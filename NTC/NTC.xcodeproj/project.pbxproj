@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F35D58A1455582A007D3116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35D5891455582A007D3116 /* UIKit.framework */; };
+		7F35D58C1455582A007D3116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35D58B1455582A007D3116 /* Foundation.framework */; };
+		7F35D58E1455582A007D3116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35D58D1455582A007D3116 /* CoreGraphics.framework */; };
+		7F35D5901455582A007D3116 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35D58F1455582A007D3116 /* CoreData.framework */; };
+		7F35D5961455582A007D3116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F35D5941455582A007D3116 /* InfoPlist.strings */; };
+		7F35D5981455582A007D3116 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F35D5971455582A007D3116 /* main.m */; };
+		7F35D59C1455582A007D3116 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F35D59B1455582A007D3116 /* AppDelegate.m */; };
+		7F35D59F1455582A007D3116 /* NTC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F35D59D1455582A007D3116 /* NTC.xcdatamodeld */; };
+		7F35D5A71455582A007D3116 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35D5A61455582A007D3116 /* SenTestingKit.framework */; };
+		7F35D5A81455582A007D3116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35D5891455582A007D3116 /* UIKit.framework */; };
+		7F35D5A91455582A007D3116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35D58B1455582A007D3116 /* Foundation.framework */; };
+		7F35D5AA1455582A007D3116 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F35D58F1455582A007D3116 /* CoreData.framework */; };
+		7F35D5C114555946007D3116 /* NTCNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F35D5BF14555946007D3116 /* NTCNavController.m */; };
+		7F35D5C214555946007D3116 /* NTCNavController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F35D5C014555946007D3116 /* NTCNavController.xib */; };
+		7F35D5C61455597F007D3116 /* MyWorkoutsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F35D5C41455597F007D3116 /* MyWorkoutsViewController.m */; };
+		7F35D5C71455597F007D3116 /* MyWorkoutsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F35D5C51455597F007D3116 /* MyWorkoutsViewController.xib */; };
+		7F35D5D414555E70007D3116 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F35D5D214555E70007D3116 /* ProgressViewController.m */; };
+		7F35D5D514555E70007D3116 /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F35D5D314555E70007D3116 /* ProgressViewController.xib */; };
+		7F35D5D914555E7F007D3116 /* RewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F35D5D714555E7F007D3116 /* RewardsViewController.m */; };
+		7F35D5DA14555E7F007D3116 /* RewardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F35D5D814555E7F007D3116 /* RewardsViewController.xib */; };
+		7F35D5DE14556415007D3116 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F35D5DD14556415007D3116 /* MainWindow.xib */; };
+		7F62BE711455785300554461 /* NTCHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BE6F1455785200554461 /* NTCHomeController.m */; };
+		7F62BE721455785300554461 /* NTCHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE701455785300554461 /* NTCHomeController.xib */; };
+		7F62BE76145579BF00554461 /* NTCHomeMainPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE75145579BF00554461 /* NTCHomeMainPic.png */; };
+		7F62BE7E1455822100554461 /* NTCTableLayerOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BE7C1455822100554461 /* NTCTableLayerOneViewController.m */; };
+		7F62BE7F1455822100554461 /* NTCTableLayerOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE7D1455822100554461 /* NTCTableLayerOneViewController.xib */; };
+		7F62BE8414559BB500554461 /* NTCTableLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BE8214559BB400554461 /* NTCTableLevelViewController.m */; };
+		7F62BE8514559BB500554461 /* NTCTableLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE8314559BB500554461 /* NTCTableLevelViewController.xib */; };
+		7F62BE891455A3BE00554461 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BE871455A3BE00554461 /* AppInfo.m */; };
+		7F62BE8A1455A3BE00554461 /* AppInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE881455A3BE00554461 /* AppInfo.xib */; };
+		7F62BE8C1455A4A400554461 /* NTCInfoBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE8B1455A4A400554461 /* NTCInfoBg.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F35D5AB1455582A007D3116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F35D57C1455582A007D3116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F35D5841455582A007D3116;
+			remoteInfo = NTC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F35D5851455582A007D3116 /* NTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F35D5891455582A007D3116 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F35D58B1455582A007D3116 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F35D58D1455582A007D3116 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F35D58F1455582A007D3116 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F35D5931455582A007D3116 /* NTC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NTC-Info.plist"; sourceTree = "<group>"; };
+		7F35D5951455582A007D3116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F35D5971455582A007D3116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F35D5991455582A007D3116 /* NTC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTC-Prefix.pch"; sourceTree = "<group>"; };
+		7F35D59A1455582A007D3116 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F35D59B1455582A007D3116 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F35D59E1455582A007D3116 /* NTC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NTC.xcdatamodel; sourceTree = "<group>"; };
+		7F35D5A51455582A007D3116 /* NTCTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTCTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F35D5A61455582A007D3116 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F35D5BE14555946007D3116 /* NTCNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTCNavController.h; sourceTree = "<group>"; };
+		7F35D5BF14555946007D3116 /* NTCNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTCNavController.m; sourceTree = "<group>"; };
+		7F35D5C014555946007D3116 /* NTCNavController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTCNavController.xib; sourceTree = "<group>"; };
+		7F35D5C31455597F007D3116 /* MyWorkoutsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWorkoutsViewController.h; sourceTree = "<group>"; };
+		7F35D5C41455597F007D3116 /* MyWorkoutsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWorkoutsViewController.m; sourceTree = "<group>"; };
+		7F35D5C51455597F007D3116 /* MyWorkoutsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWorkoutsViewController.xib; sourceTree = "<group>"; };
+		7F35D5D114555E70007D3116 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		7F35D5D214555E70007D3116 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		7F35D5D314555E70007D3116 /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
+		7F35D5D614555E7F007D3116 /* RewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardsViewController.h; sourceTree = "<group>"; };
+		7F35D5D714555E7F007D3116 /* RewardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardsViewController.m; sourceTree = "<group>"; };
+		7F35D5D814555E7F007D3116 /* RewardsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewardsViewController.xib; sourceTree = "<group>"; };
+		7F35D5DD14556415007D3116 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
+		7F62BE6E1455785200554461 /* NTCHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTCHomeController.h; sourceTree = "<group>"; };
+		7F62BE6F1455785200554461 /* NTCHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTCHomeController.m; sourceTree = "<group>"; };
+		7F62BE701455785300554461 /* NTCHomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTCHomeController.xib; sourceTree = "<group>"; };
+		7F62BE75145579BF00554461 /* NTCHomeMainPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NTCHomeMainPic.png; sourceTree = "<group>"; };
+		7F62BE7B1455822100554461 /* NTCTableLayerOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTCTableLayerOneViewController.h; sourceTree = "<group>"; };
+		7F62BE7C1455822100554461 /* NTCTableLayerOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTCTableLayerOneViewController.m; sourceTree = "<group>"; };
+		7F62BE7D1455822100554461 /* NTCTableLayerOneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTCTableLayerOneViewController.xib; sourceTree = "<group>"; };
+		7F62BE8114559BB400554461 /* NTCTableLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTCTableLevelViewController.h; sourceTree = "<group>"; };
+		7F62BE8214559BB400554461 /* NTCTableLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTCTableLevelViewController.m; sourceTree = "<group>"; };
+		7F62BE8314559BB500554461 /* NTCTableLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTCTableLevelViewController.xib; sourceTree = "<group>"; };
+		7F62BE861455A3BE00554461 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		7F62BE871455A3BE00554461 /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		7F62BE881455A3BE00554461 /* AppInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppInfo.xib; sourceTree = "<group>"; };
+		7F62BE8B1455A4A400554461 /* NTCInfoBg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCInfoBg.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F35D5821455582A007D3116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F35D58A1455582A007D3116 /* UIKit.framework in Frameworks */,
+				7F35D58C1455582A007D3116 /* Foundation.framework in Frameworks */,
+				7F35D58E1455582A007D3116 /* CoreGraphics.framework in Frameworks */,
+				7F35D5901455582A007D3116 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35D5A11455582A007D3116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F35D5A71455582A007D3116 /* SenTestingKit.framework in Frameworks */,
+				7F35D5A81455582A007D3116 /* UIKit.framework in Frameworks */,
+				7F35D5A91455582A007D3116 /* Foundation.framework in Frameworks */,
+				7F35D5AA1455582A007D3116 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F35D57A1455582A007D3116 = {
+			isa = PBXGroup;
+			children = (
+				7F35D5911455582A007D3116 /* NTC */,
+				7F35D5881455582A007D3116 /* Frameworks */,
+				7F35D5861455582A007D3116 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F35D5861455582A007D3116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F35D5851455582A007D3116 /* NTC.app */,
+				7F35D5A51455582A007D3116 /* NTCTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F35D5881455582A007D3116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F35D5891455582A007D3116 /* UIKit.framework */,
+				7F35D58B1455582A007D3116 /* Foundation.framework */,
+				7F35D58D1455582A007D3116 /* CoreGraphics.framework */,
+				7F35D58F1455582A007D3116 /* CoreData.framework */,
+				7F35D5A61455582A007D3116 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F35D5911455582A007D3116 /* NTC */ = {
+			isa = PBXGroup;
+			children = (
+				7F35D59A1455582A007D3116 /* AppDelegate.h */,
+				7F35D59B1455582A007D3116 /* AppDelegate.m */,
+				7F35D5BE14555946007D3116 /* NTCNavController.h */,
+				7F35D5BF14555946007D3116 /* NTCNavController.m */,
+				7F62BE6E1455785200554461 /* NTCHomeController.h */,
+				7F62BE6F1455785200554461 /* NTCHomeController.m */,
+				7F62BE7B1455822100554461 /* NTCTableLayerOneViewController.h */,
+				7F62BE7C1455822100554461 /* NTCTableLayerOneViewController.m */,
+				7F62BE8114559BB400554461 /* NTCTableLevelViewController.h */,
+				7F62BE8214559BB400554461 /* NTCTableLevelViewController.m */,
+				7F35D5C31455597F007D3116 /* MyWorkoutsViewController.h */,
+				7F35D5C41455597F007D3116 /* MyWorkoutsViewController.m */,
+				7F35D5D114555E70007D3116 /* ProgressViewController.h */,
+				7F35D5D214555E70007D3116 /* ProgressViewController.m */,
+				7F35D5D614555E7F007D3116 /* RewardsViewController.h */,
+				7F35D5D714555E7F007D3116 /* RewardsViewController.m */,
+				7F62BE861455A3BE00554461 /* AppInfo.h */,
+				7F62BE871455A3BE00554461 /* AppInfo.m */,
+				7F35D59D1455582A007D3116 /* NTC.xcdatamodeld */,
+				7F35D5921455582A007D3116 /* Supporting Files */,
+			);
+			path = NTC;
+			sourceTree = "<group>";
+		};
+		7F35D5921455582A007D3116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F35D5DD14556415007D3116 /* MainWindow.xib */,
+				7F35D5C014555946007D3116 /* NTCNavController.xib */,
+				7F62BE701455785300554461 /* NTCHomeController.xib */,
+				7F62BE7D1455822100554461 /* NTCTableLayerOneViewController.xib */,
+				7F62BE8314559BB500554461 /* NTCTableLevelViewController.xib */,
+				7F35D5C51455597F007D3116 /* MyWorkoutsViewController.xib */,
+				7F35D5D314555E70007D3116 /* ProgressViewController.xib */,
+				7F35D5D814555E7F007D3116 /* RewardsViewController.xib */,
+				7F62BE881455A3BE00554461 /* AppInfo.xib */,
+				7F35D5931455582A007D3116 /* NTC-Info.plist */,
+				7F35D5941455582A007D3116 /* InfoPlist.strings */,
+				7F35D5971455582A007D3116 /* main.m */,
+				7F35D5991455582A007D3116 /* NTC-Prefix.pch */,
+				7F62BE741455799D00554461 /* images */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F62BE741455799D00554461 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7F62BE8B1455A4A400554461 /* NTCInfoBg.jpg */,
+				7F62BE75145579BF00554461 /* NTCHomeMainPic.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F35D5841455582A007D3116 /* NTC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F35D5B81455582A007D3116 /* Build configuration list for PBXNativeTarget "NTC" */;
+			buildPhases = (
+				7F35D5811455582A007D3116 /* Sources */,
+				7F35D5821455582A007D3116 /* Frameworks */,
+				7F35D5831455582A007D3116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTC;
+			productName = NTC;
+			productReference = 7F35D5851455582A007D3116 /* NTC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F35D5A41455582A007D3116 /* NTCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F35D5BB1455582A007D3116 /* Build configuration list for PBXNativeTarget "NTCTests" */;
+			buildPhases = (
+				7F35D5A01455582A007D3116 /* Sources */,
+				7F35D5A11455582A007D3116 /* Frameworks */,
+				7F35D5A21455582A007D3116 /* Resources */,
+				7F35D5A31455582A007D3116 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F35D5AC1455582A007D3116 /* PBXTargetDependency */,
+			);
+			name = NTCTests;
+			productName = NTCTests;
+			productReference = 7F35D5A51455582A007D3116 /* NTCTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F35D57C1455582A007D3116 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = thePlant;
+			};
+			buildConfigurationList = 7F35D57F1455582A007D3116 /* Build configuration list for PBXProject "NTC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F35D57A1455582A007D3116;
+			productRefGroup = 7F35D5861455582A007D3116 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F35D5841455582A007D3116 /* NTC */,
+				7F35D5A41455582A007D3116 /* NTCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F35D5831455582A007D3116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F35D5961455582A007D3116 /* InfoPlist.strings in Resources */,
+				7F35D5C214555946007D3116 /* NTCNavController.xib in Resources */,
+				7F35D5C71455597F007D3116 /* MyWorkoutsViewController.xib in Resources */,
+				7F35D5D514555E70007D3116 /* ProgressViewController.xib in Resources */,
+				7F35D5DA14555E7F007D3116 /* RewardsViewController.xib in Resources */,
+				7F35D5DE14556415007D3116 /* MainWindow.xib in Resources */,
+				7F62BE721455785300554461 /* NTCHomeController.xib in Resources */,
+				7F62BE76145579BF00554461 /* NTCHomeMainPic.png in Resources */,
+				7F62BE7F1455822100554461 /* NTCTableLayerOneViewController.xib in Resources */,
+				7F62BE8514559BB500554461 /* NTCTableLevelViewController.xib in Resources */,
+				7F62BE8A1455A3BE00554461 /* AppInfo.xib in Resources */,
+				7F62BE8C1455A4A400554461 /* NTCInfoBg.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35D5A21455582A007D3116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F35D5A31455582A007D3116 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F35D5811455582A007D3116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F35D5981455582A007D3116 /* main.m in Sources */,
+				7F35D59C1455582A007D3116 /* AppDelegate.m in Sources */,
+				7F35D59F1455582A007D3116 /* NTC.xcdatamodeld in Sources */,
+				7F35D5C114555946007D3116 /* NTCNavController.m in Sources */,
+				7F35D5C61455597F007D3116 /* MyWorkoutsViewController.m in Sources */,
+				7F35D5D414555E70007D3116 /* ProgressViewController.m in Sources */,
+				7F35D5D914555E7F007D3116 /* RewardsViewController.m in Sources */,
+				7F62BE711455785300554461 /* NTCHomeController.m in Sources */,
+				7F62BE7E1455822100554461 /* NTCTableLayerOneViewController.m in Sources */,
+				7F62BE8414559BB500554461 /* NTCTableLevelViewController.m in Sources */,
+				7F62BE891455A3BE00554461 /* AppInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35D5A01455582A007D3116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F35D5AC1455582A007D3116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F35D5841455582A007D3116 /* NTC */;
+			targetProxy = 7F35D5AB1455582A007D3116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F35D5941455582A007D3116 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F35D5951455582A007D3116 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F35D5B61455582A007D3116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F35D5B71455582A007D3116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F35D5B91455582A007D3116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTC/NTC-Prefix.pch";
+				INFOPLIST_FILE = "NTC/NTC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F35D5BA1455582A007D3116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTC/NTC-Prefix.pch";
+				INFOPLIST_FILE = "NTC/NTC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F35D5BC1455582A007D3116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NTC.app/NTC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTC/NTC-Prefix.pch";
+				INFOPLIST_FILE = "NTCTests/NTCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7F35D5BD1455582A007D3116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NTC.app/NTC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTC/NTC-Prefix.pch";
+				INFOPLIST_FILE = "NTCTests/NTCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F35D57F1455582A007D3116 /* Build configuration list for PBXProject "NTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F35D5B61455582A007D3116 /* Debug */,
+				7F35D5B71455582A007D3116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F35D5B81455582A007D3116 /* Build configuration list for PBXNativeTarget "NTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F35D5B91455582A007D3116 /* Debug */,
+				7F35D5BA1455582A007D3116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F35D5BB1455582A007D3116 /* Build configuration list for PBXNativeTarget "NTCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F35D5BC1455582A007D3116 /* Debug */,
+				7F35D5BD1455582A007D3116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F35D59D1455582A007D3116 /* NTC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F35D59E1455582A007D3116 /* NTC.xcdatamodel */,
+			);
+			currentVersion = 7F35D59E1455582A007D3116 /* NTC.xcdatamodel */;
+			path = NTC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F35D57C1455582A007D3116 /* Project object */;
+}
