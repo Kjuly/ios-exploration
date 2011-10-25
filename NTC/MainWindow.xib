@@ -135,7 +135,7 @@
 											<int key="type">2</int>
 											<double key="pointSize">15</double>
 										</object>
-										<object class="NSFont" key="IBUIFont" id="711374324">
+										<object class="NSFont" key="IBUIFont" id="569918942">
 											<string key="NSName">Helvetica-Bold</string>
 											<double key="NSSize">15</double>
 											<int key="NSfFlags">16</int>
@@ -205,7 +205,7 @@
 											</object>
 											<reference key="IBUINormalTitleShadowColor" ref="910987133"/>
 											<reference key="IBUIFontDescription" ref="111041891"/>
-											<reference key="IBUIFont" ref="711374324"/>
+											<reference key="IBUIFont" ref="569918942"/>
 										</object>
 										<reference key="IBUINavigationItem" ref="343980329"/>
 									</object>
@@ -272,7 +272,7 @@
 											</object>
 											<reference key="IBUINormalTitleShadowColor" ref="910987133"/>
 											<reference key="IBUIFontDescription" ref="111041891"/>
-											<reference key="IBUIFont" ref="711374324"/>
+											<reference key="IBUIFont" ref="569918942"/>
 										</object>
 										<reference key="IBUINavigationItem" ref="859125218"/>
 									</object>

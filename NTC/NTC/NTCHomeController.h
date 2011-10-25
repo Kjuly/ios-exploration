@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface NTCHomeController : UIViewController
+{
+  BOOL ntcHomeImgIsEnlarged;
+}
 
 - (IBAction)startTrainingPlan:(id)sender;
+
+@property (nonatomic, retain) IBOutlet UIImageView *ntcHomeImg;
+@property (assign) BOOL ntcHomeImgIsEnlarged;
 
 @end

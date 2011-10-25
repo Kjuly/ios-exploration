@@ -11,6 +11,9 @@
 
 @implementation NTCHomeController
 
+@synthesize ntcHomeImg;
+@synthesize ntcHomeImgIsEnlarged;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,8 +35,13 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+  // Do any additional setup after loading the view from its nib.
+  [ntcHomeImg setBounds:CGRectMake(0, 75, 320, 159)];
+  [ntcHomeImg setClipsToBounds:YES];
+  [self.view bringSubviewToFront:ntcHomeImg];
+  
+  self.ntcHomeImgIsEnlarged = NO;
 }
 
 - (void)viewDidUnload
@@ -41,6 +49,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+  ntcHomeImg = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -56,6 +65,39 @@
   NTCTableLayerOneViewController *ntcTableLayerOneViewController = [[NTCTableLayerOneViewController alloc] initWithNibName:@"NTCTableLayerOneViewController" bundle:nil];
   [self.navigationController pushViewController:ntcTableLayerOneViewController animated:YES];
   [ntcTableLayerOneViewController release];
+}
+
+#pragma mark - UIImageView
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  UITouch *touch = [touches anyObject];
+  if ([touch view] == ntcHomeImg) {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [UIView beginAnimations:nil context:context];
+    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    [UIView setAnimationDuration:0.5];
+    
+    if (self.ntcHomeImgIsEnlarged) {
+      [ntcHomeImg setBounds:CGRectMake(0, 0, 320, 159)];
+      [self.navigationController.navigationBar setAlpha:1.0];
+      [self.tabBarController.tabBar setAlpha:1.0];
+    } else {
+      [ntcHomeImg setBounds:CGRectMake(0, 0, 320, 480)];
+      [self.navigationController.navigationBar setAlpha:0.0];
+      //[self.navigationController.navigationBar setHidden:YES];
+      [self.tabBarController.tabBar setAlpha:0.0];
+    }
+    
+    [UIView commitAnimations];
+    self.ntcHomeImgIsEnlarged = !self.ntcHomeImgIsEnlarged;
+  }
+  //[touch release];
+}
+
+- (void)dealloc
+{
+  [ntcHomeImg release];
 }
 
 @end

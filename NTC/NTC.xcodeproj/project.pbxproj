@@ -40,6 +40,7 @@
 		7F62BE8C1455A4A400554461 /* NTCInfoBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE8B1455A4A400554461 /* NTCInfoBg.jpg */; };
 		7FFF90B8145664FE005229B0 /* NTCTablePlanSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF90B6145664FD005229B0 /* NTCTablePlanSelectionViewController.m */; };
 		7FFF90B9145664FE005229B0 /* NTCTablePlanSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF90B7145664FE005229B0 /* NTCTablePlanSelectionViewController.xib */; };
+		7FFF90BE1456AB7B005229B0 /* NTCHomeMainPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF90BD1456AB7A005229B0 /* NTCHomeMainPic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		7FFF90B5145664FD005229B0 /* NTCTablePlanSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTCTablePlanSelectionViewController.h; sourceTree = "<group>"; };
 		7FFF90B6145664FD005229B0 /* NTCTablePlanSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTCTablePlanSelectionViewController.m; sourceTree = "<group>"; };
 		7FFF90B7145664FE005229B0 /* NTCTablePlanSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTCTablePlanSelectionViewController.xib; sourceTree = "<group>"; };
+		7FFF90BD1456AB7A005229B0 /* NTCHomeMainPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCHomeMainPic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				7F62BE8B1455A4A400554461 /* NTCInfoBg.jpg */,
+				7FFF90BD1456AB7A005229B0 /* NTCHomeMainPic.jpg */,
 				7F62BE75145579BF00554461 /* NTCHomeMainPic.png */,
 			);
 			name = images;
@@ -299,6 +302,7 @@
 				7F62BE8A1455A3BE00554461 /* AppInfo.xib in Resources */,
 				7F62BE8C1455A4A400554461 /* NTCInfoBg.jpg in Resources */,
 				7FFF90B9145664FE005229B0 /* NTCTablePlanSelectionViewController.xib in Resources */,
+				7FFF90BE1456AB7B005229B0 /* NTCHomeMainPic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
