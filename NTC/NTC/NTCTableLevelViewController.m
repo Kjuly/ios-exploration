@@ -153,7 +153,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   NTCTablePlanSelectionViewController *ntcTablePlanSelectionViewController = [[NTCTablePlanSelectionViewController alloc] initWithNibName:@"NTCTablePlanSelectionViewController" bundle:nil];
+  
   ntcTablePlanSelectionViewController.title = @"Plan Selection";
+  ntcTablePlanSelectionViewController.planSelected = indexPath.row;
+  
   [self.navigationController pushViewController:ntcTablePlanSelectionViewController animated:YES];
   [ntcTablePlanSelectionViewController release];
 }

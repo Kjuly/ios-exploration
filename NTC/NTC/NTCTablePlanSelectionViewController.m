@@ -11,6 +11,7 @@
 @implementation NTCTablePlanSelectionViewController
 
 @synthesize beginnerPlanArray, intermediatePlanArray, advancedPlanArray;
+@synthesize planSelected;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -107,9 +108,17 @@
     
     // Configure the cell...
   NSUInteger row = [indexPath row];
-  cell.textLabel.text = [self.beginnerPlanArray objectAtIndex:row];
-    
-    return cell;
+  if (self.planSelected == 0) {
+    cell.textLabel.text = [self.beginnerPlanArray objectAtIndex:row];
+  }
+  else if (self.planSelected == 1) {
+    cell.textLabel.text = [self.intermediatePlanArray objectAtIndex:row];
+  }
+  else {
+    cell.textLabel.text = [self.advancedPlanArray objectAtIndex:row];
+  }
+  
+  return cell;
 }
 
 /*

@@ -16,10 +16,12 @@
   NSMutableArray *beginnerPlanArray;
   NSMutableArray *intermediatePlanArray;
   NSMutableArray *advancedPlanArray;
+  NSInteger planSelected;
 }
 
 @property (retain, nonatomic) NSMutableArray *beginnerPlanArray;
 @property (retain, nonatomic) NSMutableArray *intermediatePlanArray;
 @property (retain, nonatomic) NSMutableArray *advancedPlanArray;
+@property (assign, nonatomic) NSInteger planSelected;
 
 @end
