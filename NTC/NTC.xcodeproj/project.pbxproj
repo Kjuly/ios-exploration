@@ -38,6 +38,8 @@
 		7F62BE891455A3BE00554461 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F62BE871455A3BE00554461 /* AppInfo.m */; };
 		7F62BE8A1455A3BE00554461 /* AppInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE881455A3BE00554461 /* AppInfo.xib */; };
 		7F62BE8C1455A4A400554461 /* NTCInfoBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F62BE8B1455A4A400554461 /* NTCInfoBg.jpg */; };
+		7FFF90B8145664FE005229B0 /* NTCTablePlanSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF90B6145664FD005229B0 /* NTCTablePlanSelectionViewController.m */; };
+		7FFF90B9145664FE005229B0 /* NTCTablePlanSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF90B7145664FE005229B0 /* NTCTablePlanSelectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,9 @@
 		7F62BE871455A3BE00554461 /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		7F62BE881455A3BE00554461 /* AppInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppInfo.xib; sourceTree = "<group>"; };
 		7F62BE8B1455A4A400554461 /* NTCInfoBg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCInfoBg.jpg; sourceTree = "<group>"; };
+		7FFF90B5145664FD005229B0 /* NTCTablePlanSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTCTablePlanSelectionViewController.h; sourceTree = "<group>"; };
+		7FFF90B6145664FD005229B0 /* NTCTablePlanSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTCTablePlanSelectionViewController.m; sourceTree = "<group>"; };
+		7FFF90B7145664FE005229B0 /* NTCTablePlanSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTCTablePlanSelectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +168,8 @@
 				7F62BE7C1455822100554461 /* NTCTableLayerOneViewController.m */,
 				7F62BE8114559BB400554461 /* NTCTableLevelViewController.h */,
 				7F62BE8214559BB400554461 /* NTCTableLevelViewController.m */,
+				7FFF90B5145664FD005229B0 /* NTCTablePlanSelectionViewController.h */,
+				7FFF90B6145664FD005229B0 /* NTCTablePlanSelectionViewController.m */,
 				7F35D5C31455597F007D3116 /* MyWorkoutsViewController.h */,
 				7F35D5C41455597F007D3116 /* MyWorkoutsViewController.m */,
 				7F35D5D114555E70007D3116 /* ProgressViewController.h */,
@@ -185,6 +192,7 @@
 				7F62BE701455785300554461 /* NTCHomeController.xib */,
 				7F62BE7D1455822100554461 /* NTCTableLayerOneViewController.xib */,
 				7F62BE8314559BB500554461 /* NTCTableLevelViewController.xib */,
+				7FFF90B7145664FE005229B0 /* NTCTablePlanSelectionViewController.xib */,
 				7F35D5C51455597F007D3116 /* MyWorkoutsViewController.xib */,
 				7F35D5D314555E70007D3116 /* ProgressViewController.xib */,
 				7F35D5D814555E7F007D3116 /* RewardsViewController.xib */,
@@ -290,6 +298,7 @@
 				7F62BE8514559BB500554461 /* NTCTableLevelViewController.xib in Resources */,
 				7F62BE8A1455A3BE00554461 /* AppInfo.xib in Resources */,
 				7F62BE8C1455A4A400554461 /* NTCInfoBg.jpg in Resources */,
+				7FFF90B9145664FE005229B0 /* NTCTablePlanSelectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +343,7 @@
 				7F62BE7E1455822100554461 /* NTCTableLayerOneViewController.m in Sources */,
 				7F62BE8414559BB500554461 /* NTCTableLevelViewController.m in Sources */,
 				7F62BE891455A3BE00554461 /* AppInfo.m in Sources */,
+				7FFF90B8145664FE005229B0 /* NTCTablePlanSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

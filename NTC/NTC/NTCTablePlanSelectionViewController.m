@@ -1,17 +1,16 @@
 //
-//  NTCTableLevelViewController.m
+//  NTCTablePlanSelectionViewController.m
 //  NTC
 //
-//  Created by Kaijie Yu on 10/24/11.
+//  Created by Kaijie Yu on 10/25/11.
 //  Copyright (c) 2011 thePlant. All rights reserved.
 //
 
-#import "NTCTableLevelViewController.h"
 #import "NTCTablePlanSelectionViewController.h"
 
-@implementation NTCTableLevelViewController
+@implementation NTCTablePlanSelectionViewController
 
-@synthesize levelArray;
+@synthesize beginnerPlanArray, intermediatePlanArray, advancedPlanArray;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -41,11 +40,11 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-  self.title = NSLocalizedString(@"Level Selection", @"Level Selection");
+  self.title = NSLocalizedString(@"Plan Selection", @"Plan Selection");
   
-  NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Beginner", @"Intermediate", @"Advanced", nil];
-  self.levelArray = array;
-  [array release];
+  self.beginnerPlanArray = [[NSMutableArray alloc] initWithObjects:@"tnxl", @"nlcj", @"qjxl", @"mhzh", @"jzxx", @"xssx+dstt", nil];
+  self.intermediatePlanArray = [[NSMutableArray alloc] initWithObjects:@"xhxl", @"rrxl", @"qxsz", @"fblx", @"jscj", @"jtxl", nil];
+  self.advancedPlanArray = [[NSMutableArray alloc] initWithObjects:@"hhxl", @"qjtp", @"zyht", @"zstj", @"wmrh", @"ttdd", nil];
 }
 
 - (void)viewDidUnload
@@ -85,12 +84,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-  return 1;
+//#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return [self.levelArray count];
+//#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return [self.beginnerPlanArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -104,7 +107,7 @@
     
     // Configure the cell...
   NSUInteger row = [indexPath row];
-  cell.textLabel.text = [self.levelArray objectAtIndex:row];
+  cell.textLabel.text = [self.beginnerPlanArray objectAtIndex:row];
     
     return cell;
 }
@@ -152,10 +155,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  NTCTablePlanSelectionViewController *ntcTablePlanSelectionViewController = [[NTCTablePlanSelectionViewController alloc] initWithNibName:@"NTCTablePlanSelectionViewController" bundle:nil];
-  ntcTablePlanSelectionViewController.title = @"Plan Selection";
-  [self.navigationController pushViewController:ntcTablePlanSelectionViewController animated:YES];
-  [ntcTablePlanSelectionViewController release];
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     [detailViewController release];
+     */
 }
 
 #pragma mark - Addition
@@ -163,7 +170,9 @@
 - (void)dealloc
 {
   [tableViewController release];
-  [self.levelArray release];
+  [self.beginnerPlanArray release];
+  [self.intermediatePlanArray release];
+  [self.advancedPlanArray release];
 }
 
 @end
