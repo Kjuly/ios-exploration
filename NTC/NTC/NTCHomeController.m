@@ -7,6 +7,7 @@
 //
 
 #import "NTCHomeController.h"
+#import "NTCTableLayerOneViewController.h"
 
 @implementation NTCHomeController
 
@@ -48,10 +49,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-// IBAction
+#pragma mark - IBAction
+
 - (IBAction)startTrainingPlan:(id)sender
 {
-  //self.pu
+  NTCTableLayerOneViewController *ntcTableLayerOneViewController = [[NTCTableLayerOneViewController alloc] initWithNibName:@"NTCTableLayerOneViewController" bundle:nil];
+  [self.navigationController pushViewController:ntcTableLayerOneViewController animated:YES];
+  [ntcTableLayerOneViewController release];
 }
 
 @end

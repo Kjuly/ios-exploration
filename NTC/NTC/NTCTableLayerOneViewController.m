@@ -46,7 +46,7 @@
   
   self.title = NSLocalizedString(@"Goal Selection", @"Goal Selection");
   
-  NSMutableArray *array = [[NSArray alloc] initWithObjects:@"Fit", @"Bodybuilding", @"Strong", @"Part", nil];
+  NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Fit", @"Bodybuilding", @"Strong", @"Part", nil];
   self.styleArray = array;
   [array release];
 }
@@ -174,7 +174,8 @@
     [newNTCTableLevelViewController release];
   }
   
-  self.ntcTableLevelViewController.title = [NSString stringWithFormat:@"%@", [styleArray objectAtIndex:row]];
+  //self.ntcTableLevelViewController.title = [NSString stringWithFormat:@"%@", [styleArray objectAtIndex:row]];
+  self.ntcTableLevelViewController.title = @"Level Selection";
   
   //AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
   //[delegate.myWorkoutsNavController pushViewController:ntcTableLevelViewController animated:YES];
