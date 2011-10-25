@@ -167,7 +167,8 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-  NSInteger row = [indexPath row];
+  
+  //NSInteger row = [indexPath row];
   if (self.ntcTableLevelViewController == nil) {
     NTCTableLevelViewController *newNTCTableLevelViewController = [[NTCTableLevelViewController alloc] initWithNibName:@"NTCTableLevelViewController" bundle:nil];
     self.ntcTableLevelViewController = newNTCTableLevelViewController;

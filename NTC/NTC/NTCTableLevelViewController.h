@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NTCTableLevelViewController : UITableViewController
+@class NTCTableLevelViewController;
+
+@interface NTCTableLevelViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+{
+  IBOutlet UITableViewController *tableViewController;
+  NSMutableArray *levelArray;
+}
+
+@property (retain, nonatomic) NSMutableArray *levelArray;
 
 @end

@@ -7,8 +7,11 @@
 //
 
 #import "NTCTableLevelViewController.h"
+#import "NTCTableLevelViewController.h"
 
 @implementation NTCTableLevelViewController
+
+@synthesize levelArray;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -38,6 +41,11 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  self.title = NSLocalizedString(@"Level Selection", @"Level Selection");
+  
+  NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Beginner", @"Intermediate", @"Advanced", nil];
+  self.levelArray = array;
+  [array release];
 }
 
 - (void)viewDidUnload
@@ -77,16 +85,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+  return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+  return [self.levelArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -99,6 +103,8 @@
     }
     
     // Configure the cell...
+  NSUInteger row = [indexPath row];
+  cell.textLabel.text = [self.levelArray objectAtIndex:row];
     
     return cell;
 }
@@ -154,6 +160,14 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+}
+
+#pragma mark - Addition
+
+- (void)dealloc
+{
+  [tableViewController release];
+  [self.levelArray release];
 }
 
 @end
