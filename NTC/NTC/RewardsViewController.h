@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppInfo.h"
 
-@interface RewardsViewController : UINavigationController
+@interface RewardsViewController : UINavigationController <AppInfoViewControllerDelegate>
+
+- (IBAction)showInfo:(id)sender;
 
 @end

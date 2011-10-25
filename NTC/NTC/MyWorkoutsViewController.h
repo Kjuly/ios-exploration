@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppInfo.h"
 
-@interface MyWorkoutsViewController : UINavigationController
+@interface MyWorkoutsViewController : UINavigationController <AppInfoViewControllerDelegate>
+
+- (IBAction)showInfo:(id)sender;
 
 @end

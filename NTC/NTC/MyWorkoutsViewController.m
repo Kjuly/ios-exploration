@@ -49,4 +49,23 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark - IBAction
+
+- (IBAction)showInfo:(id)sender
+{
+  AppInfo *appInfoViewController = [[AppInfo alloc] initWithNibName:@"AppInfo" bundle:nil];
+  appInfoViewController.delegate = self;
+  appInfoViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+  [self presentModalViewController:appInfoViewController animated:YES];
+  
+  [appInfoViewController release];
+}
+
+#pragma mark - AppInfoViewControllerDelegate
+
+- (void)appInfoViewControllerDidFinish:(AppInfo *)controller
+{
+  [self dismissModalViewControllerAnimated:YES];
+}
+
 @end

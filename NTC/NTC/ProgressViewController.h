@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppInfo.h"
 
-@interface ProgressViewController : UINavigationController
+@interface ProgressViewController : UINavigationController <AppInfoViewControllerDelegate>
+
+- (IBAction)showInfo:(id)sender;
 
 @end
