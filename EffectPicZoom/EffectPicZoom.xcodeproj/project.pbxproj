@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FAB402F1457C27000D74034 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB402E1457C27000D74034 /* UIKit.framework */; };
+		7FAB40311457C27000D74034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB40301457C27000D74034 /* Foundation.framework */; };
+		7FAB40331457C27000D74034 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB40321457C27000D74034 /* CoreGraphics.framework */; };
+		7FAB40391457C27000D74034 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FAB40371457C27000D74034 /* InfoPlist.strings */; };
+		7FAB403B1457C27000D74034 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB403A1457C27000D74034 /* main.m */; };
+		7FAB403F1457C27000D74034 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB403E1457C27000D74034 /* AppDelegate.m */; };
+		7FAB40421457C27000D74034 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB40411457C27000D74034 /* ViewController.m */; };
+		7FAB40451457C27000D74034 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAB40431457C27000D74034 /* ViewController.xib */; };
+		7FAB404D1457C27000D74034 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB404C1457C27000D74034 /* SenTestingKit.framework */; };
+		7FAB404E1457C27000D74034 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB402E1457C27000D74034 /* UIKit.framework */; };
+		7FAB404F1457C27000D74034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAB40301457C27000D74034 /* Foundation.framework */; };
+		7FAB40571457C27000D74034 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FAB40551457C27000D74034 /* InfoPlist.strings */; };
+		7FAB405A1457C27000D74034 /* EffectPicZoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB40591457C27000D74034 /* EffectPicZoomTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FAB40501457C27000D74034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FAB40211457C26F00D74034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FAB40291457C27000D74034;
+			remoteInfo = EffectPicZoom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FAB402A1457C27000D74034 /* EffectPicZoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectPicZoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FAB402E1457C27000D74034 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FAB40301457C27000D74034 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FAB40321457C27000D74034 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FAB40361457C27000D74034 /* EffectPicZoom-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EffectPicZoom-Info.plist"; sourceTree = "<group>"; };
+		7FAB40381457C27000D74034 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FAB403A1457C27000D74034 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FAB403C1457C27000D74034 /* EffectPicZoom-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EffectPicZoom-Prefix.pch"; sourceTree = "<group>"; };
+		7FAB403D1457C27000D74034 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7FAB403E1457C27000D74034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7FAB40401457C27000D74034 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7FAB40411457C27000D74034 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7FAB40441457C27000D74034 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		7FAB404B1457C27000D74034 /* EffectPicZoomTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectPicZoomTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FAB404C1457C27000D74034 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FAB40541457C27000D74034 /* EffectPicZoomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EffectPicZoomTests-Info.plist"; sourceTree = "<group>"; };
+		7FAB40561457C27000D74034 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FAB40581457C27000D74034 /* EffectPicZoomTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectPicZoomTests.h; sourceTree = "<group>"; };
+		7FAB40591457C27000D74034 /* EffectPicZoomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectPicZoomTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FAB40271457C27000D74034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAB402F1457C27000D74034 /* UIKit.framework in Frameworks */,
+				7FAB40311457C27000D74034 /* Foundation.framework in Frameworks */,
+				7FAB40331457C27000D74034 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FAB40471457C27000D74034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAB404D1457C27000D74034 /* SenTestingKit.framework in Frameworks */,
+				7FAB404E1457C27000D74034 /* UIKit.framework in Frameworks */,
+				7FAB404F1457C27000D74034 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FAB401F1457C26F00D74034 = {
+			isa = PBXGroup;
+			children = (
+				7FAB40341457C27000D74034 /* EffectPicZoom */,
+				7FAB40521457C27000D74034 /* EffectPicZoomTests */,
+				7FAB402D1457C27000D74034 /* Frameworks */,
+				7FAB402B1457C27000D74034 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FAB402B1457C27000D74034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FAB402A1457C27000D74034 /* EffectPicZoom.app */,
+				7FAB404B1457C27000D74034 /* EffectPicZoomTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FAB402D1457C27000D74034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FAB402E1457C27000D74034 /* UIKit.framework */,
+				7FAB40301457C27000D74034 /* Foundation.framework */,
+				7FAB40321457C27000D74034 /* CoreGraphics.framework */,
+				7FAB404C1457C27000D74034 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FAB40341457C27000D74034 /* EffectPicZoom */ = {
+			isa = PBXGroup;
+			children = (
+				7FAB403D1457C27000D74034 /* AppDelegate.h */,
+				7FAB403E1457C27000D74034 /* AppDelegate.m */,
+				7FAB40401457C27000D74034 /* ViewController.h */,
+				7FAB40411457C27000D74034 /* ViewController.m */,
+				7FAB40431457C27000D74034 /* ViewController.xib */,
+				7FAB40351457C27000D74034 /* Supporting Files */,
+			);
+			path = EffectPicZoom;
+			sourceTree = "<group>";
+		};
+		7FAB40351457C27000D74034 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FAB40361457C27000D74034 /* EffectPicZoom-Info.plist */,
+				7FAB40371457C27000D74034 /* InfoPlist.strings */,
+				7FAB403A1457C27000D74034 /* main.m */,
+				7FAB403C1457C27000D74034 /* EffectPicZoom-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FAB40521457C27000D74034 /* EffectPicZoomTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FAB40581457C27000D74034 /* EffectPicZoomTests.h */,
+				7FAB40591457C27000D74034 /* EffectPicZoomTests.m */,
+				7FAB40531457C27000D74034 /* Supporting Files */,
+			);
+			path = EffectPicZoomTests;
+			sourceTree = "<group>";
+		};
+		7FAB40531457C27000D74034 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FAB40541457C27000D74034 /* EffectPicZoomTests-Info.plist */,
+				7FAB40551457C27000D74034 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FAB40291457C27000D74034 /* EffectPicZoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FAB405D1457C27000D74034 /* Build configuration list for PBXNativeTarget "EffectPicZoom" */;
+			buildPhases = (
+				7FAB40261457C27000D74034 /* Sources */,
+				7FAB40271457C27000D74034 /* Frameworks */,
+				7FAB40281457C27000D74034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EffectPicZoom;
+			productName = EffectPicZoom;
+			productReference = 7FAB402A1457C27000D74034 /* EffectPicZoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FAB404A1457C27000D74034 /* EffectPicZoomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FAB40601457C27000D74034 /* Build configuration list for PBXNativeTarget "EffectPicZoomTests" */;
+			buildPhases = (
+				7FAB40461457C27000D74034 /* Sources */,
+				7FAB40471457C27000D74034 /* Frameworks */,
+				7FAB40481457C27000D74034 /* Resources */,
+				7FAB40491457C27000D74034 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FAB40511457C27000D74034 /* PBXTargetDependency */,
+			);
+			name = EffectPicZoomTests;
+			productName = EffectPicZoomTests;
+			productReference = 7FAB404B1457C27000D74034 /* EffectPicZoomTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FAB40211457C26F00D74034 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = thePlant;
+			};
+			buildConfigurationList = 7FAB40241457C26F00D74034 /* Build configuration list for PBXProject "EffectPicZoom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FAB401F1457C26F00D74034;
+			productRefGroup = 7FAB402B1457C27000D74034 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FAB40291457C27000D74034 /* EffectPicZoom */,
+				7FAB404A1457C27000D74034 /* EffectPicZoomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FAB40281457C27000D74034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAB40391457C27000D74034 /* InfoPlist.strings in Resources */,
+				7FAB40451457C27000D74034 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FAB40481457C27000D74034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAB40571457C27000D74034 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FAB40491457C27000D74034 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FAB40261457C27000D74034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAB403B1457C27000D74034 /* main.m in Sources */,
+				7FAB403F1457C27000D74034 /* AppDelegate.m in Sources */,
+				7FAB40421457C27000D74034 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FAB40461457C27000D74034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAB405A1457C27000D74034 /* EffectPicZoomTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FAB40511457C27000D74034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FAB40291457C27000D74034 /* EffectPicZoom */;
+			targetProxy = 7FAB40501457C27000D74034 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FAB40371457C27000D74034 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FAB40381457C27000D74034 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FAB40431457C27000D74034 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FAB40441457C27000D74034 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		7FAB40551457C27000D74034 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FAB40561457C27000D74034 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FAB405B1457C27000D74034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7FAB405C1457C27000D74034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FAB405E1457C27000D74034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectPicZoom/EffectPicZoom-Prefix.pch";
+				INFOPLIST_FILE = "EffectPicZoom/EffectPicZoom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7FAB405F1457C27000D74034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectPicZoom/EffectPicZoom-Prefix.pch";
+				INFOPLIST_FILE = "EffectPicZoom/EffectPicZoom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7FAB40611457C27000D74034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EffectPicZoom.app/EffectPicZoom";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectPicZoom/EffectPicZoom-Prefix.pch";
+				INFOPLIST_FILE = "EffectPicZoomTests/EffectPicZoomTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7FAB40621457C27000D74034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EffectPicZoom.app/EffectPicZoom";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectPicZoom/EffectPicZoom-Prefix.pch";
+				INFOPLIST_FILE = "EffectPicZoomTests/EffectPicZoomTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FAB40241457C26F00D74034 /* Build configuration list for PBXProject "EffectPicZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FAB405B1457C27000D74034 /* Debug */,
+				7FAB405C1457C27000D74034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FAB405D1457C27000D74034 /* Build configuration list for PBXNativeTarget "EffectPicZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FAB405E1457C27000D74034 /* Debug */,
+				7FAB405F1457C27000D74034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FAB40601457C27000D74034 /* Build configuration list for PBXNativeTarget "EffectPicZoomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FAB40611457C27000D74034 /* Debug */,
+				7FAB40621457C27000D74034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FAB40211457C26F00D74034 /* Project object */;
+}
