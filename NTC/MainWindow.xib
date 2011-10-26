@@ -46,7 +46,6 @@
 				<object class="NSPSMatrix" key="NSFrameMatrix"/>
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -78,11 +77,10 @@
 				<bool key="IBUIDefinesPresentationContext">YES</bool>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="861668222">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="916520268">
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="528462781">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="638309008">
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUITabBar" ref="568283150"/>
-						<int key="IBUISystemItemIdentifier">7</int>
+						<int key="IBUISystemItemIdentifier">1</int>
 					</object>
 					<reference key="IBUIParentViewController" ref="1071762489"/>
 					<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
@@ -93,7 +91,7 @@
 					<bool key="IBUIDefinesPresentationContext">YES</bool>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="30616904">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="465890651">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
@@ -105,18 +103,16 @@
 						<int key="IBUIBarStyle">1</int>
 					</object>
 					<array class="NSMutableArray" key="IBUIViewControllers">
-						<object class="IBUIViewController" id="669761644">
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="113104869">
-								<reference key="IBUINavigationBar"/>
-								<string key="IBUITitle">Rewards</string>
-								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="248559569">
+						<object class="IBUIViewController" id="948131423">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="343980329">
+								<string key="IBUITitle">N C</string>
+								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="1047428489">
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-									<object class="IBUIButton" key="IBUICustomView" id="342855658">
+									<object class="IBUIButton" key="IBUICustomView" id="301169669">
 										<reference key="NSNextResponder"/>
 										<int key="NSvFlags">292</int>
 										<string key="NSFrame">{{5, 12}, {18, 19}}</string>
 										<reference key="NSSuperview"/>
-										<reference key="NSWindow"/>
 										<string key="NSReuseIdentifierKey">_NS:225</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -140,17 +136,17 @@
 											<int key="type">2</int>
 											<double key="pointSize">15</double>
 										</object>
-										<object class="NSFont" key="IBUIFont" id="569918942">
+										<object class="NSFont" key="IBUIFont" id="174396705">
 											<string key="NSName">Helvetica-Bold</string>
 											<double key="NSSize">15</double>
 											<int key="NSfFlags">16</int>
 										</object>
 									</object>
-									<reference key="IBUINavigationItem" ref="113104869"/>
+									<reference key="IBUINavigationItem" ref="343980329"/>
 								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="861668222"/>
+							<reference key="IBUIParentViewController" ref="528462781"/>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
 								<int key="interfaceOrientation">1</int>
@@ -161,76 +157,10 @@
 					</array>
 				</object>
 				<array class="NSMutableArray" key="IBUIViewControllers">
-					<object class="IBUINavigationController" id="528462781">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="638309008">
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							<reference key="IBUITabBar" ref="568283150"/>
-							<int key="IBUISystemItemIdentifier">1</int>
-						</object>
-						<reference key="IBUIParentViewController" ref="1071762489"/>
-						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-							<int key="IBUIInterfaceOrientation">1</int>
-							<int key="interfaceOrientation">1</int>
-						</object>
-						<bool key="IBUIDefinesPresentationContext">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="465890651">
-							<nil key="NSNextResponder"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrameSize">{0, 0}</string>
-							<string key="NSReuseIdentifierKey">_NS:451</string>
-							<bool key="IBUIOpaque">NO</bool>
-							<bool key="IBUIClipsSubviews">YES</bool>
-							<bool key="IBUIMultipleTouchEnabled">YES</bool>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							<int key="IBUIBarStyle">1</int>
-						</object>
-						<array class="NSMutableArray" key="IBUIViewControllers">
-							<object class="IBUIViewController" id="948131423">
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="343980329">
-									<string key="IBUITitle">N C</string>
-									<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="1047428489">
-										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-										<object class="IBUIButton" key="IBUICustomView" id="301169669">
-											<nil key="NSNextResponder"/>
-											<int key="NSvFlags">292</int>
-											<string key="NSFrame">{{5, 12}, {18, 19}}</string>
-											<string key="NSReuseIdentifierKey">_NS:225</string>
-											<bool key="IBUIOpaque">NO</bool>
-											<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-											<int key="IBUIContentHorizontalAlignment">0</int>
-											<int key="IBUIContentVerticalAlignment">0</int>
-											<int key="IBUIButtonType">3</int>
-											<bool key="IBUIShowsTouchWhenHighlighted">YES</bool>
-											<reference key="IBUIHighlightedTitleColor" ref="1060141261"/>
-											<object class="NSColor" key="IBUINormalTitleColor">
-												<int key="NSColorSpace">1</int>
-												<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-											</object>
-											<reference key="IBUINormalTitleShadowColor" ref="910987133"/>
-											<reference key="IBUIFontDescription" ref="111041891"/>
-											<reference key="IBUIFont" ref="569918942"/>
-										</object>
-										<reference key="IBUINavigationItem" ref="343980329"/>
-									</object>
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								</object>
-								<reference key="IBUIParentViewController" ref="528462781"/>
-								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-									<int key="IBUIInterfaceOrientation">1</int>
-									<int key="interfaceOrientation">1</int>
-								</object>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<bool key="IBUIHorizontal">NO</bool>
-							</object>
-						</array>
-					</object>
+					<reference ref="528462781"/>
 					<object class="IBUINavigationController" id="586974467">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="848617159">
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							<reference key="IBUITabBar" ref="568283150"/>
 							<int key="IBUISystemItemIdentifier">2</int>
 						</object>
 						<reference key="IBUIParentViewController" ref="1071762489"/>
@@ -277,7 +207,7 @@
 											</object>
 											<reference key="IBUINormalTitleShadowColor" ref="910987133"/>
 											<reference key="IBUIFontDescription" ref="111041891"/>
-											<reference key="IBUIFont" ref="569918942"/>
+											<reference key="IBUIFont" ref="174396705"/>
 										</object>
 										<reference key="IBUINavigationItem" ref="859125218"/>
 									</object>
@@ -296,7 +226,6 @@
 					<object class="IBUINavigationController" id="680116134">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="214153812">
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							<reference key="IBUITabBar" ref="568283150"/>
 							<int key="IBUISystemItemIdentifier">6</int>
 						</object>
 						<reference key="IBUIParentViewController" ref="1071762489"/>
@@ -366,27 +295,83 @@
 							</object>
 						</array>
 					</object>
-					<reference ref="861668222"/>
+					<object class="IBUINavigationController" id="861668222">
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="916520268">
+							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							<int key="IBUISystemItemIdentifier">7</int>
+						</object>
+						<reference key="IBUIParentViewController" ref="1071762489"/>
+						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+							<int key="IBUIInterfaceOrientation">1</int>
+							<int key="interfaceOrientation">1</int>
+						</object>
+						<bool key="IBUIDefinesPresentationContext">YES</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<bool key="IBUIHorizontal">NO</bool>
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="30616904">
+							<nil key="NSNextResponder"/>
+							<int key="NSvFlags">256</int>
+							<string key="NSFrameSize">{0, 0}</string>
+							<string key="NSReuseIdentifierKey">_NS:451</string>
+							<bool key="IBUIOpaque">NO</bool>
+							<bool key="IBUIClipsSubviews">YES</bool>
+							<bool key="IBUIMultipleTouchEnabled">YES</bool>
+							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							<int key="IBUIBarStyle">1</int>
+						</object>
+						<array class="NSMutableArray" key="IBUIViewControllers">
+							<object class="IBUIViewController" id="669761644">
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="113104869">
+									<string key="IBUITitle">Rewards</string>
+									<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="248559569">
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<object class="IBUIButton" key="IBUICustomView" id="342855658">
+											<nil key="NSNextResponder"/>
+											<int key="NSvFlags">292</int>
+											<string key="NSFrame">{{5, 12}, {18, 19}}</string>
+											<string key="NSReuseIdentifierKey">_NS:225</string>
+											<bool key="IBUIOpaque">NO</bool>
+											<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+											<int key="IBUIContentHorizontalAlignment">0</int>
+											<int key="IBUIContentVerticalAlignment">0</int>
+											<int key="IBUIButtonType">3</int>
+											<bool key="IBUIShowsTouchWhenHighlighted">YES</bool>
+											<reference key="IBUIHighlightedTitleColor" ref="1060141261"/>
+											<object class="NSColor" key="IBUINormalTitleColor">
+												<int key="NSColorSpace">1</int>
+												<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+											</object>
+											<reference key="IBUINormalTitleShadowColor" ref="910987133"/>
+											<reference key="IBUIFontDescription" ref="111041891"/>
+											<reference key="IBUIFont" ref="174396705"/>
+										</object>
+										<reference key="IBUINavigationItem" ref="113104869"/>
+									</object>
+									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								</object>
+								<reference key="IBUIParentViewController" ref="861668222"/>
+								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+									<int key="IBUIInterfaceOrientation">1</int>
+									<int key="interfaceOrientation">1</int>
+								</object>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<bool key="IBUIHorizontal">NO</bool>
+							</object>
+						</array>
+					</object>
 				</array>
 				<object class="IBUITabBar" key="IBUITabBar" id="568283150">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 431}, {320, 49}}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 					<string key="NSReuseIdentifierKey">_NS:473</string>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
 						<bytes key="NSWhite">MCAwAA</bytes>
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					<array class="NSMutableArray" key="IBUIItems">
-						<reference ref="638309008"/>
-						<reference ref="848617159"/>
-						<reference ref="214153812"/>
-						<reference ref="916520268"/>
-					</array>
-					<reference key="IBUISelectedItem" ref="916520268"/>
 				</object>
 			</object>
 		</array>
@@ -780,158 +765,7 @@
 			<nil key="sourceID"/>
 			<int key="maxID">64</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">AppDelegate</string>
-					<string key="superclassName">UIResponder</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="myWorkoutsNavController">MyWorkoutsViewController</string>
-						<string key="ntcNavController">NTCNavController</string>
-						<string key="progressNavController">ProgressViewController</string>
-						<string key="rewardsNavController">RewardsViewController</string>
-						<string key="rootTabBarController">UITabBarController</string>
-						<string key="window">UIWindow</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="myWorkoutsNavController">
-							<string key="name">myWorkoutsNavController</string>
-							<string key="candidateClassName">MyWorkoutsViewController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="ntcNavController">
-							<string key="name">ntcNavController</string>
-							<string key="candidateClassName">NTCNavController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="progressNavController">
-							<string key="name">progressNavController</string>
-							<string key="candidateClassName">ProgressViewController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="rewardsNavController">
-							<string key="name">rewardsNavController</string>
-							<string key="candidateClassName">RewardsViewController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="rootTabBarController">
-							<string key="name">rootTabBarController</string>
-							<string key="candidateClassName">UITabBarController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="window">
-							<string key="name">window</string>
-							<string key="candidateClassName">UIWindow</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/AppDelegate.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MyWorkoutsViewController</string>
-					<string key="superclassName">UINavigationController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showInfo:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">showInfo:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">showInfo:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/MyWorkoutsViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NTCHomeController</string>
-					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">startTrainingPlan:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">startTrainingPlan:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">startTrainingPlan:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">ntcHomeImg</string>
-						<string key="NS.object.0">UIImageView</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">ntcHomeImg</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">ntcHomeImg</string>
-							<string key="candidateClassName">UIImageView</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/NTCHomeController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NTCNavController</string>
-					<string key="superclassName">UINavigationController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showInfo:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">showInfo:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">showInfo:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/NTCNavController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">ProgressViewController</string>
-					<string key="superclassName">UINavigationController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showInfo:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">showInfo:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">showInfo:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/ProgressViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">RewardsViewController</string>
-					<string key="superclassName">UINavigationController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showInfo:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">showInfo:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">showInfo:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/RewardsViewController.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>

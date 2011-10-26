@@ -8,6 +8,7 @@
 
 #import "NTCHomeController.h"
 #import "NTCTableLayerOneViewController.h"
+#import "AppDelegate.h"
 
 @implementation NTCHomeController
 
@@ -78,14 +79,24 @@
     [UIView setAnimationCurve:UIViewAnimationCurveLinear];
     [UIView setAnimationDuration:0.5];
     
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
     if (self.ntcHomeImgIsEnlarged) {
+      [delegate.window setRootViewController:delegate.rootTabBarController];
+      
       [ntcHomeImg setBounds:CGRectMake(0, 0, 320, 159)];
+      [ntcHomeImg setCenter:CGPointMake(160, 154)];
       [self.navigationController.navigationBar setAlpha:1.0];
       [self.tabBarController.tabBar setAlpha:1.0];
     } else {
-      [ntcHomeImg setBounds:CGRectMake(0, 0, 320, 480)];
+      [delegate.window setRootViewController:self];
+      [delegate.window addSubview:self.view];
+      
+      [delegate.window makeKeyAndVisible];
+      [self.view addSubview:ntcHomeImg];
+      [ntcHomeImg setBounds:CGRectMake(0, 200, 320, 480)];
+      [ntcHomeImg setCenter:CGPointMake(160, 240)];
       [self.navigationController.navigationBar setAlpha:0.0];
-      //[self.navigationController.navigationBar setHidden:YES];
       [self.tabBarController.tabBar setAlpha:0.0];
     }
     
