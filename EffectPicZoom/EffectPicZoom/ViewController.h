@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController : UIViewController
+{
+  BOOL imageEnlarged;
+}
+
+@property (nonatomic, retain) IBOutlet UIImageView *image;
+@property (assign) BOOL imageEnlarged;
 
 @end
