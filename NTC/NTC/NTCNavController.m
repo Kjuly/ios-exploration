@@ -40,6 +40,7 @@
                                                        green:52.0/255
                                                        blue:133.0/255
                                                        alpha:1];*/
+  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
 }
 
 - (void)viewDidUnload
