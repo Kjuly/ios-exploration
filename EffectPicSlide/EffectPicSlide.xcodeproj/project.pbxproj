@@ -20,6 +20,10 @@
 		7FE2E6D91458F49D0017147D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE2E6BA1458F49D0017147D /* Foundation.framework */; };
 		7FE2E6E11458F49D0017147D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E6DF1458F49D0017147D /* InfoPlist.strings */; };
 		7FE2E6E41458F49D0017147D /* EffectPicSlideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE2E6E31458F49D0017147D /* EffectPicSlideTests.m */; };
+		7FE2E6F11458F6E60017147D /* Eight_320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E6EE1458F6E60017147D /* Eight_320x480.png */; };
+		7FE2E6F21458F6E60017147D /* NTCHomeMainPic_320x480.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E6EF1458F6E60017147D /* NTCHomeMainPic_320x480.jpg */; };
+		7FE2E6F31458F6E60017147D /* NTCInfoBg_320x480.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E6F01458F6E60017147D /* NTCInfoBg_320x480.jpg */; };
+		7FE2E7441458FEFD0017147D /* SlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE2E7431458FEFD0017147D /* SlideView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,11 @@
 		7FE2E6E01458F49D0017147D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7FE2E6E21458F49D0017147D /* EffectPicSlideTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectPicSlideTests.h; sourceTree = "<group>"; };
 		7FE2E6E31458F49D0017147D /* EffectPicSlideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectPicSlideTests.m; sourceTree = "<group>"; };
+		7FE2E6EE1458F6E60017147D /* Eight_320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eight_320x480.png; sourceTree = "<group>"; };
+		7FE2E6EF1458F6E60017147D /* NTCHomeMainPic_320x480.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCHomeMainPic_320x480.jpg; sourceTree = "<group>"; };
+		7FE2E6F01458F6E60017147D /* NTCInfoBg_320x480.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCInfoBg_320x480.jpg; sourceTree = "<group>"; };
+		7FE2E7421458FEFD0017147D /* SlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideView.h; sourceTree = "<group>"; };
+		7FE2E7431458FEFD0017147D /* SlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,8 @@
 				7FE2E6C81458F49D0017147D /* AppDelegate.m */,
 				7FE2E6CA1458F49D0017147D /* ViewController.h */,
 				7FE2E6CB1458F49D0017147D /* ViewController.m */,
+				7FE2E7421458FEFD0017147D /* SlideView.h */,
+				7FE2E7431458FEFD0017147D /* SlideView.m */,
 				7FE2E6BF1458F49D0017147D /* Supporting Files */,
 			);
 			path = EffectPicSlide;
@@ -128,6 +139,7 @@
 				7FE2E6C11458F49D0017147D /* InfoPlist.strings */,
 				7FE2E6C41458F49D0017147D /* main.m */,
 				7FE2E6C61458F49D0017147D /* EffectPicSlide-Prefix.pch */,
+				7FE2E6ED1458F55E0017147D /* images */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,6 +161,16 @@
 				7FE2E6DF1458F49D0017147D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE2E6ED1458F55E0017147D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2E6EE1458F6E60017147D /* Eight_320x480.png */,
+				7FE2E6EF1458F6E60017147D /* NTCHomeMainPic_320x480.jpg */,
+				7FE2E6F01458F6E60017147D /* NTCInfoBg_320x480.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +246,9 @@
 			files = (
 				7FE2E6C31458F49D0017147D /* InfoPlist.strings in Resources */,
 				7FE2E6CF1458F49D0017147D /* ViewController.xib in Resources */,
+				7FE2E6F11458F6E60017147D /* Eight_320x480.png in Resources */,
+				7FE2E6F21458F6E60017147D /* NTCHomeMainPic_320x480.jpg in Resources */,
+				7FE2E6F31458F6E60017147D /* NTCInfoBg_320x480.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +286,7 @@
 				7FE2E6C51458F49D0017147D /* main.m in Sources */,
 				7FE2E6C91458F49D0017147D /* AppDelegate.m in Sources */,
 				7FE2E6CC1458F49D0017147D /* ViewController.m in Sources */,
+				7FE2E7441458FEFD0017147D /* SlideView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

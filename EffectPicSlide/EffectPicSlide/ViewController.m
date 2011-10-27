@@ -7,8 +7,22 @@
 //
 
 #import "ViewController.h"
+#import "SlideView.h"
 
 @implementation ViewController
+
+- (id)init
+{
+  if (self = [super initWithNibName:nil bundle:nil]) {
+    NSArray * images = [NSArray arrayWithObjects:
+                        [UIImage imageNamed:@"NTCInfoBg_320x480.jpg"],
+                        [UIImage imageNamed:@"NTCHomeMainPic_320x480.jpg"],
+                        [UIImage imageNamed:@"Eight_320x480.png"],
+                        nil];
+    self.view = [[[SlideView alloc] initWithImages:images] autorelease];
+  }
+  return self;
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -20,15 +34,16 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+  [super viewDidUnload];
+  // Release any retained subviews of the main view.
+  // e.g. self.myOutlet = nil;
+  self.view = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
