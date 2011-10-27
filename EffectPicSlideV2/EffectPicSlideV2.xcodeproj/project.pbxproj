@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FE2E76114594B9C0017147D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE2E76014594B9C0017147D /* UIKit.framework */; };
+		7FE2E76314594B9C0017147D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE2E76214594B9C0017147D /* Foundation.framework */; };
+		7FE2E76514594B9C0017147D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE2E76414594B9C0017147D /* CoreGraphics.framework */; };
+		7FE2E76B14594B9C0017147D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E76914594B9C0017147D /* InfoPlist.strings */; };
+		7FE2E76D14594B9C0017147D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE2E76C14594B9C0017147D /* main.m */; };
+		7FE2E77114594B9C0017147D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE2E77014594B9C0017147D /* AppDelegate.m */; };
+		7FE2E77414594B9C0017147D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE2E77314594B9C0017147D /* ViewController.m */; };
+		7FE2E77714594B9C0017147D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E77514594B9C0017147D /* ViewController.xib */; };
+		7FE2E77F14594B9D0017147D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE2E77E14594B9D0017147D /* SenTestingKit.framework */; };
+		7FE2E78014594B9D0017147D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE2E76014594B9C0017147D /* UIKit.framework */; };
+		7FE2E78114594B9D0017147D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE2E76214594B9C0017147D /* Foundation.framework */; };
+		7FE2E78914594B9D0017147D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E78714594B9D0017147D /* InfoPlist.strings */; };
+		7FE2E78C14594B9D0017147D /* EffectPicSlideV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE2E78B14594B9D0017147D /* EffectPicSlideV2Tests.m */; };
+		7FE2E79914594BD90017147D /* Eight_320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E79614594BD90017147D /* Eight_320x480.png */; };
+		7FE2E79A14594BD90017147D /* NTCHomeMainPic_320x480.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E79714594BD90017147D /* NTCHomeMainPic_320x480.jpg */; };
+		7FE2E79B14594BD90017147D /* NTCInfoBg_320x480.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE2E79814594BD90017147D /* NTCInfoBg_320x480.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FE2E78214594B9D0017147D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FE2E75314594B9C0017147D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FE2E75B14594B9C0017147D;
+			remoteInfo = EffectPicSlideV2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FE2E75C14594B9C0017147D /* EffectPicSlideV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectPicSlideV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE2E76014594B9C0017147D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FE2E76214594B9C0017147D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FE2E76414594B9C0017147D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FE2E76814594B9C0017147D /* EffectPicSlideV2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EffectPicSlideV2-Info.plist"; sourceTree = "<group>"; };
+		7FE2E76A14594B9C0017147D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FE2E76C14594B9C0017147D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FE2E76E14594B9C0017147D /* EffectPicSlideV2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EffectPicSlideV2-Prefix.pch"; sourceTree = "<group>"; };
+		7FE2E76F14594B9C0017147D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7FE2E77014594B9C0017147D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7FE2E77214594B9C0017147D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7FE2E77314594B9C0017147D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7FE2E77614594B9C0017147D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		7FE2E77D14594B9D0017147D /* EffectPicSlideV2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectPicSlideV2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE2E77E14594B9D0017147D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FE2E78614594B9D0017147D /* EffectPicSlideV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EffectPicSlideV2Tests-Info.plist"; sourceTree = "<group>"; };
+		7FE2E78814594B9D0017147D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FE2E78A14594B9D0017147D /* EffectPicSlideV2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectPicSlideV2Tests.h; sourceTree = "<group>"; };
+		7FE2E78B14594B9D0017147D /* EffectPicSlideV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectPicSlideV2Tests.m; sourceTree = "<group>"; };
+		7FE2E79614594BD90017147D /* Eight_320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eight_320x480.png; sourceTree = "<group>"; };
+		7FE2E79714594BD90017147D /* NTCHomeMainPic_320x480.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCHomeMainPic_320x480.jpg; sourceTree = "<group>"; };
+		7FE2E79814594BD90017147D /* NTCInfoBg_320x480.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCInfoBg_320x480.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FE2E75914594B9C0017147D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE2E76114594B9C0017147D /* UIKit.framework in Frameworks */,
+				7FE2E76314594B9C0017147D /* Foundation.framework in Frameworks */,
+				7FE2E76514594B9C0017147D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE2E77914594B9D0017147D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE2E77F14594B9D0017147D /* SenTestingKit.framework in Frameworks */,
+				7FE2E78014594B9D0017147D /* UIKit.framework in Frameworks */,
+				7FE2E78114594B9D0017147D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FE2E75114594B9C0017147D = {
+			isa = PBXGroup;
+			children = (
+				7FE2E76614594B9C0017147D /* EffectPicSlideV2 */,
+				7FE2E78414594B9D0017147D /* EffectPicSlideV2Tests */,
+				7FE2E75F14594B9C0017147D /* Frameworks */,
+				7FE2E75D14594B9C0017147D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FE2E75D14594B9C0017147D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2E75C14594B9C0017147D /* EffectPicSlideV2.app */,
+				7FE2E77D14594B9D0017147D /* EffectPicSlideV2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FE2E75F14594B9C0017147D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2E76014594B9C0017147D /* UIKit.framework */,
+				7FE2E76214594B9C0017147D /* Foundation.framework */,
+				7FE2E76414594B9C0017147D /* CoreGraphics.framework */,
+				7FE2E77E14594B9D0017147D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FE2E76614594B9C0017147D /* EffectPicSlideV2 */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2E76F14594B9C0017147D /* AppDelegate.h */,
+				7FE2E77014594B9C0017147D /* AppDelegate.m */,
+				7FE2E77214594B9C0017147D /* ViewController.h */,
+				7FE2E77314594B9C0017147D /* ViewController.m */,
+				7FE2E76714594B9C0017147D /* Supporting Files */,
+			);
+			path = EffectPicSlideV2;
+			sourceTree = "<group>";
+		};
+		7FE2E76714594B9C0017147D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2E77514594B9C0017147D /* ViewController.xib */,
+				7FE2E76814594B9C0017147D /* EffectPicSlideV2-Info.plist */,
+				7FE2E76914594B9C0017147D /* InfoPlist.strings */,
+				7FE2E76C14594B9C0017147D /* main.m */,
+				7FE2E76E14594B9C0017147D /* EffectPicSlideV2-Prefix.pch */,
+				7FE2E79514594BB80017147D /* images */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE2E78414594B9D0017147D /* EffectPicSlideV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2E78A14594B9D0017147D /* EffectPicSlideV2Tests.h */,
+				7FE2E78B14594B9D0017147D /* EffectPicSlideV2Tests.m */,
+				7FE2E78514594B9D0017147D /* Supporting Files */,
+			);
+			path = EffectPicSlideV2Tests;
+			sourceTree = "<group>";
+		};
+		7FE2E78514594B9D0017147D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2E78614594B9D0017147D /* EffectPicSlideV2Tests-Info.plist */,
+				7FE2E78714594B9D0017147D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE2E79514594BB80017147D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2E79614594BD90017147D /* Eight_320x480.png */,
+				7FE2E79714594BD90017147D /* NTCHomeMainPic_320x480.jpg */,
+				7FE2E79814594BD90017147D /* NTCInfoBg_320x480.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FE2E75B14594B9C0017147D /* EffectPicSlideV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE2E78F14594B9D0017147D /* Build configuration list for PBXNativeTarget "EffectPicSlideV2" */;
+			buildPhases = (
+				7FE2E75814594B9C0017147D /* Sources */,
+				7FE2E75914594B9C0017147D /* Frameworks */,
+				7FE2E75A14594B9C0017147D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EffectPicSlideV2;
+			productName = EffectPicSlideV2;
+			productReference = 7FE2E75C14594B9C0017147D /* EffectPicSlideV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FE2E77C14594B9D0017147D /* EffectPicSlideV2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE2E79214594B9D0017147D /* Build configuration list for PBXNativeTarget "EffectPicSlideV2Tests" */;
+			buildPhases = (
+				7FE2E77814594B9D0017147D /* Sources */,
+				7FE2E77914594B9D0017147D /* Frameworks */,
+				7FE2E77A14594B9D0017147D /* Resources */,
+				7FE2E77B14594B9D0017147D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FE2E78314594B9D0017147D /* PBXTargetDependency */,
+			);
+			name = EffectPicSlideV2Tests;
+			productName = EffectPicSlideV2Tests;
+			productReference = 7FE2E77D14594B9D0017147D /* EffectPicSlideV2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FE2E75314594B9C0017147D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = thePlant;
+			};
+			buildConfigurationList = 7FE2E75614594B9C0017147D /* Build configuration list for PBXProject "EffectPicSlideV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FE2E75114594B9C0017147D;
+			productRefGroup = 7FE2E75D14594B9C0017147D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FE2E75B14594B9C0017147D /* EffectPicSlideV2 */,
+				7FE2E77C14594B9D0017147D /* EffectPicSlideV2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FE2E75A14594B9C0017147D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE2E76B14594B9C0017147D /* InfoPlist.strings in Resources */,
+				7FE2E77714594B9C0017147D /* ViewController.xib in Resources */,
+				7FE2E79914594BD90017147D /* Eight_320x480.png in Resources */,
+				7FE2E79A14594BD90017147D /* NTCHomeMainPic_320x480.jpg in Resources */,
+				7FE2E79B14594BD90017147D /* NTCInfoBg_320x480.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE2E77A14594B9D0017147D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE2E78914594B9D0017147D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FE2E77B14594B9D0017147D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FE2E75814594B9C0017147D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE2E76D14594B9C0017147D /* main.m in Sources */,
+				7FE2E77114594B9C0017147D /* AppDelegate.m in Sources */,
+				7FE2E77414594B9C0017147D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE2E77814594B9D0017147D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE2E78C14594B9D0017147D /* EffectPicSlideV2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FE2E78314594B9D0017147D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FE2E75B14594B9C0017147D /* EffectPicSlideV2 */;
+			targetProxy = 7FE2E78214594B9D0017147D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FE2E76914594B9C0017147D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE2E76A14594B9C0017147D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FE2E77514594B9C0017147D /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE2E77614594B9C0017147D /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		7FE2E78714594B9D0017147D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE2E78814594B9D0017147D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FE2E78D14594B9D0017147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7FE2E78E14594B9D0017147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FE2E79014594B9D0017147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectPicSlideV2/EffectPicSlideV2-Prefix.pch";
+				INFOPLIST_FILE = "EffectPicSlideV2/EffectPicSlideV2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7FE2E79114594B9D0017147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectPicSlideV2/EffectPicSlideV2-Prefix.pch";
+				INFOPLIST_FILE = "EffectPicSlideV2/EffectPicSlideV2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7FE2E79314594B9D0017147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EffectPicSlideV2.app/EffectPicSlideV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectPicSlideV2/EffectPicSlideV2-Prefix.pch";
+				INFOPLIST_FILE = "EffectPicSlideV2Tests/EffectPicSlideV2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7FE2E79414594B9D0017147D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EffectPicSlideV2.app/EffectPicSlideV2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectPicSlideV2/EffectPicSlideV2-Prefix.pch";
+				INFOPLIST_FILE = "EffectPicSlideV2Tests/EffectPicSlideV2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FE2E75614594B9C0017147D /* Build configuration list for PBXProject "EffectPicSlideV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE2E78D14594B9D0017147D /* Debug */,
+				7FE2E78E14594B9D0017147D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FE2E78F14594B9D0017147D /* Build configuration list for PBXNativeTarget "EffectPicSlideV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE2E79014594B9D0017147D /* Debug */,
+				7FE2E79114594B9D0017147D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FE2E79214594B9D0017147D /* Build configuration list for PBXNativeTarget "EffectPicSlideV2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE2E79314594B9D0017147D /* Debug */,
+				7FE2E79414594B9D0017147D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FE2E75314594B9C0017147D /* Project object */;
+}
