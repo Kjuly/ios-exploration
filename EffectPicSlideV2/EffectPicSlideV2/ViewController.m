@@ -83,6 +83,12 @@
              [UIImage imageNamed:@"NTCInfoBg_320x480.jpg"],
              [UIImage imageNamed:@"NTCHomeMainPic_320x480.jpg"],
              [UIImage imageNamed:@"Eight_320x480.png"],
+             [UIImage imageNamed:@"NTCInfoBg_320x480.jpg"],
+             [UIImage imageNamed:@"NTCHomeMainPic_320x480.jpg"],
+             [UIImage imageNamed:@"Eight_320x480.png"],
+             [UIImage imageNamed:@"NTCInfoBg_320x480.jpg"],
+             [UIImage imageNamed:@"NTCHomeMainPic_320x480.jpg"],
+             [UIImage imageNamed:@"Eight_320x480.png"],
              nil];
   
   CGRect thePageFrame = CGRectMake(0, 0, imageSlideView.bounds.size.width, imageSlideView.bounds.size.height);
@@ -109,12 +115,11 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
   // Update the page when more than 50% of the previous/next page is visible
-  CGFloat pageWidth = scrollView.frame.size.width;
-  int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-  pageControl.currentPage = page;
+  pageControl.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
 }
 
-- (IBAction)changePage {
+- (IBAction)changePage
+{
   // update the scroll view to the appropriate page
   CGRect frame;
   frame.origin.x = scrollView.frame.size.width * pageControl.currentPage;
