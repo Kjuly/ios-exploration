@@ -111,6 +111,12 @@
   
   pageControl.numberOfPages = [_images count];
   pageControl.currentPage = 0;//_currPageIndex;
+  [pageControl setBackgroundColor:[UIColor colorWithRed:0.0f
+                                                  green:0.0f
+                                                   blue:0.0f
+                                                  alpha:0.5f]];
+  [pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
+  //[self.view addSubview:pageControl];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
@@ -118,7 +124,7 @@
   pageControl.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
 }
 
-- (IBAction)changePage
+- (IBAction)changePage:(id)sender
 {
   // update the scroll view to the appropriate page
   CGRect frame;

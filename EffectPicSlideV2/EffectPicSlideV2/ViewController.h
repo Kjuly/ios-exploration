@@ -19,6 +19,6 @@
 //@property (assign) NSUInteger _currPageIndex;
 
 - (void)setImageSlideView:(UIScrollView *)imageSlideView;
-- (IBAction)changePage;
+- (IBAction)changePage:(id)sender;
 
 @end

@@ -379,6 +379,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EffectPicSlideV2/EffectPicSlideV2-Prefix.pch";
 				INFOPLIST_FILE = "EffectPicSlideV2/EffectPicSlideV2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,6 +391,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EffectPicSlideV2/EffectPicSlideV2-Prefix.pch";
 				INFOPLIST_FILE = "EffectPicSlideV2/EffectPicSlideV2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -448,6 +450,7 @@
 				7FE2E79114594B9D0017147D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FE2E79214594B9D0017147D /* Build configuration list for PBXNativeTarget "EffectPicSlideV2Tests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +459,7 @@
 				7FE2E79414594B9D0017147D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
