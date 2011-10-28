@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController <UIScrollViewDelegate>
 {
   NSMutableArray * _images;
+  BOOL _scrollViewFullScreen;
 }
 
 @property (nonatomic, retain) NSMutableArray * _images;
@@ -18,6 +19,7 @@
 @property (nonatomic, retain) IBOutlet UIView * _topbarView;
 @property (nonatomic, retain) IBOutlet UIPageControl * _pageControl;
 @property (nonatomic, retain) IBOutlet UIButton * _buttonBack;
+@property (assign) BOOL _scrollViewFullScreen;
 
 - (void)setImageSlideView:(UIScrollView *)imageSlideView;
 - (IBAction)changePage:(id)sender;

@@ -15,6 +15,7 @@
 @synthesize _topbarView;
 @synthesize _pageControl;
 @synthesize _buttonBack;
+@synthesize _scrollViewFullScreen;
 
 - (void)dealloc
 {
@@ -45,6 +46,12 @@
   tapGestureRecognizer.numberOfTapsRequired = 1;
   [_scrollView addGestureRecognizer:tapGestureRecognizer];
   [tapGestureRecognizer release];
+  [_scrollView setShowsHorizontalScrollIndicator:NO];
+  [_scrollView setShowsVerticalScrollIndicator:NO];
+  [_scrollView setAutoresizesSubviews:YES];
+  [_scrollView setDelegate:self];
+  
+  _scrollViewFullScreen = YES;
 }
 
 - (void)viewDidUnload
@@ -112,12 +119,9 @@
   CGFloat imageMargin = 25.0f;
   CGRect thePageFrame = CGRectMake(0, 0, imageSlideView.bounds.size.width + imageMargin, imageSlideView.bounds.size.height);
   
-  imageSlideView.contentSize = CGSizeMake(thePageFrame.size.width * [_images count], thePageFrame.size.height);
-  imageSlideView.pagingEnabled = YES;
-  imageSlideView.showsHorizontalScrollIndicator = NO;
-  imageSlideView.showsVerticalScrollIndicator = NO;
-  imageSlideView.delegate = self;
-  imageSlideView.frame = thePageFrame;
+  [imageSlideView setContentSize:CGSizeMake(thePageFrame.size.width * [_images count], thePageFrame.size.height)];
+  [imageSlideView setPagingEnabled:YES];
+  [imageSlideView setFrame:thePageFrame];
   
   CGFloat offsetX = 0.0f;
   for (UIImage * image in _images) {
@@ -136,7 +140,6 @@
   _pageControl.numberOfPages = [_images count];
   _pageControl.currentPage = 0;//_currPageIndex;
   [_pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
-  //[self.view addSubview:pageControl];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
@@ -158,23 +161,54 @@
 
 - (void)handleTapGesture:(id)sender
 {
-  [UIView beginAnimations:@"fade" context:nil];
-  [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-  [UIView setAnimationDuration:0.3];
+  if (_scrollViewFullScreen) {
+    [UIView beginAnimations:@"fade" context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.3];
+    
+    if (_topbarView.alpha < 0.5f) [_topbarView setAlpha:1.0f];
+    else [_topbarView setAlpha:0.0f];
+    
+    [UIView commitAnimations];
+  } else {
+    [UIView beginAnimations:@"scale" context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    [UIView setAnimationDuration:0.5];
+    
+    [_scrollView setBounds:CGRectMake(_scrollView.frame.size.width * _pageControl.currentPage,
+                                      0,
+                                      345,
+                                      480)];
+    [_scrollView setFrame:CGRectMake(0, 0, 345, 480)];
+    
+    [_topbarView setAlpha:1.0f];
+    
+    [UIView commitAnimations];
+  }
   
-  //if ([pageControl isHidden]) [pageControl setHidden:NO];
-  //else [pageControl setHidden:YES];
-  if (_topbarView.alpha < 0.5f) [_topbarView setAlpha:1.0f];
-  else [_topbarView setAlpha:0.0f];
-  
-  [UIView commitAnimations];
+  _scrollViewFullScreen = !_scrollViewFullScreen;
 }
 
 #pragma mark - Button IBAcion
 
 - (IBAction)scaleBackToSmall:(id)sender
 {
-  NSLog(@"****** Clicked the back button");
+  [UIView beginAnimations:@"scale" context:nil];
+  [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+  [UIView setAnimationDuration:0.5];
+  
+  CGFloat marginTop = 100.0f;
+  [_scrollView setBounds:CGRectMake(_scrollView.frame.size.width * _pageControl.currentPage,
+                                    marginTop,
+                                    345,
+                                    160)];
+  [_scrollView setFrame:CGRectMake(0, marginTop, 345, 160)];
+  
+  [_topbarView setAlpha:0.0f];
+  
+  [UIView commitAnimations];
+  
+  _scrollViewFullScreen = NO;
 }
 
 @end
