@@ -32,6 +32,7 @@
 {
   [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+  [scrollView setBounds:CGRectMake(0, 0, 320, 480)];
   [self setImageSlideView:scrollView];
   
   // Add tap gesture recognizer for scroll view
@@ -104,14 +105,16 @@
   
   CGFloat offsetX = 0.0f;
   for (UIImage * image in _images) {
+    thePageFrame.origin.x = offsetX - imageMargin / 2; // Set the offset of the next image for paging
+    
     UIImageView *newPage = [[[UIImageView alloc] initWithImage:image] autorelease];
-    newPage.frame = thePageFrame;
-    newPage.userInteractionEnabled = YES;
-    [newPage setContentMode:UIViewContentModeBottomLeft];
+    [newPage setFrame:thePageFrame];
+    [newPage setUserInteractionEnabled:YES];
+    [newPage setContentMode:UIViewContentModeScaleAspectFit];
+    [newPage setClipsToBounds:YES];
     [imageSlideView addSubview:newPage];
     
     offsetX += thePageFrame.size.width;
-    thePageFrame.origin.x = offsetX; // Set the offset of the next image for paging
   }
   
   pageControl.numberOfPages = [_images count];
