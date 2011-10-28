@@ -10,14 +10,18 @@
 
 @implementation ViewController
 
-@synthesize _scrollView;
-@synthesize _pageControl;
 @synthesize _images;
+@synthesize _scrollView;
+@synthesize _topbarView;
+@synthesize _pageControl;
+@synthesize _buttonBack;
 
 - (void)dealloc
 {
   [_scrollView release];
+  [_topbarView release];
   [_pageControl release];
+  [_buttonBack release];
   [_images release];
 }
 
@@ -49,7 +53,9 @@
   // Release any retained subviews of the main view.
   // e.g. self.myOutlet = nil;
   self._scrollView = nil;
+  self._topbarView = nil;
   self._pageControl = nil;
+  self._buttonBack = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -129,10 +135,6 @@
   
   _pageControl.numberOfPages = [_images count];
   _pageControl.currentPage = 0;//_currPageIndex;
-  [_pageControl setBackgroundColor:[UIColor colorWithRed:0.0f
-                                                  green:0.0f
-                                                   blue:0.0f
-                                                  alpha:0.5f]];
   [_pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
   //[self.view addSubview:pageControl];
 }
@@ -162,10 +164,17 @@
   
   //if ([pageControl isHidden]) [pageControl setHidden:NO];
   //else [pageControl setHidden:YES];
-  if (_pageControl.alpha > 0.5f) [_pageControl setAlpha:0.0f];
-  else [_pageControl setAlpha:1.0f];
+  if (_topbarView.alpha < 0.5f) [_topbarView setAlpha:1.0f];
+  else [_topbarView setAlpha:0.0f];
   
   [UIView commitAnimations];
+}
+
+#pragma mark - Button IBAcion
+
+- (IBAction)scaleBackToSmall:(id)sender
+{
+  NSLog(@"****** Clicked the back button");
 }
 
 @end

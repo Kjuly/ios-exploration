@@ -13,11 +13,14 @@
   NSMutableArray * _images;
 }
 
-@property (nonatomic, retain) IBOutlet UIScrollView * _scrollView;
-@property (nonatomic, retain) IBOutlet UIPageControl * _pageControl;
 @property (nonatomic, retain) NSMutableArray * _images;
+@property (nonatomic, retain) IBOutlet UIScrollView * _scrollView;
+@property (nonatomic, retain) IBOutlet UIView * _topbarView;
+@property (nonatomic, retain) IBOutlet UIPageControl * _pageControl;
+@property (nonatomic, retain) IBOutlet UIButton * _buttonBack;
 
 - (void)setImageSlideView:(UIScrollView *)imageSlideView;
 - (IBAction)changePage:(id)sender;
+- (IBAction)scaleBackToSmall:(id)sender;
 
 @end
