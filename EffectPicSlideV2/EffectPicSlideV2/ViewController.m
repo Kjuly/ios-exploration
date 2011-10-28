@@ -92,19 +92,22 @@
              [UIImage imageNamed:@"Eight_320x480.png"],
              nil];
   
-  CGRect thePageFrame = CGRectMake(0, 0, imageSlideView.bounds.size.width, imageSlideView.bounds.size.height);
+  CGFloat imageMargin = 25.0f;
+  CGRect thePageFrame = CGRectMake(0, 0, imageSlideView.bounds.size.width + imageMargin, imageSlideView.bounds.size.height);
   
   imageSlideView.contentSize = CGSizeMake(thePageFrame.size.width * [_images count], thePageFrame.size.height);
   imageSlideView.pagingEnabled = YES;
   imageSlideView.showsHorizontalScrollIndicator = NO;
   imageSlideView.showsVerticalScrollIndicator = NO;
   imageSlideView.delegate = self;
+  imageSlideView.frame = thePageFrame;
   
   CGFloat offsetX = 0.0f;
   for (UIImage * image in _images) {
     UIImageView *newPage = [[[UIImageView alloc] initWithImage:image] autorelease];
     newPage.frame = thePageFrame;
     newPage.userInteractionEnabled = YES;
+    [newPage setContentMode:UIViewContentModeBottomLeft];
     [imageSlideView addSubview:newPage];
     
     offsetX += thePageFrame.size.width;
