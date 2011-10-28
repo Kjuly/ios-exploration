@@ -82,15 +82,15 @@
 - (void)setImageSlideView:(UIScrollView *)imageSlideView
 {
   _images = [NSMutableArray arrayWithObjects:
-             [UIImage imageNamed:@"NTCInfoBg_320x480.jpg"],
-             [UIImage imageNamed:@"NTCHomeMainPic_320x480.jpg"],
-             [UIImage imageNamed:@"Eight_320x480.png"],
-             [UIImage imageNamed:@"NTCInfoBg_320x480.jpg"],
-             [UIImage imageNamed:@"NTCHomeMainPic_320x480.jpg"],
-             [UIImage imageNamed:@"Eight_320x480.png"],
-             [UIImage imageNamed:@"NTCInfoBg_320x480.jpg"],
-             [UIImage imageNamed:@"NTCHomeMainPic_320x480.jpg"],
-             [UIImage imageNamed:@"Eight_320x480.png"],
+             [UIImage imageNamed:@"NTCInfoBg_640x960.jpg"],
+             [UIImage imageNamed:@"NTCHomeMainPic_640x960.jpg"],
+             [UIImage imageNamed:@"Eight_640x960.png"],
+             [UIImage imageNamed:@"NTCInfoBg_640x960.jpg"],
+             [UIImage imageNamed:@"NTCHomeMainPic_640x960.jpg"],
+             [UIImage imageNamed:@"Eight_640x960.png"],
+             [UIImage imageNamed:@"NTCInfoBg_640x960.jpg"],
+             [UIImage imageNamed:@"NTCHomeMainPic_640x960.jpg"],
+             [UIImage imageNamed:@"Eight_640x960.png"],
              nil];
   
   CGFloat imageMargin = 25.0f;
