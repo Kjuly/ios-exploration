@@ -12,7 +12,6 @@
 
 @synthesize scrollView;
 @synthesize pageControl;
-//@synthesize _currPageIndex;
 
 - (void)dealloc
 {
@@ -33,11 +32,13 @@
 {
   [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-  //slideView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-  //[self.view addSubview:slideView];
-  //[self.view sendSubviewToBack:slideView];
   [self setImageSlideView:scrollView];
-  //_currPageIndex = 0;
+  
+  // Add tap gesture recognizer for scroll view
+  UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+  tapGestureRecognizer.numberOfTapsRequired = 1;
+  [scrollView addGestureRecognizer:tapGestureRecognizer];
+  [tapGestureRecognizer release];
 }
 
 - (void)viewDidUnload
@@ -103,6 +104,7 @@
   for (UIImage * image in _images) {
     UIImageView *newPage = [[[UIImageView alloc] initWithImage:image] autorelease];
     newPage.frame = thePageFrame;
+    newPage.userInteractionEnabled = YES;
     [imageSlideView addSubview:newPage];
     
     offsetX += thePageFrame.size.width;
@@ -132,6 +134,22 @@
   frame.origin.y = 0;
   frame.size = scrollView.frame.size;
   [scrollView scrollRectToVisible:frame animated:YES];
+}
+
+#pragma mark - Gesture Handler
+
+- (void)handleTapGesture:(id)sender
+{
+  [UIView beginAnimations:@"fade" context:nil];
+  [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+  [UIView setAnimationDuration:0.3];
+  
+  //if ([pageControl isHidden]) [pageControl setHidden:NO];
+  //else [pageControl setHidden:YES];
+  if (pageControl.alpha > 0.5f) [pageControl setAlpha:0.0f];
+  else [pageControl setAlpha:1.0f];
+  
+  [UIView commitAnimations];
 }
 
 @end
