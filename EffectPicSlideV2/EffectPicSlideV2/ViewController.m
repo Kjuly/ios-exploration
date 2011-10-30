@@ -48,7 +48,8 @@
   [tapGestureRecognizer release];
   [_scrollView setShowsHorizontalScrollIndicator:NO];
   [_scrollView setShowsVerticalScrollIndicator:NO];
-  [_scrollView setAutoresizesSubviews:YES];
+  //[_scrollView setAutoresizesSubviews:YES];
+  [_scrollView setBounds:CGRectMake(0, 0, 345, 480)];
   [_scrollView setDelegate:self];
   
   _scrollViewFullScreen = YES;
@@ -116,8 +117,7 @@
              [UIImage imageNamed:@"Eight_640x960.png"],
              nil];
   
-  CGFloat imageMargin = 25.0f;
-  CGRect thePageFrame = CGRectMake(0, 0, imageSlideView.bounds.size.width + imageMargin, imageSlideView.bounds.size.height);
+  CGRect thePageFrame = CGRectMake(0, 0, imageSlideView.bounds.size.width + kImageMargin, imageSlideView.bounds.size.height);
   
   [imageSlideView setContentSize:CGSizeMake(thePageFrame.size.width * [_images count], thePageFrame.size.height)];
   [imageSlideView setPagingEnabled:YES];
@@ -125,7 +125,7 @@
   
   CGFloat offsetX = 0.0f;
   for (UIImage * image in _images) {
-    thePageFrame.origin.x = offsetX - imageMargin / 2; // Set the offset of the next image for paging
+    thePageFrame.origin.x = offsetX - kImageMargin / 2; // Set the offset of the next image for paging
     
     UIImageView *newPage = [[[UIImageView alloc] initWithImage:image] autorelease];
     [newPage setFrame:thePageFrame];
@@ -177,10 +177,9 @@
     
     [_scrollView setBounds:CGRectMake(_scrollView.frame.size.width * _pageControl.currentPage,
                                       0,
-                                      345,
+                                      320 + kImageMargin,
                                       480)];
-    [_scrollView setFrame:CGRectMake(0, 0, 345, 480)];
-    
+    [_scrollView setFrame:CGRectMake(0, 0, 320 + kImageMargin, 480)];
     [_topbarView setAlpha:1.0f];
     
     [UIView commitAnimations];
@@ -197,14 +196,12 @@
   [UIView setAnimationCurve:UIViewAnimationCurveLinear];
   [UIView setAnimationDuration:0.5];
   
-  CGFloat marginTop = 100.0f;
-  [_scrollView setBounds:CGRectMake(_scrollView.frame.size.width * _pageControl.currentPage,
-                                    marginTop,
-                                    345,
-                                    160)];
-  [_scrollView setFrame:CGRectMake(0, marginTop, 345, 160)];
-  
   [_topbarView setAlpha:0.0f];
+  [_scrollView setBounds:CGRectMake(_scrollView.frame.size.width * _pageControl.currentPage,
+                                    (480 - kSmallImageHeight) / 2,
+                                    320 + kImageMargin,
+                                    kSmallImageHeight)];
+  [_scrollView setFrame:CGRectMake(0, kSmallImageMarginTop, 320 + kImageMargin, kSmallImageHeight)];
   
   [UIView commitAnimations];
   

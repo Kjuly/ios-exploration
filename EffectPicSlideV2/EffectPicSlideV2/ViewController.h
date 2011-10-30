@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#define kSmallImageHeight 160
+#define kSmallImageMarginTop 100
+#define kImageMargin 25
+
 @interface ViewController : UIViewController <UIScrollViewDelegate>
 {
   NSMutableArray * _images;
