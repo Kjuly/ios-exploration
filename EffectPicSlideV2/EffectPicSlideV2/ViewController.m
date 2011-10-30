@@ -105,7 +105,7 @@
 
 - (void)setImageSlideView:(UIScrollView *)imageSlideView
 {
-  _images = [NSMutableArray arrayWithObjects:
+  _images = [[NSMutableArray alloc] initWithObjects:
              [UIImage imageNamed:@"NTCInfoBg_640x960.jpg"],
              [UIImage imageNamed:@"NTCHomeMainPic_640x960.jpg"],
              [UIImage imageNamed:@"Eight_640x960.png"],
