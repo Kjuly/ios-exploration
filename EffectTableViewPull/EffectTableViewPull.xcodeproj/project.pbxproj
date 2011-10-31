@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FBD3762145E9B7100D61DD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3761145E9B7100D61DD5 /* UIKit.framework */; };
+		7FBD3764145E9B7100D61DD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3763145E9B7100D61DD5 /* Foundation.framework */; };
+		7FBD3766145E9B7100D61DD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3765145E9B7100D61DD5 /* CoreGraphics.framework */; };
+		7FBD3768145E9B7100D61DD5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3767145E9B7100D61DD5 /* CoreData.framework */; };
+		7FBD376E145E9B7100D61DD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD376C145E9B7100D61DD5 /* InfoPlist.strings */; };
+		7FBD3770145E9B7100D61DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD376F145E9B7100D61DD5 /* main.m */; };
+		7FBD3774145E9B7100D61DD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD3773145E9B7100D61DD5 /* AppDelegate.m */; };
+		7FBD3777145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD3775145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld */; };
+		7FBD377F145E9B7100D61DD5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD377E145E9B7100D61DD5 /* SenTestingKit.framework */; };
+		7FBD3780145E9B7100D61DD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3761145E9B7100D61DD5 /* UIKit.framework */; };
+		7FBD3781145E9B7100D61DD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3763145E9B7100D61DD5 /* Foundation.framework */; };
+		7FBD3782145E9B7100D61DD5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3767145E9B7100D61DD5 /* CoreData.framework */; };
+		7FBD378A145E9B7100D61DD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD3788145E9B7100D61DD5 /* InfoPlist.strings */; };
+		7FBD378D145E9B7100D61DD5 /* EffectTableViewPullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD378C145E9B7100D61DD5 /* EffectTableViewPullTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FBD3783145E9B7100D61DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FBD3754145E9B7100D61DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FBD375C145E9B7100D61DD5;
+			remoteInfo = EffectTableViewPull;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FBD375D145E9B7100D61DD5 /* EffectTableViewPull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectTableViewPull.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBD3761145E9B7100D61DD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FBD3763145E9B7100D61DD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FBD3765145E9B7100D61DD5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FBD3767145E9B7100D61DD5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7FBD376B145E9B7100D61DD5 /* EffectTableViewPull-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EffectTableViewPull-Info.plist"; sourceTree = "<group>"; };
+		7FBD376D145E9B7100D61DD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FBD376F145E9B7100D61DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FBD3771145E9B7100D61DD5 /* EffectTableViewPull-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EffectTableViewPull-Prefix.pch"; sourceTree = "<group>"; };
+		7FBD3772145E9B7100D61DD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7FBD3773145E9B7100D61DD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7FBD3776145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EffectTableViewPull.xcdatamodel; sourceTree = "<group>"; };
+		7FBD377D145E9B7100D61DD5 /* EffectTableViewPullTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectTableViewPullTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBD377E145E9B7100D61DD5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FBD3787145E9B7100D61DD5 /* EffectTableViewPullTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EffectTableViewPullTests-Info.plist"; sourceTree = "<group>"; };
+		7FBD3789145E9B7100D61DD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FBD378B145E9B7100D61DD5 /* EffectTableViewPullTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectTableViewPullTests.h; sourceTree = "<group>"; };
+		7FBD378C145E9B7100D61DD5 /* EffectTableViewPullTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectTableViewPullTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FBD375A145E9B7100D61DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBD3762145E9B7100D61DD5 /* UIKit.framework in Frameworks */,
+				7FBD3764145E9B7100D61DD5 /* Foundation.framework in Frameworks */,
+				7FBD3766145E9B7100D61DD5 /* CoreGraphics.framework in Frameworks */,
+				7FBD3768145E9B7100D61DD5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBD3779145E9B7100D61DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBD377F145E9B7100D61DD5 /* SenTestingKit.framework in Frameworks */,
+				7FBD3780145E9B7100D61DD5 /* UIKit.framework in Frameworks */,
+				7FBD3781145E9B7100D61DD5 /* Foundation.framework in Frameworks */,
+				7FBD3782145E9B7100D61DD5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FBD3752145E9B7100D61DD5 = {
+			isa = PBXGroup;
+			children = (
+				7FBD3769145E9B7100D61DD5 /* EffectTableViewPull */,
+				7FBD3785145E9B7100D61DD5 /* EffectTableViewPullTests */,
+				7FBD3760145E9B7100D61DD5 /* Frameworks */,
+				7FBD375E145E9B7100D61DD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FBD375E145E9B7100D61DD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FBD375D145E9B7100D61DD5 /* EffectTableViewPull.app */,
+				7FBD377D145E9B7100D61DD5 /* EffectTableViewPullTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FBD3760145E9B7100D61DD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FBD3761145E9B7100D61DD5 /* UIKit.framework */,
+				7FBD3763145E9B7100D61DD5 /* Foundation.framework */,
+				7FBD3765145E9B7100D61DD5 /* CoreGraphics.framework */,
+				7FBD3767145E9B7100D61DD5 /* CoreData.framework */,
+				7FBD377E145E9B7100D61DD5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FBD3769145E9B7100D61DD5 /* EffectTableViewPull */ = {
+			isa = PBXGroup;
+			children = (
+				7FBD3772145E9B7100D61DD5 /* AppDelegate.h */,
+				7FBD3773145E9B7100D61DD5 /* AppDelegate.m */,
+				7FBD3775145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld */,
+				7FBD376A145E9B7100D61DD5 /* Supporting Files */,
+			);
+			path = EffectTableViewPull;
+			sourceTree = "<group>";
+		};
+		7FBD376A145E9B7100D61DD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FBD376B145E9B7100D61DD5 /* EffectTableViewPull-Info.plist */,
+				7FBD376C145E9B7100D61DD5 /* InfoPlist.strings */,
+				7FBD376F145E9B7100D61DD5 /* main.m */,
+				7FBD3771145E9B7100D61DD5 /* EffectTableViewPull-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FBD3785145E9B7100D61DD5 /* EffectTableViewPullTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FBD378B145E9B7100D61DD5 /* EffectTableViewPullTests.h */,
+				7FBD378C145E9B7100D61DD5 /* EffectTableViewPullTests.m */,
+				7FBD3786145E9B7100D61DD5 /* Supporting Files */,
+			);
+			path = EffectTableViewPullTests;
+			sourceTree = "<group>";
+		};
+		7FBD3786145E9B7100D61DD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FBD3787145E9B7100D61DD5 /* EffectTableViewPullTests-Info.plist */,
+				7FBD3788145E9B7100D61DD5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FBD375C145E9B7100D61DD5 /* EffectTableViewPull */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FBD3790145E9B7100D61DD5 /* Build configuration list for PBXNativeTarget "EffectTableViewPull" */;
+			buildPhases = (
+				7FBD3759145E9B7100D61DD5 /* Sources */,
+				7FBD375A145E9B7100D61DD5 /* Frameworks */,
+				7FBD375B145E9B7100D61DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EffectTableViewPull;
+			productName = EffectTableViewPull;
+			productReference = 7FBD375D145E9B7100D61DD5 /* EffectTableViewPull.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FBD377C145E9B7100D61DD5 /* EffectTableViewPullTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FBD3793145E9B7100D61DD5 /* Build configuration list for PBXNativeTarget "EffectTableViewPullTests" */;
+			buildPhases = (
+				7FBD3778145E9B7100D61DD5 /* Sources */,
+				7FBD3779145E9B7100D61DD5 /* Frameworks */,
+				7FBD377A145E9B7100D61DD5 /* Resources */,
+				7FBD377B145E9B7100D61DD5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FBD3784145E9B7100D61DD5 /* PBXTargetDependency */,
+			);
+			name = EffectTableViewPullTests;
+			productName = EffectTableViewPullTests;
+			productReference = 7FBD377D145E9B7100D61DD5 /* EffectTableViewPullTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FBD3754145E9B7100D61DD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = thePlant;
+			};
+			buildConfigurationList = 7FBD3757145E9B7100D61DD5 /* Build configuration list for PBXProject "EffectTableViewPull" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FBD3752145E9B7100D61DD5;
+			productRefGroup = 7FBD375E145E9B7100D61DD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FBD375C145E9B7100D61DD5 /* EffectTableViewPull */,
+				7FBD377C145E9B7100D61DD5 /* EffectTableViewPullTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FBD375B145E9B7100D61DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBD376E145E9B7100D61DD5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBD377A145E9B7100D61DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBD378A145E9B7100D61DD5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FBD377B145E9B7100D61DD5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FBD3759145E9B7100D61DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBD3770145E9B7100D61DD5 /* main.m in Sources */,
+				7FBD3774145E9B7100D61DD5 /* AppDelegate.m in Sources */,
+				7FBD3777145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBD3778145E9B7100D61DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBD378D145E9B7100D61DD5 /* EffectTableViewPullTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FBD3784145E9B7100D61DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FBD375C145E9B7100D61DD5 /* EffectTableViewPull */;
+			targetProxy = 7FBD3783145E9B7100D61DD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FBD376C145E9B7100D61DD5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FBD376D145E9B7100D61DD5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FBD3788145E9B7100D61DD5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FBD3789145E9B7100D61DD5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FBD378E145E9B7100D61DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7FBD378F145E9B7100D61DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FBD3791145E9B7100D61DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectTableViewPull/EffectTableViewPull-Prefix.pch";
+				INFOPLIST_FILE = "EffectTableViewPull/EffectTableViewPull-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7FBD3792145E9B7100D61DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectTableViewPull/EffectTableViewPull-Prefix.pch";
+				INFOPLIST_FILE = "EffectTableViewPull/EffectTableViewPull-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7FBD3794145E9B7100D61DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EffectTableViewPull.app/EffectTableViewPull";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectTableViewPull/EffectTableViewPull-Prefix.pch";
+				INFOPLIST_FILE = "EffectTableViewPullTests/EffectTableViewPullTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7FBD3795145E9B7100D61DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EffectTableViewPull.app/EffectTableViewPull";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EffectTableViewPull/EffectTableViewPull-Prefix.pch";
+				INFOPLIST_FILE = "EffectTableViewPullTests/EffectTableViewPullTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FBD3757145E9B7100D61DD5 /* Build configuration list for PBXProject "EffectTableViewPull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBD378E145E9B7100D61DD5 /* Debug */,
+				7FBD378F145E9B7100D61DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FBD3790145E9B7100D61DD5 /* Build configuration list for PBXNativeTarget "EffectTableViewPull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBD3791145E9B7100D61DD5 /* Debug */,
+				7FBD3792145E9B7100D61DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FBD3793145E9B7100D61DD5 /* Build configuration list for PBXNativeTarget "EffectTableViewPullTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBD3794145E9B7100D61DD5 /* Debug */,
+				7FBD3795145E9B7100D61DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FBD3775145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FBD3776145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodel */,
+			);
+			currentVersion = 7FBD3776145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodel */;
+			path = EffectTableViewPull.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7FBD3754145E9B7100D61DD5 /* Project object */;
+}
