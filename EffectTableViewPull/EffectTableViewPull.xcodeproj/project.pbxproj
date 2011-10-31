@@ -31,6 +31,7 @@
 		7FBD37A7145E9C6700D61DD5 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD379F145E9C6700D61DD5 /* whiteArrow.png */; };
 		7FBD37A8145E9C6700D61DD5 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD37A0145E9C6700D61DD5 /* whiteArrow@2x.png */; };
 		7FBD37AF145E9F1300D61DD5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD37AE145E9F1300D61DD5 /* QuartzCore.framework */; };
+		7FBD37B2145E9FD700D61DD5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD37B1145E9FD700D61DD5 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		7FBD379F145E9C6700D61DD5 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
 		7FBD37A0145E9C6700D61DD5 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 		7FBD37AE145E9F1300D61DD5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7FBD37B0145E9FD700D61DD5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		7FBD37B1145E9FD700D61DD5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 			children = (
 				7FBD3772145E9B7100D61DD5 /* AppDelegate.h */,
 				7FBD3773145E9B7100D61DD5 /* AppDelegate.m */,
+				7FBD37B0145E9FD700D61DD5 /* TableViewController.h */,
+				7FBD37B1145E9FD700D61DD5 /* TableViewController.m */,
 				7FBD3796145E9C4A00D61DD5 /* EGORefreshTableHeaderView.h */,
 				7FBD3797145E9C4A00D61DD5 /* EGORefreshTableHeaderView.m */,
 				7FBD3775145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld */,
@@ -311,6 +316,7 @@
 				7FBD3774145E9B7100D61DD5 /* AppDelegate.m in Sources */,
 				7FBD3777145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld in Sources */,
 				7FBD3798145E9C4A00D61DD5 /* EGORefreshTableHeaderView.m in Sources */,
+				7FBD37B2145E9FD700D61DD5 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
