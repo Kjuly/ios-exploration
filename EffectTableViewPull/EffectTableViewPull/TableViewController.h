@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EGORefreshTableHeaderView.h"
 
-@interface TableViewController : UITableViewController
+@interface TableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, EGORefreshTableHeaderDelegate>
+{
+  EGORefreshTableHeaderView * rootTableView_;
+  BOOL reloading_;
+}
+
+@property (nonatomic, retain) EGORefreshTableHeaderView * rootTableView;
+@property (nonatomic, assign) BOOL reloading;
+
+- (void)reloadTableViewDataSource;
+- (void)doneLoadingTableViewData;
 
 @end

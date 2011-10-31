@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TableViewController.h"
 
 @implementation AppDelegate
 
@@ -15,12 +16,15 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
+@synthesize rootTableViewController = rootTableViewController_;
+
 - (void)dealloc
 {
   [_window release];
   [__managedObjectContext release];
   [__managedObjectModel release];
   [__persistentStoreCoordinator release];
+  [rootTableViewController_ release];
   [super dealloc];
 }
 
@@ -29,6 +33,10 @@
   self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
   // Override point for customization after application launch.
   self.window.backgroundColor = [UIColor whiteColor];
+  
+  rootTableViewController_ = [[TableViewController alloc] initWithStyle:UITableViewStylePlain];
+  [self.window addSubview:[rootTableViewController_ view]];
+  
   [self.window makeKeyAndVisible];
   return YES;
 }
