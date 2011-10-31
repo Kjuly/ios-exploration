@@ -21,6 +21,15 @@
 		7FBD3782145E9B7100D61DD5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3767145E9B7100D61DD5 /* CoreData.framework */; };
 		7FBD378A145E9B7100D61DD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD3788145E9B7100D61DD5 /* InfoPlist.strings */; };
 		7FBD378D145E9B7100D61DD5 /* EffectTableViewPullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD378C145E9B7100D61DD5 /* EffectTableViewPullTests.m */; };
+		7FBD3798145E9C4A00D61DD5 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD3797145E9C4A00D61DD5 /* EGORefreshTableHeaderView.m */; };
+		7FBD37A1145E9C6700D61DD5 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD3799145E9C6700D61DD5 /* blackArrow.png */; };
+		7FBD37A2145E9C6700D61DD5 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD379A145E9C6700D61DD5 /* blackArrow@2x.png */; };
+		7FBD37A3145E9C6700D61DD5 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD379B145E9C6700D61DD5 /* blueArrow.png */; };
+		7FBD37A4145E9C6700D61DD5 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD379C145E9C6700D61DD5 /* blueArrow@2x.png */; };
+		7FBD37A5145E9C6700D61DD5 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD379D145E9C6700D61DD5 /* grayArrow.png */; };
+		7FBD37A6145E9C6700D61DD5 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD379E145E9C6700D61DD5 /* grayArrow@2x.png */; };
+		7FBD37A7145E9C6700D61DD5 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD379F145E9C6700D61DD5 /* whiteArrow.png */; };
+		7FBD37A8145E9C6700D61DD5 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBD37A0145E9C6700D61DD5 /* whiteArrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,16 @@
 		7FBD3789145E9B7100D61DD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7FBD378B145E9B7100D61DD5 /* EffectTableViewPullTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectTableViewPullTests.h; sourceTree = "<group>"; };
 		7FBD378C145E9B7100D61DD5 /* EffectTableViewPullTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectTableViewPullTests.m; sourceTree = "<group>"; };
+		7FBD3796145E9C4A00D61DD5 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		7FBD3797145E9C4A00D61DD5 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		7FBD3799145E9C6700D61DD5 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		7FBD379A145E9C6700D61DD5 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		7FBD379B145E9C6700D61DD5 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		7FBD379C145E9C6700D61DD5 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		7FBD379D145E9C6700D61DD5 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		7FBD379E145E9C6700D61DD5 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		7FBD379F145E9C6700D61DD5 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		7FBD37A0145E9C6700D61DD5 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +135,8 @@
 			children = (
 				7FBD3772145E9B7100D61DD5 /* AppDelegate.h */,
 				7FBD3773145E9B7100D61DD5 /* AppDelegate.m */,
+				7FBD3796145E9C4A00D61DD5 /* EGORefreshTableHeaderView.h */,
+				7FBD3797145E9C4A00D61DD5 /* EGORefreshTableHeaderView.m */,
 				7FBD3775145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld */,
 				7FBD376A145E9B7100D61DD5 /* Supporting Files */,
 			);
@@ -129,6 +150,7 @@
 				7FBD376C145E9B7100D61DD5 /* InfoPlist.strings */,
 				7FBD376F145E9B7100D61DD5 /* main.m */,
 				7FBD3771145E9B7100D61DD5 /* EffectTableViewPull-Prefix.pch */,
+				7FBD37A9145E9C6D00D61DD5 /* images */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +172,21 @@
 				7FBD3788145E9B7100D61DD5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FBD37A9145E9C6D00D61DD5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7FBD3799145E9C6700D61DD5 /* blackArrow.png */,
+				7FBD379A145E9C6700D61DD5 /* blackArrow@2x.png */,
+				7FBD379B145E9C6700D61DD5 /* blueArrow.png */,
+				7FBD379C145E9C6700D61DD5 /* blueArrow@2x.png */,
+				7FBD379D145E9C6700D61DD5 /* grayArrow.png */,
+				7FBD379E145E9C6700D61DD5 /* grayArrow@2x.png */,
+				7FBD379F145E9C6700D61DD5 /* whiteArrow.png */,
+				7FBD37A0145E9C6700D61DD5 /* whiteArrow@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +261,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FBD376E145E9B7100D61DD5 /* InfoPlist.strings in Resources */,
+				7FBD37A1145E9C6700D61DD5 /* blackArrow.png in Resources */,
+				7FBD37A2145E9C6700D61DD5 /* blackArrow@2x.png in Resources */,
+				7FBD37A3145E9C6700D61DD5 /* blueArrow.png in Resources */,
+				7FBD37A4145E9C6700D61DD5 /* blueArrow@2x.png in Resources */,
+				7FBD37A5145E9C6700D61DD5 /* grayArrow.png in Resources */,
+				7FBD37A6145E9C6700D61DD5 /* grayArrow@2x.png in Resources */,
+				7FBD37A7145E9C6700D61DD5 /* whiteArrow.png in Resources */,
+				7FBD37A8145E9C6700D61DD5 /* whiteArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +306,7 @@
 				7FBD3770145E9B7100D61DD5 /* main.m in Sources */,
 				7FBD3774145E9B7100D61DD5 /* AppDelegate.m in Sources */,
 				7FBD3777145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld in Sources */,
+				7FBD3798145E9C4A00D61DD5 /* EGORefreshTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
