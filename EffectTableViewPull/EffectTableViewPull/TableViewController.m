@@ -52,6 +52,8 @@
   
   // Update the last update time
   [rootTableView_ refreshLastUpdatedDate];
+  
+  //self.title = [[NSString alloc] initWithString:@"TableView Pull"];
 }
 
 - (void)viewDidUnload

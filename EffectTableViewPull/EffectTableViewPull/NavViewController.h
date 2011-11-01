@@ -17,4 +17,6 @@
 
 @property (nonatomic, retain) TableViewController * rootTableViewController;
 
+- (void)setNavigationBarStyle;
+
 @end
