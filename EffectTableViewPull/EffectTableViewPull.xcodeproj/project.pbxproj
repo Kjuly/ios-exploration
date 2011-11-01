@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F35F76F145FF4BC00F52ADD /* TableViewTopBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F35F76E145FF4BC00F52ADD /* TableViewTopBorder.png */; };
 		7F5F3225145F8F75009B05E1 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5F3224145F8F75009B05E1 /* NavViewController.m */; };
 		7F5F3232145FAD45009B05E1 /* Eight_300x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5F322F145FAD45009B05E1 /* Eight_300x120.png */; };
 		7F5F3233145FAD45009B05E1 /* NTCHomeMainPic_300x120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F5F3230145FAD45009B05E1 /* NTCHomeMainPic_300x120.jpg */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F35F76E145FF4BC00F52ADD /* TableViewTopBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableViewTopBorder.png; sourceTree = "<group>"; };
 		7F5F3223145F8F75009B05E1 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		7F5F3224145F8F75009B05E1 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		7F5F322F145FAD45009B05E1 /* Eight_300x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eight_300x120.png; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		7FBD37A9145E9C6D00D61DD5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7F35F76E145FF4BC00F52ADD /* TableViewTopBorder.png */,
 				7F5F322F145FAD45009B05E1 /* Eight_300x120.png */,
 				7F5F3230145FAD45009B05E1 /* NTCHomeMainPic_300x120.jpg */,
 				7F5F3231145FAD45009B05E1 /* NTCInfoBg_300x120.jpg */,
@@ -295,6 +298,7 @@
 				7F5F3232145FAD45009B05E1 /* Eight_300x120.png in Resources */,
 				7F5F3233145FAD45009B05E1 /* NTCHomeMainPic_300x120.jpg in Resources */,
 				7F5F3234145FAD45009B05E1 /* NTCInfoBg_300x120.jpg in Resources */,
+				7F35F76F145FF4BC00F52ADD /* TableViewTopBorder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

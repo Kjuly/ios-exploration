@@ -52,6 +52,15 @@
   
   // Update the last update time
   [rootTableView_ refreshLastUpdatedDate];
+  
+  // TableView style setting
+  [[self tableView] setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+  
+  UIImageView * topBorder = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TableViewTopBorder.png"]];
+  [topBorder setContentMode:UIViewContentModeScaleAspectFit];
+  [topBorder setFrame:CGRectMake(0.0f, -8.0f, 320.0f, 8.0f)];
+  [self.view addSubview:topBorder];
+  [self.view bringSubviewToFront:topBorder];
 }
 
 - (void)viewDidUnload
@@ -148,6 +157,12 @@
   
   [cellView addSubview:textBelow];
   [textBelow release];
+  
+  // Seperate line
+  UIView * seperateLine = [[UIView alloc] initWithFrame:CGRectMake(10.0f, 164.0f, 300.0f, 1.0f)];
+  [seperateLine setBackgroundColor:[UIColor colorWithWhite:0.8f alpha:1.0f]];
+  [cell addSubview:seperateLine];
+  [seperateLine release];
   
   // Cell Setting
   [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
