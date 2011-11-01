@@ -53,7 +53,7 @@
   // Update the last update time
   [rootTableView_ refreshLastUpdatedDate];
   
-  //self.title = [[NSString alloc] initWithString:@"TableView Pull"];
+  
 }
 
 - (void)viewDidUnload
@@ -99,33 +99,74 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-  return 10;
+  return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return 4;
+  return 8;
 }
 
-#warning *** Cell not configured now
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-    // Configure the cell...
-    
-    return cell;
+  static NSString *CellIdentifier = @"Cell";
+  
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  if (cell == nil) {
+    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+  }
+  
+  // Configure the cell...
+  UIView * cellView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 300.0f, 165.0f)];
+  [cellView setBackgroundColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
+  
+  // Image View
+  UIImage * image;
+  switch ([indexPath row] % 3) {
+    case 0:
+      image = [UIImage imageNamed:@"NTCInfoBg_300x120.jpg"];
+      break;
+    case 1:
+      image = [UIImage imageNamed:@"NTCHomeMainPic_300x120.jpg"];
+      break;
+    case 2:
+      image = [UIImage imageNamed:@"Eight_300x120.png"];
+      break;
+    default:
+      break;
+  }
+  UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
+  [imageView setFrame:CGRectMake(10.0f, 10.0f, 300.0f, 120.0f)];
+  
+  [cellView addSubview:imageView];
+  [imageView release];
+  
+  // Label below ImageView
+  UILabel * textBelow = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 135.0f, 300.0f, 20.0f)];
+  [textBelow setBackgroundColor:[UIColor clearColor]];
+  [textBelow setFont:[UIFont systemFontOfSize:12.0f]];
+  [textBelow setTextColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
+  [textBelow setText:@"Textbelow Image View"];
+  
+  [cellView addSubview:textBelow];
+  [textBelow release];
+  
+  // Cell Setting
+  [cell setBackgroundView:cellView];
+  [cellView release];
+  
+  return cell;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  return 165.0f;
+}
+
+/*- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
   return [NSString stringWithFormat:@"Section %i", section];
-}
+}*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -180,6 +221,18 @@
      */
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+  UIView * sectionTop = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 5.0f)];
+  [sectionTop setBackgroundColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
+  
+  /*if (section == 0) {
+    [[sectionTop layer] setCornerRadius:2.0f];
+  }*/
+  
+  return sectionTop;
+}
+
 #pragma mark - Pull table view data
 
 - (void)reloadTableViewDataSource
@@ -224,5 +277,7 @@
 {
   [rootTableView_ egoRefreshScrollViewDidEndDragging:scrollView];
 }
+
+#pragma mark - Custom UI
 
 @end
