@@ -33,6 +33,7 @@
   self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
   // Override point for customization after application launch.
   self.window.backgroundColor = [UIColor whiteColor];
+  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
   
   rootTableViewController_ = [[TableViewController alloc] initWithStyle:UITableViewStylePlain];
   [self.window addSubview:[rootTableViewController_ view]];
