@@ -52,8 +52,6 @@
   
   // Update the last update time
   [rootTableView_ refreshLastUpdatedDate];
-  
-  
 }
 
 - (void)viewDidUnload
@@ -222,17 +220,21 @@
   */
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+/*- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
   UIView * sectionTop = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 5.0f)];
   [sectionTop setBackgroundColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
   
-  /*if (section == 0) {
+  [[sectionTop layer] setCornerRadius:10.0f];
+  //[tableView 
+  
+  if (section == 0) {
     [[sectionTop layer] setCornerRadius:2.0f];
-  }*/
+  }
+  //tableView.tableHeaderView = sectionTop;
   
   return sectionTop;
-}
+}*/
 
 #pragma mark - Pull table view data
 
