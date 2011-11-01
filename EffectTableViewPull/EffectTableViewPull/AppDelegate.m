@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TableViewController.h"
+#import "NavViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +16,7 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
-@synthesize rootTableViewController = rootTableViewController_;
+@synthesize rootNavController = rootNavController_;
 
 - (void)dealloc
 {
@@ -24,7 +24,7 @@
   [__managedObjectContext release];
   [__managedObjectModel release];
   [__persistentStoreCoordinator release];
-  [rootTableViewController_ release];
+  [rootNavController_ release];
   [super dealloc];
 }
 
@@ -35,8 +35,8 @@
   self.window.backgroundColor = [UIColor whiteColor];
   [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
   
-  rootTableViewController_ = [[TableViewController alloc] initWithStyle:UITableViewStylePlain];
-  [self.window addSubview:[rootTableViewController_ view]];
+  rootNavController_ = [[NavViewController alloc] initWithNibName:nil bundle:nil];
+  [self.window addSubview:[rootNavController_ view]];
   
   [self.window makeKeyAndVisible];
   return YES;

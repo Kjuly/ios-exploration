@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class TableViewController;
+
+@class NavViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
-  TableViewController * rootTableViewController_;
+  NavViewController * rootNavController_;
 }
 
 @property (strong, nonatomic) UIWindow *window;
@@ -20,7 +21,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-@property (nonatomic, retain) TableViewController * rootTableViewController;
+@property (nonatomic, retain) NavViewController * rootNavController;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5F3225145F8F75009B05E1 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5F3224145F8F75009B05E1 /* NavViewController.m */; };
 		7FBD3762145E9B7100D61DD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3761145E9B7100D61DD5 /* UIKit.framework */; };
 		7FBD3764145E9B7100D61DD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3763145E9B7100D61DD5 /* Foundation.framework */; };
 		7FBD3766145E9B7100D61DD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBD3765145E9B7100D61DD5 /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F5F3223145F8F75009B05E1 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		7F5F3224145F8F75009B05E1 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		7FBD375D145E9B7100D61DD5 /* EffectTableViewPull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectTableViewPull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBD3761145E9B7100D61DD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7FBD3763145E9B7100D61DD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 			children = (
 				7FBD3772145E9B7100D61DD5 /* AppDelegate.h */,
 				7FBD3773145E9B7100D61DD5 /* AppDelegate.m */,
+				7F5F3223145F8F75009B05E1 /* NavViewController.h */,
+				7F5F3224145F8F75009B05E1 /* NavViewController.m */,
 				7FBD37B0145E9FD700D61DD5 /* TableViewController.h */,
 				7FBD37B1145E9FD700D61DD5 /* TableViewController.m */,
 				7FBD3796145E9C4A00D61DD5 /* EGORefreshTableHeaderView.h */,
@@ -317,6 +322,7 @@
 				7FBD3777145E9B7100D61DD5 /* EffectTableViewPull.xcdatamodeld in Sources */,
 				7FBD3798145E9C4A00D61DD5 /* EGORefreshTableHeaderView.m in Sources */,
 				7FBD37B2145E9FD700D61DD5 /* TableViewController.m in Sources */,
+				7F5F3225145F8F75009B05E1 /* NavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +484,7 @@
 				7FBD3792145E9B7100D61DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FBD3793145E9B7100D61DD5 /* Build configuration list for PBXNativeTarget "EffectTableViewPullTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +493,7 @@
 				7FBD3795145E9B7100D61DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
