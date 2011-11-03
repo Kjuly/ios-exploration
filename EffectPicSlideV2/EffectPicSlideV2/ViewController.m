@@ -160,8 +160,9 @@
 
 // ---------------------------------------------------------------------------
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
-  // Update the page when more than 50% of the previous/next page is visible
-  _pageControl.currentPage = _scrollView.contentOffset.x / _scrollView.frame.size.width;
+  // Update the page number
+  CGFloat pageWidth = _scrollView.frame.size.width;
+  _pageControl.currentPage = floor((_scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
 }
 
 // ---------------------------------------------------------------------------
@@ -214,7 +215,7 @@
     [_scrollView setContentSize:CGSizeMake(
                                            _scrollView.contentSize.width + (kImageMargin + 20) * [_images count], 
                                            _scrollView.contentSize.height )];
-    [_scrollView setContentOffset:CGPointMake(340.0f * _pageControl.currentPage, 0.0f)];
+    [_scrollView setContentOffset:CGPointMake(_scrollView.frame.size.width * _pageControl.currentPage - 20.0f, 0.0f)];
     
     _scrollViewFullScreen = YES;
   }
@@ -225,13 +226,13 @@
 #pragma mark - Button IBAcion
 // ---------------------------------------------------------------------------
 - (IBAction)scaleBackToSmall:(id)sender
-{  
+{
   [UIView beginAnimations:@"scale" context:nil];
   [UIView setAnimationCurve:UIViewAnimationCurveLinear];
   [UIView setAnimationBeginsFromCurrentState:YES];
   [UIView setAnimationDuration:0.3];
   
-  [_topbarView setAlpha:0.0f];
+  //[_topbarView setAlpha:0.0f];
   
   NSInteger i = -1;
   for (UIImageView * thePage in [_scrollView subviews]) {
@@ -241,7 +242,7 @@
   }
 
   [_scrollView setFrame:CGRectMake(10.0f, kSmallImageMarginTop, 300.0f, 480.0f)];
-  [_scrollView setContentOffset:CGPointMake(300.0f * _pageControl.currentPage, 0.0f)];
+  [_scrollView setContentOffset:CGPointMake(_scrollView.frame.size.width * _pageControl.currentPage, 0.0f)];
   [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
   [UIView commitAnimations];
 
@@ -249,7 +250,6 @@
   [_scrollView setContentSize:CGSizeMake(
                                          _scrollView.contentSize.width - (kImageMargin + 20) * [_images count], 
                                          _scrollView.contentSize.height )];
-  
   
   _scrollViewFullScreen = NO;
 }
