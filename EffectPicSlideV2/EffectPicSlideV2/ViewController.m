@@ -215,9 +215,9 @@
                                            _scrollView.contentSize.width + (kImageMargin + 20) * [_images count], 
                                            _scrollView.contentSize.height )];
     [_scrollView setContentOffset:CGPointMake(340.0f * _pageControl.currentPage, 0.0f)];
+    
+    _scrollViewFullScreen = YES;
   }
-  
-  _scrollViewFullScreen = !_scrollViewFullScreen;
 }
 
 
