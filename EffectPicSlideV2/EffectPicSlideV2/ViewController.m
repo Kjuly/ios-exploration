@@ -46,11 +46,12 @@
   tapGestureRecognizer.numberOfTapsRequired = 1;
   [_scrollView addGestureRecognizer:tapGestureRecognizer];
   [tapGestureRecognizer release];
+  
   [_scrollView setShowsHorizontalScrollIndicator:NO];
   [_scrollView setShowsVerticalScrollIndicator:NO];
-  //[_scrollView setAutoresizesSubviews:YES];
-  [_scrollView setBounds:CGRectMake(0, 0, 345, 480)];
+  [_scrollView setAutoresizesSubviews:NO];
   [_scrollView setDelegate:self];
+  [_scrollView setContentMode:UIViewContentModeTop];
   
   _scrollViewFullScreen = YES;
 }
@@ -119,22 +120,21 @@
   
   CGRect thePageFrame = CGRectMake(0, 0, imageSlideView.bounds.size.width + kImageMargin, imageSlideView.bounds.size.height);
   
-  [imageSlideView setContentSize:CGSizeMake(thePageFrame.size.width * [_images count], thePageFrame.size.height)];
+  [imageSlideView setContentSize:CGSizeMake((thePageFrame.size.width + kImageMargin) * [_images count], imageSlideView.bounds.size.height)];
   [imageSlideView setPagingEnabled:YES];
-  [imageSlideView setFrame:thePageFrame];
+  [imageSlideView setFrame:CGRectMake(0.0f, 0.0f, 320.0f + kImageMargin, 480.0f)];
   
-  CGFloat offsetX = 0.0f;
+  NSInteger i = -1;
   for (UIImage * image in _images) {
-    thePageFrame.origin.x = offsetX - kImageMargin / 2; // Set the offset of the next image for paging
-    
     UIImageView *newPage = [[[UIImageView alloc] initWithImage:image] autorelease];
-    [newPage setFrame:thePageFrame];
+    [newPage setFrame:CGRectMake((320.0f + kImageMargin) * ++i, 0.0f, 320.0f, 480.0f)];
+    
     [newPage setUserInteractionEnabled:YES];
-    [newPage setContentMode:UIViewContentModeScaleAspectFit];
+    [newPage setContentScaleFactor:1.0f];
+//    [newPage setContentMode:UIViewContentModeScaleAspectFit];
+    [newPage setContentMode:UIViewContentModeCenter];
     [newPage setClipsToBounds:YES];
     [imageSlideView addSubview:newPage];
-    
-    offsetX += thePageFrame.size.width;
   }
   
   _pageControl.numberOfPages = [_images count];
@@ -173,16 +173,26 @@
   } else {
     [UIView beginAnimations:@"scale" context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationDuration:0.3];
     
-    [_scrollView setBounds:CGRectMake(_scrollView.frame.size.width * _pageControl.currentPage,
-                                      0,
-                                      320 + kImageMargin,
-                                      480)];
-    [_scrollView setFrame:CGRectMake(0, 0, 320 + kImageMargin, 480)];
+    [_scrollView setFrame:CGRectMake(0.0f, 0.0f, 320.0f + kImageMargin, 480.0f)];
+    
+    NSInteger i = -1;
+    for (UIImageView * thePage in [_scrollView subviews]) {
+      //[thePage setContentScaleFactor:1.0f];
+      [thePage setBounds:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
+      [thePage setFrame:CGRectMake((320.0f + kImageMargin) * ++i, 0.0f, 320.0f, 480.0f)];
+    }
+    
     [_topbarView setAlpha:1.0f];
     
     [UIView commitAnimations];
+    
+    // Reset the content of scroll view
+    [_scrollView setContentSize:CGSizeMake(
+                                           _scrollView.contentSize.width + (kImageMargin + 20) * [_images count], 
+                                           _scrollView.contentSize.height )];
+    [_scrollView setContentOffset:CGPointMake(340.0f * _pageControl.currentPage, 0.0f)];
   }
   
   _scrollViewFullScreen = !_scrollViewFullScreen;
@@ -194,16 +204,26 @@
 {
   [UIView beginAnimations:@"scale" context:nil];
   [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-  [UIView setAnimationDuration:0.5];
+  [UIView setAnimationDuration:0.3];
   
   [_topbarView setAlpha:0.0f];
-  [_scrollView setBounds:CGRectMake(_scrollView.frame.size.width * _pageControl.currentPage,
-                                    (480 - kSmallImageHeight) / 2,
-                                    320 + kImageMargin,
-                                    kSmallImageHeight)];
-  [_scrollView setFrame:CGRectMake(0, kSmallImageMarginTop, 320 + kImageMargin, kSmallImageHeight)];
   
+  NSInteger i = -1;
+  for (UIImageView * thePage in [_scrollView subviews]) {
+    //[thePage setContentScaleFactor:1.2f];
+    [thePage setBounds:CGRectMake(0.0f, (480.0f - kSmallImageHeight) / 2.0f, 300.0f, kSmallImageHeight)];
+    [thePage setFrame:CGRectMake(300.0f * ++i, 0.0f, 300.0f, kSmallImageHeight)];
+  }
+
+  [_scrollView setFrame:CGRectMake(10.0f, kSmallImageMarginTop, 300.0f, 480.0f)];
+    
   [UIView commitAnimations];
+
+  // Reset the content of scroll view
+  [_scrollView setContentSize:CGSizeMake(
+                                         _scrollView.contentSize.width - (kImageMargin + 20) * [_images count], 
+                                         _scrollView.contentSize.height )];
+  [_scrollView setContentOffset:CGPointMake(300.0f * _pageControl.currentPage, 0.0f)];
   
   _scrollViewFullScreen = NO;
 }
