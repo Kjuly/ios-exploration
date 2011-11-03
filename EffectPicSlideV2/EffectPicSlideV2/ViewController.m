@@ -17,6 +17,7 @@
 @synthesize _buttonBack;
 @synthesize _scrollViewFullScreen;
 
+// ---------------------------------------------------------------------------
 - (void)dealloc
 {
   [_scrollView release];
@@ -26,14 +27,17 @@
   [_images release];
 }
 
+// ---------------------------------------------------------------------------
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
 
+//////////////////////////////////////////////////////////////////////////////
+#pragma mark - View lifecycle
+// ---------------------------------------------------------------------------
 - (void)viewDidLoad
 {
   [super viewDidLoad];
@@ -56,6 +60,7 @@
   _scrollViewFullScreen = YES;
 }
 
+// ---------------------------------------------------------------------------
 - (void)viewDidUnload
 {
   [super viewDidUnload];
@@ -67,6 +72,7 @@
   self._buttonBack = nil;
 }
 
+// ---------------------------------------------------------------------------
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -87,8 +93,10 @@
 	[super viewDidDisappear:animated];
 }
 
-#pragma mark - Interface Orientation
 
+//////////////////////////////////////////////////////////////////////////////
+#pragma mark - Interface Orientation
+// ---------------------------------------------------------------------------
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
   // Return YES for supported orientations
@@ -102,8 +110,10 @@
   [self updateImageSlideView:_scrollView];
 }*/
 
-#pragma mark - Custom
 
+//////////////////////////////////////////////////////////////////////////////
+#pragma mark - Custom
+// ---------------------------------------------------------------------------
 - (void)setImageSlideView:(UIScrollView *)imageSlideView
 {
   _images = [[NSMutableArray alloc] initWithObjects:
@@ -142,11 +152,13 @@
   [_pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
 }
 
+// ---------------------------------------------------------------------------
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
   // Update the page when more than 50% of the previous/next page is visible
   _pageControl.currentPage = _scrollView.contentOffset.x / _scrollView.frame.size.width;
 }
 
+// ---------------------------------------------------------------------------
 - (IBAction)changePage:(id)sender
 {
   // update the scroll view to the appropriate page
@@ -157,8 +169,10 @@
   [_scrollView scrollRectToVisible:frame animated:YES];
 }
 
-#pragma mark - Gesture Handler
 
+//////////////////////////////////////////////////////////////////////////////
+#pragma mark - Gesture Handler
+// ---------------------------------------------------------------------------
 - (void)handleTapGesture:(id)sender
 {
   if (_scrollViewFullScreen) {
@@ -198,8 +212,10 @@
   _scrollViewFullScreen = !_scrollViewFullScreen;
 }
 
-#pragma mark - Button IBAcion
 
+//////////////////////////////////////////////////////////////////////////////
+#pragma mark - Button IBAcion
+// ---------------------------------------------------------------------------
 - (IBAction)scaleBackToSmall:(id)sender
 {
   [UIView beginAnimations:@"scale" context:nil];
