@@ -136,9 +136,7 @@
              [UIImage imageNamed:@"Eight_640x960.png"],
              nil];
   
-  CGRect thePageFrame = CGRectMake(0, 0, imageSlideView.bounds.size.width + kImageMargin, imageSlideView.bounds.size.height);
-  
-  [imageSlideView setContentSize:CGSizeMake((thePageFrame.size.width + kImageMargin) * [_images count], imageSlideView.bounds.size.height)];
+  [imageSlideView setContentSize:CGSizeMake((imageSlideView.bounds.size.width + kImageMargin) * [_images count], imageSlideView.bounds.size.height)];
   [imageSlideView setPagingEnabled:YES];
   [imageSlideView setFrame:CGRectMake(0.0f, 0.0f, 320.0f + kImageMargin, 480.0f)];
   
