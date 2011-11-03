@@ -147,8 +147,9 @@
     
     [newPage setUserInteractionEnabled:YES];
     [newPage setContentScaleFactor:1.0f];
-//    [newPage setContentMode:UIViewContentModeScaleAspectFit];
-    [newPage setContentMode:UIViewContentModeCenter];
+    //[newPage setContentMode:UIViewContentModeScaleAspectFit];
+    [newPage setContentMode:UIViewContentModeScaleAspectFill];
+    //[newPage setContentMode:UIViewContentModeCenter];
     [newPage setClipsToBounds:YES];
     [imageSlideView addSubview:newPage];
   }
@@ -204,9 +205,10 @@
     
     NSInteger i = -1;
     for (UIImageView * thePage in [_scrollView subviews]) {
-      //[thePage setContentScaleFactor:1.0f];
       [thePage setBounds:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
       [thePage setFrame:CGRectMake((320.0f + kImageMargin) * ++i, 0.0f, 320.0f, 480.0f)];
+      //[thePage setContentScaleFactor:1.0f];
+      //[thePage setContentMode:UIViewContentModeCenter];
     }
     
     [_topbarView setAlpha:1.0f];
@@ -239,9 +241,10 @@
   
   NSInteger i = -1;
   for (UIImageView * thePage in [_scrollView subviews]) {
-    //[thePage setContentScaleFactor:1.2f];
     [thePage setBounds:CGRectMake(0.0f, (480.0f - kSmallImageHeight) / 2.0f, 300.0f, kSmallImageHeight)];
     [thePage setFrame:CGRectMake(300.0f * ++i, 0.0f, 300.0f, kSmallImageHeight)];
+    //[thePage setContentScaleFactor:1.2f];
+    //[thePage setContentMode:UIViewContentModeScaleAspectFill];
   }
 
   [_scrollView setFrame:CGRectMake(10.0f, kSmallImageMarginTop, 300.0f, 480.0f)];
