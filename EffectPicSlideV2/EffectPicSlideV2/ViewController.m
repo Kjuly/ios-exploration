@@ -193,6 +193,8 @@
     
     [UIView commitAnimations];
   } else {
+    NSInteger currPage = _pageControl.currentPage;
+    
     [UIView beginAnimations:@"scale" context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveLinear];
     [UIView setAnimationBeginsFromCurrentState:YES];
@@ -212,6 +214,7 @@
     [UIView commitAnimations];
     
     // Reset the content of scroll view
+    _pageControl.currentPage = currPage;
     [_scrollView setContentSize:CGSizeMake(
                                            _scrollView.contentSize.width + (kImageMargin + 20) * [_images count], 
                                            _scrollView.contentSize.height )];
@@ -232,7 +235,7 @@
   [UIView setAnimationBeginsFromCurrentState:YES];
   [UIView setAnimationDuration:0.3];
   
-  //[_topbarView setAlpha:0.0f];
+  [_topbarView setAlpha:0.0f];
   
   NSInteger i = -1;
   for (UIImageView * thePage in [_scrollView subviews]) {
