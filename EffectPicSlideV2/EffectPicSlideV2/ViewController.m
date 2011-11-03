@@ -16,6 +16,7 @@
 @synthesize _pageControl;
 @synthesize _buttonBack;
 @synthesize _scrollViewFullScreen;
+@synthesize backgroundView = backgroundView_;
 
 // ---------------------------------------------------------------------------
 - (void)dealloc
@@ -25,6 +26,7 @@
   [_pageControl release];
   [_buttonBack release];
   [_images release];
+  [backgroundView_ release];
 }
 
 // ---------------------------------------------------------------------------
@@ -57,6 +59,11 @@
   [_scrollView setDelegate:self];
   [_scrollView setContentMode:UIViewContentModeTop];
   
+  // Setting background transparent view
+  backgroundView_ = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
+  [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
+  [self.view insertSubview:backgroundView_ belowSubview:_scrollView];
+  
   _scrollViewFullScreen = YES;
 }
 
@@ -70,6 +77,7 @@
   self._topbarView = nil;
   self._pageControl = nil;
   self._buttonBack = nil;
+  self.backgroundView = nil;
 }
 
 // ---------------------------------------------------------------------------
@@ -178,6 +186,7 @@
   if (_scrollViewFullScreen) {
     [UIView beginAnimations:@"fade" context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationBeginsFromCurrentState:YES];
     [UIView setAnimationDuration:0.3];
     
     if (_topbarView.alpha < 0.5f) [_topbarView setAlpha:1.0f];
@@ -187,6 +196,7 @@
   } else {
     [UIView beginAnimations:@"scale" context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    [UIView setAnimationBeginsFromCurrentState:YES];
     [UIView setAnimationDuration:0.3];
     
     [_scrollView setFrame:CGRectMake(0.0f, 0.0f, 320.0f + kImageMargin, 480.0f)];
@@ -199,7 +209,7 @@
     }
     
     [_topbarView setAlpha:1.0f];
-    
+    [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
     [UIView commitAnimations];
     
     // Reset the content of scroll view
@@ -217,9 +227,10 @@
 #pragma mark - Button IBAcion
 // ---------------------------------------------------------------------------
 - (IBAction)scaleBackToSmall:(id)sender
-{
+{  
   [UIView beginAnimations:@"scale" context:nil];
   [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+  [UIView setAnimationBeginsFromCurrentState:YES];
   [UIView setAnimationDuration:0.3];
   
   [_topbarView setAlpha:0.0f];
@@ -232,14 +243,15 @@
   }
 
   [_scrollView setFrame:CGRectMake(10.0f, kSmallImageMarginTop, 300.0f, 480.0f)];
-    
+  [_scrollView setContentOffset:CGPointMake(300.0f * _pageControl.currentPage, 0.0f)];
+  [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
   [UIView commitAnimations];
 
   // Reset the content of scroll view
   [_scrollView setContentSize:CGSizeMake(
                                          _scrollView.contentSize.width - (kImageMargin + 20) * [_images count], 
                                          _scrollView.contentSize.height )];
-  [_scrollView setContentOffset:CGPointMake(300.0f * _pageControl.currentPage, 0.0f)];
+  
   
   _scrollViewFullScreen = NO;
 }
