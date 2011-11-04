@@ -17,14 +17,18 @@
   NSMutableArray * images_;
   BOOL scrollViewFullScreen_;
   
-  UIView * backgroundView_;
+  UIScrollView *  scrollView_;
+  UIView *        topbarView_;
+  UIPageControl * pageControl_;
+  UIButton *      buttonBack_;
+  UIView *        backgroundView_;
 }
 
 @property (nonatomic, retain) NSMutableArray * images;
-@property (nonatomic, retain) IBOutlet UIScrollView * _scrollView;
-@property (nonatomic, retain) IBOutlet UIView * _topbarView;
-@property (nonatomic, retain) IBOutlet UIPageControl * _pageControl;
-@property (nonatomic, retain) IBOutlet UIButton * _buttonBack;
+@property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
+@property (nonatomic, retain) IBOutlet UIView * topbarView;
+@property (nonatomic, retain) IBOutlet UIPageControl * pageControl;
+@property (nonatomic, retain) IBOutlet UIButton * buttonBack;
 @property (nonatomic, retain) UIView * backgroundView;
 @property (assign) BOOL scrollViewFullScreen;
 
