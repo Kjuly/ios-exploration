@@ -14,19 +14,19 @@
 
 @interface ViewController : UIViewController <UIScrollViewDelegate>
 {
-  NSMutableArray * _images;
-  BOOL _scrollViewFullScreen;
+  NSMutableArray * images_;
+  BOOL scrollViewFullScreen_;
   
   UIView * backgroundView_;
 }
 
-@property (nonatomic, retain) NSMutableArray * _images;
+@property (nonatomic, retain) NSMutableArray * images;
 @property (nonatomic, retain) IBOutlet UIScrollView * _scrollView;
 @property (nonatomic, retain) IBOutlet UIView * _topbarView;
 @property (nonatomic, retain) IBOutlet UIPageControl * _pageControl;
 @property (nonatomic, retain) IBOutlet UIButton * _buttonBack;
 @property (nonatomic, retain) UIView * backgroundView;
-@property (assign) BOOL _scrollViewFullScreen;
+@property (assign) BOOL scrollViewFullScreen;
 
 - (void)setImageSlideView:(UIScrollView *)imageSlideView;
 - (IBAction)changePage:(id)sender;

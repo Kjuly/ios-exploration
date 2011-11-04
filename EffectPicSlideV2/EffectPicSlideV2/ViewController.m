@@ -10,12 +10,12 @@
 
 @implementation ViewController
 
-@synthesize _images;
+@synthesize images = images_;
 @synthesize _scrollView;
 @synthesize _topbarView;
 @synthesize _pageControl;
 @synthesize _buttonBack;
-@synthesize _scrollViewFullScreen;
+@synthesize scrollViewFullScreen = scrollViewFullScreen_;
 @synthesize backgroundView = backgroundView_;
 
 // ---------------------------------------------------------------------------
@@ -25,7 +25,7 @@
   [_topbarView release];
   [_pageControl release];
   [_buttonBack release];
-  [_images release];
+  [images_ release];
   [backgroundView_ release];
 }
 
@@ -64,7 +64,7 @@
   [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
   [self.view insertSubview:backgroundView_ belowSubview:_scrollView];
   
-  _scrollViewFullScreen = YES;
+  scrollViewFullScreen_ = YES;
 }
 
 // ---------------------------------------------------------------------------
@@ -124,7 +124,7 @@
 // ---------------------------------------------------------------------------
 - (void)setImageSlideView:(UIScrollView *)imageSlideView
 {
-  _images = [[NSMutableArray alloc] initWithObjects:
+  images_ = [[NSMutableArray alloc] initWithObjects:
              [UIImage imageNamed:@"NTCInfoBg_640x960.jpg"],
              [UIImage imageNamed:@"NTCHomeMainPic_640x960.jpg"],
              [UIImage imageNamed:@"Eight_640x960.png"],
@@ -136,12 +136,12 @@
              [UIImage imageNamed:@"Eight_640x960.png"],
              nil];
   
-  [imageSlideView setContentSize:CGSizeMake((imageSlideView.bounds.size.width + kImageMargin) * [_images count], imageSlideView.bounds.size.height)];
+  [imageSlideView setContentSize:CGSizeMake((imageSlideView.bounds.size.width + kImageMargin) * [images_ count], imageSlideView.bounds.size.height)];
   [imageSlideView setPagingEnabled:YES];
   [imageSlideView setFrame:CGRectMake(0.0f, 0.0f, 320.0f + kImageMargin, 480.0f)];
   
   NSInteger i = -1;
-  for (UIImage * image in _images) {
+  for (UIImage * image in images_) {
     UIImageView *newPage = [[[UIImageView alloc] initWithImage:image] autorelease];
     [newPage setFrame:CGRectMake((320.0f + kImageMargin) * ++i, 0.0f, 320.0f, 480.0f)];
     
@@ -154,7 +154,7 @@
     [imageSlideView addSubview:newPage];
   }
   
-  _pageControl.numberOfPages = [_images count];
+  _pageControl.numberOfPages = [images_ count];
   _pageControl.currentPage = 0;//_currPageIndex;
   [_pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
 }
@@ -183,7 +183,7 @@
 // ---------------------------------------------------------------------------
 - (void)handleTapGesture:(id)sender
 {
-  if (_scrollViewFullScreen) {
+  if (scrollViewFullScreen_) {
     [UIView beginAnimations:@"fade" context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationBeginsFromCurrentState:YES];
@@ -218,11 +218,11 @@
     // Reset the content of scroll view
     _pageControl.currentPage = currPage;
     [_scrollView setContentSize:CGSizeMake(
-                                           _scrollView.contentSize.width + (kImageMargin + 20) * [_images count], 
+                                           _scrollView.contentSize.width + (kImageMargin + 20) * [images_ count], 
                                            _scrollView.contentSize.height )];
     [_scrollView setContentOffset:CGPointMake(_scrollView.frame.size.width * _pageControl.currentPage, 0.0f)];
     
-    _scrollViewFullScreen = YES;
+    scrollViewFullScreen_ = YES;
   }
 }
 
@@ -254,10 +254,10 @@
 
   // Reset the content of scroll view
   [_scrollView setContentSize:CGSizeMake(
-                                         _scrollView.contentSize.width - (kImageMargin + 20) * [_images count], 
+                                         _scrollView.contentSize.width - (kImageMargin + 20) * [images_ count], 
                                          _scrollView.contentSize.height )];
   
-  _scrollViewFullScreen = NO;
+  scrollViewFullScreen_ = NO;
 }
 
 @end
