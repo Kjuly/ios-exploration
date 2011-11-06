@@ -29,7 +29,7 @@
   [self.view setBackgroundColor:[UIColor whiteColor]];
   
   // Text label
-  self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 80.0f, 320.0f, 100.0f)];
+  self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 80.0f, 400.0f, 100.0f)];
   [textLabel_ setBackgroundColor:[UIColor clearColor]];
   [textLabel_ setText:@"Effect 3D Rotation"];
   [textLabel_ setFont:[UIFont systemFontOfSize:24.0f]];
