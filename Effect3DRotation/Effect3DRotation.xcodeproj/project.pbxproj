@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F1BFCDC1466645300FB86C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1BFCDB1466645300FB86C7 /* UIKit.framework */; };
+		7F1BFCDE1466645300FB86C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1BFCDD1466645300FB86C7 /* Foundation.framework */; };
+		7F1BFCE01466645300FB86C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1BFCDF1466645300FB86C7 /* CoreGraphics.framework */; };
+		7F1BFCE61466645300FB86C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BFCE41466645300FB86C7 /* InfoPlist.strings */; };
+		7F1BFCE81466645300FB86C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1BFCE71466645300FB86C7 /* main.m */; };
+		7F1BFCEC1466645300FB86C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1BFCEB1466645300FB86C7 /* AppDelegate.m */; };
+		7F1BFCEF1466645300FB86C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1BFCEE1466645300FB86C7 /* ViewController.m */; };
+		7F1BFCF21466645300FB86C7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BFCF01466645300FB86C7 /* ViewController.xib */; };
+		7F1BFCFA1466645300FB86C7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1BFCF91466645300FB86C7 /* SenTestingKit.framework */; };
+		7F1BFCFB1466645300FB86C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1BFCDB1466645300FB86C7 /* UIKit.framework */; };
+		7F1BFCFC1466645300FB86C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1BFCDD1466645300FB86C7 /* Foundation.framework */; };
+		7F1BFD041466645300FB86C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BFD021466645300FB86C7 /* InfoPlist.strings */; };
+		7F1BFD071466645300FB86C7 /* Effect3DRotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1BFD061466645300FB86C7 /* Effect3DRotationTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F1BFCFD1466645300FB86C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F1BFCCE1466645200FB86C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F1BFCD61466645200FB86C7;
+			remoteInfo = Effect3DRotation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F1BFCD71466645300FB86C7 /* Effect3DRotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Effect3DRotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1BFCDB1466645300FB86C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F1BFCDD1466645300FB86C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F1BFCDF1466645300FB86C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F1BFCE31466645300FB86C7 /* Effect3DRotation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Effect3DRotation-Info.plist"; sourceTree = "<group>"; };
+		7F1BFCE51466645300FB86C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F1BFCE71466645300FB86C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F1BFCE91466645300FB86C7 /* Effect3DRotation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Effect3DRotation-Prefix.pch"; sourceTree = "<group>"; };
+		7F1BFCEA1466645300FB86C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F1BFCEB1466645300FB86C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F1BFCED1466645300FB86C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7F1BFCEE1466645300FB86C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7F1BFCF11466645300FB86C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		7F1BFCF81466645300FB86C7 /* Effect3DRotationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Effect3DRotationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1BFCF91466645300FB86C7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F1BFD011466645300FB86C7 /* Effect3DRotationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Effect3DRotationTests-Info.plist"; sourceTree = "<group>"; };
+		7F1BFD031466645300FB86C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F1BFD051466645300FB86C7 /* Effect3DRotationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Effect3DRotationTests.h; sourceTree = "<group>"; };
+		7F1BFD061466645300FB86C7 /* Effect3DRotationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Effect3DRotationTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F1BFCD41466645200FB86C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1BFCDC1466645300FB86C7 /* UIKit.framework in Frameworks */,
+				7F1BFCDE1466645300FB86C7 /* Foundation.framework in Frameworks */,
+				7F1BFCE01466645300FB86C7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F1BFCF41466645300FB86C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1BFCFA1466645300FB86C7 /* SenTestingKit.framework in Frameworks */,
+				7F1BFCFB1466645300FB86C7 /* UIKit.framework in Frameworks */,
+				7F1BFCFC1466645300FB86C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F1BFCCC1466645200FB86C7 = {
+			isa = PBXGroup;
+			children = (
+				7F1BFCE11466645300FB86C7 /* Effect3DRotation */,
+				7F1BFCFF1466645300FB86C7 /* Effect3DRotationTests */,
+				7F1BFCDA1466645300FB86C7 /* Frameworks */,
+				7F1BFCD81466645300FB86C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F1BFCD81466645300FB86C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F1BFCD71466645300FB86C7 /* Effect3DRotation.app */,
+				7F1BFCF81466645300FB86C7 /* Effect3DRotationTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F1BFCDA1466645300FB86C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F1BFCDB1466645300FB86C7 /* UIKit.framework */,
+				7F1BFCDD1466645300FB86C7 /* Foundation.framework */,
+				7F1BFCDF1466645300FB86C7 /* CoreGraphics.framework */,
+				7F1BFCF91466645300FB86C7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F1BFCE11466645300FB86C7 /* Effect3DRotation */ = {
+			isa = PBXGroup;
+			children = (
+				7F1BFCEA1466645300FB86C7 /* AppDelegate.h */,
+				7F1BFCEB1466645300FB86C7 /* AppDelegate.m */,
+				7F1BFCED1466645300FB86C7 /* ViewController.h */,
+				7F1BFCEE1466645300FB86C7 /* ViewController.m */,
+				7F1BFCE21466645300FB86C7 /* Supporting Files */,
+			);
+			path = Effect3DRotation;
+			sourceTree = "<group>";
+		};
+		7F1BFCE21466645300FB86C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F1BFCF01466645300FB86C7 /* ViewController.xib */,
+				7F1BFCE31466645300FB86C7 /* Effect3DRotation-Info.plist */,
+				7F1BFCE41466645300FB86C7 /* InfoPlist.strings */,
+				7F1BFCE71466645300FB86C7 /* main.m */,
+				7F1BFCE91466645300FB86C7 /* Effect3DRotation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F1BFCFF1466645300FB86C7 /* Effect3DRotationTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F1BFD051466645300FB86C7 /* Effect3DRotationTests.h */,
+				7F1BFD061466645300FB86C7 /* Effect3DRotationTests.m */,
+				7F1BFD001466645300FB86C7 /* Supporting Files */,
+			);
+			path = Effect3DRotationTests;
+			sourceTree = "<group>";
+		};
+		7F1BFD001466645300FB86C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F1BFD011466645300FB86C7 /* Effect3DRotationTests-Info.plist */,
+				7F1BFD021466645300FB86C7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F1BFCD61466645200FB86C7 /* Effect3DRotation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F1BFD0A1466645300FB86C7 /* Build configuration list for PBXNativeTarget "Effect3DRotation" */;
+			buildPhases = (
+				7F1BFCD31466645200FB86C7 /* Sources */,
+				7F1BFCD41466645200FB86C7 /* Frameworks */,
+				7F1BFCD51466645200FB86C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Effect3DRotation;
+			productName = Effect3DRotation;
+			productReference = 7F1BFCD71466645300FB86C7 /* Effect3DRotation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F1BFCF71466645300FB86C7 /* Effect3DRotationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F1BFD0D1466645300FB86C7 /* Build configuration list for PBXNativeTarget "Effect3DRotationTests" */;
+			buildPhases = (
+				7F1BFCF31466645300FB86C7 /* Sources */,
+				7F1BFCF41466645300FB86C7 /* Frameworks */,
+				7F1BFCF51466645300FB86C7 /* Resources */,
+				7F1BFCF61466645300FB86C7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F1BFCFE1466645300FB86C7 /* PBXTargetDependency */,
+			);
+			name = Effect3DRotationTests;
+			productName = Effect3DRotationTests;
+			productReference = 7F1BFCF81466645300FB86C7 /* Effect3DRotationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F1BFCCE1466645200FB86C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = thePlant;
+			};
+			buildConfigurationList = 7F1BFCD11466645200FB86C7 /* Build configuration list for PBXProject "Effect3DRotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F1BFCCC1466645200FB86C7;
+			productRefGroup = 7F1BFCD81466645300FB86C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F1BFCD61466645200FB86C7 /* Effect3DRotation */,
+				7F1BFCF71466645300FB86C7 /* Effect3DRotationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F1BFCD51466645200FB86C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1BFCE61466645300FB86C7 /* InfoPlist.strings in Resources */,
+				7F1BFCF21466645300FB86C7 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F1BFCF51466645300FB86C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1BFD041466645300FB86C7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F1BFCF61466645300FB86C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F1BFCD31466645200FB86C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1BFCE81466645300FB86C7 /* main.m in Sources */,
+				7F1BFCEC1466645300FB86C7 /* AppDelegate.m in Sources */,
+				7F1BFCEF1466645300FB86C7 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F1BFCF31466645300FB86C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1BFD071466645300FB86C7 /* Effect3DRotationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F1BFCFE1466645300FB86C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F1BFCD61466645200FB86C7 /* Effect3DRotation */;
+			targetProxy = 7F1BFCFD1466645300FB86C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F1BFCE41466645300FB86C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F1BFCE51466645300FB86C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F1BFCF01466645300FB86C7 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F1BFCF11466645300FB86C7 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		7F1BFD021466645300FB86C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F1BFD031466645300FB86C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F1BFD081466645300FB86C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F1BFD091466645300FB86C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F1BFD0B1466645300FB86C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Effect3DRotation/Effect3DRotation-Prefix.pch";
+				INFOPLIST_FILE = "Effect3DRotation/Effect3DRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F1BFD0C1466645300FB86C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Effect3DRotation/Effect3DRotation-Prefix.pch";
+				INFOPLIST_FILE = "Effect3DRotation/Effect3DRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F1BFD0E1466645300FB86C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Effect3DRotation.app/Effect3DRotation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Effect3DRotation/Effect3DRotation-Prefix.pch";
+				INFOPLIST_FILE = "Effect3DRotationTests/Effect3DRotationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7F1BFD0F1466645300FB86C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Effect3DRotation.app/Effect3DRotation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Effect3DRotation/Effect3DRotation-Prefix.pch";
+				INFOPLIST_FILE = "Effect3DRotationTests/Effect3DRotationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F1BFCD11466645200FB86C7 /* Build configuration list for PBXProject "Effect3DRotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F1BFD081466645300FB86C7 /* Debug */,
+				7F1BFD091466645300FB86C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F1BFD0A1466645300FB86C7 /* Build configuration list for PBXNativeTarget "Effect3DRotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F1BFD0B1466645300FB86C7 /* Debug */,
+				7F1BFD0C1466645300FB86C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F1BFD0D1466645300FB86C7 /* Build configuration list for PBXNativeTarget "Effect3DRotationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F1BFD0E1466645300FB86C7 /* Debug */,
+				7F1BFD0F1466645300FB86C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F1BFCCE1466645200FB86C7 /* Project object */;
+}
