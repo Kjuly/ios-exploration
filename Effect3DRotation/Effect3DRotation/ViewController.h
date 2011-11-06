@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+  UILabel * textLabel_;
+}
+
+@property (nonatomic, retain) UILabel * textLabel;
 
 - (void)doRotate:(id)sender;
 

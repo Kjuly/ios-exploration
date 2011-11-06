@@ -10,6 +10,8 @@
 
 @implementation ViewController
 
+@synthesize textLabel = textLabel_;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -25,13 +27,12 @@
   [self.view setBackgroundColor:[UIColor whiteColor]];
   
   // Text label
-  UILabel * textLabel = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 80.0f, 320.0f, 100.0f)];
-  [textLabel setBackgroundColor:[UIColor clearColor]];
-  [textLabel setText:@"Effect 3D Rotation"];
-  [textLabel setFont:[UIFont systemFontOfSize:24.0f]];
+  self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 80.0f, 320.0f, 100.0f)];
+  [textLabel_ setBackgroundColor:[UIColor clearColor]];
+  [textLabel_ setText:@"Effect 3D Rotation"];
+  [textLabel_ setFont:[UIFont systemFontOfSize:24.0f]];
   
-  [self.view addSubview:textLabel];
-  [textLabel release];
+  [self.view addSubview:textLabel_];
   
   // Button
   UIButton * actionButton = [[UIButton alloc] initWithFrame:CGRectMake(20.0f, 200.0f, 160.0f, 30.0f)];
@@ -49,6 +50,13 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+  self.textLabel = nil;
+}
+
+- (void)dealloc
+{
+  [textLabel_ release];
+  [super dealloc];
 }
 
 - (void)viewWillAppear:(BOOL)animated
