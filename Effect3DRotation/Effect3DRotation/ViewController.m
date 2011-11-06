@@ -20,8 +20,28 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+  [self.view setBackgroundColor:[UIColor whiteColor]];
+  
+  // Text label
+  UILabel * textLabel = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 80.0f, 320.0f, 100.0f)];
+  [textLabel setBackgroundColor:[UIColor clearColor]];
+  [textLabel setText:@"Effect 3D Rotation"];
+  [textLabel setFont:[UIFont systemFontOfSize:24.0f]];
+  
+  [self.view addSubview:textLabel];
+  [textLabel release];
+  
+  // Button
+  UIButton * actionButton = [[UIButton alloc] initWithFrame:CGRectMake(20.0f, 200.0f, 160.0f, 30.0f)];
+  [actionButton setBackgroundColor:[UIColor blackColor]];
+  [actionButton setTitle:@"Run" forState:UIControlStateNormal];
+  [actionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+  [actionButton addTarget:self action:@selector(doRotate:) forControlEvents:UIControlEventTouchUpInside];
+  
+  [self.view addSubview:actionButton];
+  [actionButton release];
 }
 
 - (void)viewDidUnload
@@ -55,6 +75,14 @@
 {
     // Return YES for supported orientations
   return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+//////////////////////////////////////////////////////////////////////////////
+#pragma mark - Action
+// ---------------------------------------------------------------------------
+- (void)doRotate:(id)sender
+{
+  NSLog(@"*** Clicked");
 }
 
 @end

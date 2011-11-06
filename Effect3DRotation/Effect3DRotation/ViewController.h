@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (void)doRotate:(id)sender;
+
 @end
