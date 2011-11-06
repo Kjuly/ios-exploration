@@ -11,9 +11,12 @@
 @interface ViewController : UIViewController
 {
   UILabel * textLabel_;
+  
+  BOOL rotated_;
 }
 
 @property (nonatomic, retain) UILabel * textLabel;
+@property (nonatomic, assign) BOOL rotated;
 
 - (void)doRotate:(id)sender;
 

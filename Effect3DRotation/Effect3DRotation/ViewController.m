@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation ViewController
 
 @synthesize textLabel = textLabel_;
+@synthesize rotated = rotated_;
 
 - (void)didReceiveMemoryWarning
 {
@@ -43,6 +45,9 @@
   
   [self.view addSubview:actionButton];
   [actionButton release];
+  
+  // Set class members
+  self.rotated = NO;
 }
 
 - (void)viewDidUnload
@@ -90,7 +95,25 @@
 // ---------------------------------------------------------------------------
 - (void)doRotate:(id)sender
 {
-  NSLog(@"*** Clicked");
+  [UIView beginAnimations:@"transform" context:nil];
+  [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+  [UIView setAnimationBeginsFromCurrentState:YES];
+  [UIView setAnimationDuration:0.2f];
+  
+  CATransform3D rotation = CATransform3DIdentity;
+  if (rotated_) {
+    [textLabel_ setAlpha:1.0f];
+  } else {
+    rotation.m34 = - 1.0f / 300.0f;
+    rotation = CATransform3DRotate(rotation, 60.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+    
+    [textLabel_ setAlpha:0.0f];
+  }
+  [[textLabel_ layer] setTransform:rotation];
+  
+  [UIView commitAnimations];
+  
+  rotated_ = !rotated_;
 }
 
 @end
