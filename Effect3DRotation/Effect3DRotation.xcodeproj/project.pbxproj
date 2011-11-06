@@ -20,6 +20,7 @@
 		7F1BFCFC1466645300FB86C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1BFCDD1466645300FB86C7 /* Foundation.framework */; };
 		7F1BFD041466645300FB86C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BFD021466645300FB86C7 /* InfoPlist.strings */; };
 		7F1BFD071466645300FB86C7 /* Effect3DRotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1BFD061466645300FB86C7 /* Effect3DRotationTests.m */; };
+		7F1BFD1114666C3400FB86C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1BFD1014666C3400FB86C7 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		7F1BFD031466645300FB86C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F1BFD051466645300FB86C7 /* Effect3DRotationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Effect3DRotationTests.h; sourceTree = "<group>"; };
 		7F1BFD061466645300FB86C7 /* Effect3DRotationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Effect3DRotationTests.m; sourceTree = "<group>"; };
+		7F1BFD1014666C3400FB86C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1BFD1114666C3400FB86C7 /* QuartzCore.framework in Frameworks */,
 				7F1BFCDC1466645300FB86C7 /* UIKit.framework in Frameworks */,
 				7F1BFCDE1466645300FB86C7 /* Foundation.framework in Frameworks */,
 				7F1BFCE01466645300FB86C7 /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +103,7 @@
 		7F1BFCDA1466645300FB86C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F1BFD1014666C3400FB86C7 /* QuartzCore.framework */,
 				7F1BFCDB1466645300FB86C7 /* UIKit.framework */,
 				7F1BFCDD1466645300FB86C7 /* Foundation.framework */,
 				7F1BFCDF1466645300FB86C7 /* CoreGraphics.framework */,
