@@ -197,7 +197,7 @@
     NSInteger currPage = pageControl_.currentPage;
     
     [UIView beginAnimations:@"scale" context:nil];
-    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationBeginsFromCurrentState:YES];
     [UIView setAnimationDuration:0.3];
     
@@ -233,7 +233,7 @@
 - (IBAction)scaleBackToSmall:(id)sender
 {
   [UIView beginAnimations:@"scale" context:nil];
-  [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+  [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
   [UIView setAnimationBeginsFromCurrentState:YES];
   [UIView setAnimationDuration:0.3];
   
