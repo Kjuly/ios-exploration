@@ -142,16 +142,14 @@
   
   NSInteger i = -1;
   for (UIImage * image in images_) {
-    UIImageView *newPage = [[[UIImageView alloc] initWithImage:image] autorelease];
+    UIImageView *newPage = [[UIImageView alloc] initWithImage:image];
     [newPage setFrame:CGRectMake((320.0f + kImageMargin) * ++i, 0.0f, 320.0f, 480.0f)];
-    
     [newPage setUserInteractionEnabled:YES];
     [newPage setContentScaleFactor:1.0f];
-    //[newPage setContentMode:UIViewContentModeScaleAspectFit];
     [newPage setContentMode:UIViewContentModeScaleAspectFill];
-    //[newPage setContentMode:UIViewContentModeCenter];
     [newPage setClipsToBounds:YES];
     [imageSlideView addSubview:newPage];
+    [newPage release];
   }
   
   pageControl_.numberOfPages = [images_ count];
