@@ -232,30 +232,45 @@
 // ---------------------------------------------------------------------------
 - (IBAction)scaleBackToSmall:(id)sender
 {
-  [UIView beginAnimations:@"scale" context:nil];
-  [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-  [UIView setAnimationBeginsFromCurrentState:YES];
-  [UIView setAnimationDuration:0.3];
-  
-  [topbarView_ setAlpha:0.0f];
-  
-  NSInteger i = -1;
-  for (UIImageView * thePage in [scrollView_ subviews]) {
-    [thePage setBounds:CGRectMake(0.0f, (480.0f - kSmallImageHeight) / 2.0f, 300.0f, kSmallImageHeight)];
-    [thePage setFrame:CGRectMake(300.0f * ++i, 0.0f, 300.0f, kSmallImageHeight)];
-    //[thePage setContentScaleFactor:1.2f];
-    //[thePage setContentMode:UIViewContentModeScaleAspectFill];
-  }
+  [UIView animateWithDuration:0.15f
+                        delay:0.0f
+                      options:UIViewAnimationCurveEaseInOut
+                   animations:^{
+                     // Set top bar to hidden
+                     [topbarView_ setAlpha:0.0f];
+                   }
+                   completion:^(BOOL fin) {
+                     [UIView animateWithDuration:0.3f
+                                           delay:0.0f
+                                         options:UIViewAnimationCurveEaseInOut
+                                      animations:^{
+                                        // Set the current image size to small
+                                        NSInteger i = -1;
+                                        for (UIImageView * thePage in [scrollView_ subviews]) {
+                                          if (++i == pageControl_.currentPage) {
+                                            [thePage setFrame:CGRectMake(thePage.frame.origin.x, 0.0f, 300.0f, kSmallImageHeight)];
+                                            break;
+                                          }
+                                        }
+                                        [scrollView_ setFrame:CGRectMake(10.0f, kSmallImageMarginTop, 300.0f, 480.0f)];
+                                        [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
+                                      }
+                                      completion:^(BOOL fin) {
+                                        // Set all image size to small
+                                        NSInteger i = -1;
+                                        for (UIImageView * thePage in [scrollView_ subviews]) {
+                                          //[thePage setBounds:CGRectMake(0.0f, (480.0f - kSmallImageHeight) / 2.0f, 300.0f, kSmallImageHeight)];
+                                          [thePage setFrame:CGRectMake(300.0f * ++i, 0.0f, 300.0f, kSmallImageHeight)];
+                                        }
+                                        // Reset the current image's offset in view's content
+                                        [scrollView_ setContentOffset:CGPointMake(scrollView_.frame.size.width * pageControl_.currentPage, 0.0f)];
 
-  [scrollView_ setFrame:CGRectMake(10.0f, kSmallImageMarginTop, 300.0f, 480.0f)];
-  [scrollView_ setContentOffset:CGPointMake(scrollView_.frame.size.width * pageControl_.currentPage, 0.0f)];
-  [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
-  [UIView commitAnimations];
-
-  // Reset the content of scroll view
-  [scrollView_ setContentSize:CGSizeMake(
-                                         scrollView_.contentSize.width - (kImageMargin + 20) * [images_ count], 
-                                         scrollView_.contentSize.height )];
+                                        // Reset the content width of scroll view
+                                        [scrollView_ setContentSize:CGSizeMake(
+                                                                               scrollView_.contentSize.width - (kImageMargin + 20) * [images_ count], 
+                                                                               scrollView_.contentSize.height )];
+                                      }];
+                   }];
   
   scrollViewFullScreen_ = NO;
 }
