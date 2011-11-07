@@ -184,15 +184,14 @@
 - (void)handleTapGesture:(id)sender
 {
   if (scrollViewFullScreen_) {
-    [UIView beginAnimations:@"fade" context:nil];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    [UIView setAnimationDuration:0.3];
-    
-    if (topbarView_.alpha < 0.5f) [topbarView_ setAlpha:1.0f];
-    else [topbarView_ setAlpha:0.0f];
-    
-    [UIView commitAnimations];
+    [UIView animateWithDuration:0.3f
+                          delay:0.0f
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^{
+                       if (topbarView_.alpha < 0.5f) [topbarView_ setAlpha:1.0f];
+                       else [topbarView_ setAlpha:0.0f];
+                     }
+                     completion:nil];
   } else {
     NSInteger currPage = pageControl_.currentPage;
     
