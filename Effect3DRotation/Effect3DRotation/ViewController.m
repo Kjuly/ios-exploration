@@ -94,24 +94,23 @@
 #pragma mark - Action
 // ---------------------------------------------------------------------------
 - (void)doRotate:(id)sender
-{
-  [UIView beginAnimations:@"transform" context:nil];
-  [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-  [UIView setAnimationBeginsFromCurrentState:YES];
-  [UIView setAnimationDuration:0.2f];
-  
-  CATransform3D rotation = CATransform3DIdentity;
-  if (rotated_) {
-    [textLabel_ setAlpha:1.0f];
-  } else {
-    rotation.m34 = - 1.0f / 300.0f;
-    rotation = CATransform3DRotate(rotation, 60.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
-    
-    [textLabel_ setAlpha:0.0f];
-  }
-  [[textLabel_ layer] setTransform:rotation];
-  
-  [UIView commitAnimations];
+{  
+  [UIView animateWithDuration:0.2f
+                        delay:0.0f
+                      options:UIViewAnimationCurveEaseInOut
+                   animations:^{
+                     CATransform3D rotation = CATransform3DIdentity;
+                     if (rotated_) {
+                       [textLabel_ setAlpha:1.0f];
+                     } else {
+                       rotation.m34 = - 1.0f / 300.0f;
+                       rotation = CATransform3DRotate(rotation, 60.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+                       
+                       [textLabel_ setAlpha:0.0f];
+                     }
+                     [[textLabel_ layer] setTransform:rotation];
+                   }
+                   completion:nil];
   
   rotated_ = !rotated_;
 }
