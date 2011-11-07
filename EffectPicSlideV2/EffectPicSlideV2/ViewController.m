@@ -195,31 +195,56 @@
   } else {
     NSInteger currPage = pageControl_.currentPage;
     
-    [UIView beginAnimations:@"scale" context:nil];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    [UIView setAnimationDuration:0.3];
-    
-    [scrollView_ setFrame:CGRectMake(0.0f, 0.0f, 320.0f + kImageMargin, 480.0f)];
-    
+    // Before do animate, set the image(which is next to current image)'s offset
+    // It was on the top of the current image
     NSInteger i = -1;
     for (UIImageView * thePage in [scrollView_ subviews]) {
-      [thePage setBounds:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
-      [thePage setFrame:CGRectMake((320.0f + kImageMargin) * ++i, 0.0f, 320.0f, 480.0f)];
-      //[thePage setContentScaleFactor:1.0f];
-      //[thePage setContentMode:UIViewContentModeCenter];
+      if (++i == currPage + 1) {
+        [thePage setFrame:CGRectMake(thePage.frame.origin.x + 320.0f, 0.0f, 320.0f, 480.0f)];
+        break;
+      }
     }
-    
-    [topbarView_ setAlpha:1.0f];
-    [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
-    [UIView commitAnimations];
-    
-    // Reset the content of scroll view
-    pageControl_.currentPage = currPage;
+    // Set the content width of scroll view before image scaleration
+    // In case when the last image scale to full, no enough space left
     [scrollView_ setContentSize:CGSizeMake(
                                            scrollView_.contentSize.width + (kImageMargin + 20) * [images_ count], 
                                            scrollView_.contentSize.height )];
-    [scrollView_ setContentOffset:CGPointMake(scrollView_.frame.size.width * pageControl_.currentPage, 0.0f)];
+    
+    [UIView animateWithDuration:0.3f
+                          delay:0.0f
+                        options:UIViewAnimationCurveEaseInOut
+                     animations:^{
+                       // Set current image size to full
+                       NSInteger i = -1;
+                       for (UIImageView * thePage in [scrollView_ subviews]) {
+                         if (++i == currPage) {
+                           [thePage setFrame:CGRectMake(thePage.frame.origin.x, 0.0f, 320.0f, 480.0f)];
+                           break;
+                         }
+                       }
+                       [scrollView_ setFrame:CGRectMake(0.0f, 0.0f, 320.0f + kImageMargin, 480.0f)];
+                       [backgroundView_ setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
+                     }
+                     completion:^(BOOL fin) {
+                       // Set all image size to full
+                       NSInteger i = -1;
+                       for (UIImageView * thePage in [scrollView_ subviews])
+                         [thePage setFrame:CGRectMake((320.0f + kImageMargin) * ++i, 0.0f, 320.0f, 480.0f)];
+                       
+                       [scrollView_ setContentOffset:CGPointMake(scrollView_.frame.size.width * currPage, 0.0f)];
+                       
+                       // Show top bar
+                       [UIView animateWithDuration:0.3f
+                                             delay:0.0f
+                                           options:UIViewAnimationCurveEaseInOut
+                                        animations:^{
+                                          [topbarView_ setAlpha:1.0f];
+                                        }
+                                        completion:^(BOOL fin) {
+                                          // As the scroll view's frame width resized
+                                          pageControl_.currentPage = currPage;
+                                        }];
+                     }];
     
     scrollViewFullScreen_ = YES;
   }
