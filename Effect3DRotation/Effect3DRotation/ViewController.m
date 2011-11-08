@@ -29,11 +29,12 @@
   [self.view setBackgroundColor:[UIColor whiteColor]];
   
   // Text label
-  self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 80.0f, 400.0f, 100.0f)];
+  self.textLabel = [[UILabel alloc] init];
+  [[textLabel_ layer] setAnchorPoint:CGPointMake(1.0f, 0.5f)];
+  [textLabel_ setFrame:CGRectMake(20.0f, 80.0f, 200.0f, 100.0f)];
+  [textLabel_ setFont:[UIFont systemFontOfSize:24.0f]];
   [textLabel_ setBackgroundColor:[UIColor clearColor]];
   [textLabel_ setText:@"Effect 3D Rotation"];
-  [textLabel_ setFont:[UIFont systemFontOfSize:24.0f]];
-  
   [self.view addSubview:textLabel_];
   
   // Button
@@ -94,7 +95,7 @@
 #pragma mark - Action
 // ---------------------------------------------------------------------------
 - (void)doRotate:(id)sender
-{  
+{
   [UIView animateWithDuration:0.2f
                         delay:0.0f
                       options:UIViewAnimationCurveEaseInOut
@@ -103,7 +104,7 @@
                      if (rotated_) {
                        [textLabel_ setAlpha:1.0f];
                      } else {
-                       rotation.m34 = - 1.0f / 300.0f;
+                       rotation.m34 = 1.0f / -300.0f;
                        rotation = CATransform3DRotate(rotation, 60.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
                        
                        [textLabel_ setAlpha:0.0f];
