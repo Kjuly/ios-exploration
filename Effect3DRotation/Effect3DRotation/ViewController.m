@@ -30,7 +30,7 @@
   
   // Text label
   self.textLabel = [[UILabel alloc] init];
-  [[textLabel_ layer] setAnchorPoint:CGPointMake(1.0f, 0.5f)];
+  [[textLabel_ layer] setAnchorPoint:CGPointMake(0.0f, 0.5f)];
   [textLabel_ setFrame:CGRectMake(20.0f, 80.0f, 200.0f, 100.0f)];
   [textLabel_ setFont:[UIFont systemFontOfSize:24.0f]];
   [textLabel_ setBackgroundColor:[UIColor clearColor]];
@@ -105,7 +105,7 @@
                        [textLabel_ setAlpha:1.0f];
                      } else {
                        rotation.m34 = 1.0f / -300.0f;
-                       rotation = CATransform3DRotate(rotation, 60.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+                       rotation = CATransform3DRotate(rotation, -60.0f * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
                        
                        [textLabel_ setAlpha:0.0f];
                      }
