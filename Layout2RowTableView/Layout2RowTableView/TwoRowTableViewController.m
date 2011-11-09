@@ -261,6 +261,10 @@
 // ---------------------------------------------------------------------------
 - (void)loadCategory:(id)sender
 {
+  NSLog(@"****");
+  UIViewController * newViewController = [[UIViewController alloc] init];
+  [newViewController.view setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
+  [self.navigationController pushViewController:newViewController animated:YES];
 }
 
 @end
