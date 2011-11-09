@@ -125,6 +125,12 @@
     CellIdentifier = @"Cell";
     [cellView setFrame:CGRectMake(0.0f, 0.0f, 300.0f, 100.0f)];
     
+    // Center vertical seperate line in cell
+    UIView * virtSeperateLine = [[UIView alloc] initWithFrame:CGRectMake(159.5f, 0.0f, 1.0f, cellView.frame.size.height)];
+    [virtSeperateLine setBackgroundColor:[UIColor colorWithWhite:0.8f alpha:1.0f]];
+    [cellView addSubview:virtSeperateLine];
+    [virtSeperateLine release];
+    
     // Half width of cell unit
     NSInteger count = 2;
     for (NSInteger currUnitNum = ([indexPath row] - 1) * 2; count > 0; ++currUnitNum, --count) {
