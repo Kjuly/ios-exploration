@@ -10,7 +10,7 @@
 
 @interface TwoRowTableViewController : UITableViewController
 {
-  NSMutableArray * cellUnitArray_;
+  NSMutableArray * unitArray_;
 }
 
 @end

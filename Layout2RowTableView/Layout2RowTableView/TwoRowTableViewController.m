@@ -11,6 +11,11 @@
 
 @implementation TwoRowTableViewController
 
+- (void)dealloc
+{
+  [unitArray_ release];
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -45,8 +50,8 @@
                              @"Layout2RowTableView_145x60.jpg", @"image",
                              @"Little discription", @"text",
                              nil];
-  cellUnitArray_ = [[NSMutableArray alloc] initWithObjects:unitDict,
-                    unitDict, unitDict, unitDict, unitDict, unitDict, unitDict, nil];
+  unitArray_ = [[NSMutableArray alloc] initWithObjects:unitDict,
+                unitDict, unitDict, unitDict, unitDict, unitDict, unitDict, nil];
 }
 // ---------------------------------------------------------------------------
 - (void)viewDidUnload
@@ -93,7 +98,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return [cellUnitArray_ count] / 2.0f + 1.5f;
+  return [unitArray_ count] / 2.0f + 1.5f;
 }
 
 // ---------------------------------------------------------------------------
@@ -134,18 +139,29 @@
     // Half width of cell unit
     NSInteger count = 2;
     for (NSInteger currUnitNum = ([indexPath row] - 1) * 2; count > 0; ++currUnitNum, --count) {
-      if (currUnitNum < [cellUnitArray_ count]) {
-        UIImage * image = [UIImage imageNamed:[[cellUnitArray_ objectAtIndex:currUnitNum] objectForKey:@"image"]];
+      if (currUnitNum < [unitArray_ count]) {
+        // Unit Image
+        UIImage * image = [UIImage imageNamed:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"image"]];
         UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
         
-        // Set left or right
-        if (!(currUnitNum % 2))
-          [imageView setFrame:CGRectMake(10.0f, 10.0f, 145.0f, 60.0f)];
-        else
-          [imageView setFrame:CGRectMake(165.0f, 10.0f, 145.0f, 60.0f)];
+        NSInteger marginLeft;
         
+        // Set left or right
+        if (!(currUnitNum % 2)) marginLeft = 10.0f;          
+        else marginLeft = 165.0f;
+
+        [imageView setFrame:CGRectMake(marginLeft, 10.0f, 145.0f, 60.0f)];
         [cellView addSubview:imageView];
         [imageView release];
+        
+        // Unit Text
+        UILabel * text = [[UILabel alloc] initWithFrame:CGRectMake(marginLeft, 70.0f, 145.0f, cellView.frame.size.height - imageView.frame.size.height - 10.0f)];
+        [text setBackgroundColor:[UIColor clearColor]];
+        [text setFont:[UIFont systemFontOfSize:12.0f]];
+        [text setTextColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
+        [text setText:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"text"]];
+        [cellView addSubview:text];
+        [text release];
       }
     }
   }
