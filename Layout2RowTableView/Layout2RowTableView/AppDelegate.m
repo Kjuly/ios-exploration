@@ -36,7 +36,7 @@
   // Override point for customization after application launch.
   self.window.backgroundColor = [UIColor whiteColor];
   
-  self.tableViewController = [[TwoRowTableViewController alloc] initWithNibName:nil bundle:nil];
+  self.tableViewController = [[TwoRowTableViewController alloc] initWithStyle:UITableViewStylePlain];
   [self.window addSubview:self.tableViewController.view];
 
   [self.window makeKeyAndVisible];
