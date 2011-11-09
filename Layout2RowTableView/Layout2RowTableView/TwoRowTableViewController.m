@@ -28,8 +28,9 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+//////////////////////////////////////////////////////////////////////////////
 #pragma mark - View lifecycle
-
+// ---------------------------------------------------------------------------
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -40,14 +41,14 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
+// ---------------------------------------------------------------------------
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
+// ---------------------------------------------------------------------------
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -74,8 +75,9 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+//////////////////////////////////////////////////////////////////////////////
 #pragma mark - Table view data source
-
+// ---------------------------------------------------------------------------
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
@@ -88,6 +90,7 @@
     return 10;
 }
 
+// ---------------------------------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -102,6 +105,7 @@
     return cell;
 }
 
+// ---------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   if ([indexPath row] == 0) return 170.0f;
@@ -147,8 +151,9 @@
 }
 */
 
+//////////////////////////////////////////////////////////////////////////////
 #pragma mark - Table view delegate
-
+// ---------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
