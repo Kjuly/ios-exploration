@@ -93,8 +93,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  NSInteger rows = ([cellUnitArray_ count] + 1) / 2;
-  return rows;
+  return [cellUnitArray_ count] / 2.0f + 1.5f;
 }
 
 // ---------------------------------------------------------------------------
@@ -128,11 +127,10 @@
     
     // Half width of cell unit
     NSInteger count = 2;
-    for (NSInteger currUnitNum = [indexPath row] * 2; count > 0; ++currUnitNum, --count) {
+    for (NSInteger currUnitNum = ([indexPath row] - 1) * 2; count > 0; ++currUnitNum, --count) {
       if (currUnitNum < [cellUnitArray_ count]) {
         UIImage * image = [UIImage imageNamed:[[cellUnitArray_ objectAtIndex:currUnitNum] objectForKey:@"image"]];
         UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
-        [image release];
         
         // Set left or right
         if (!(currUnitNum % 2))
