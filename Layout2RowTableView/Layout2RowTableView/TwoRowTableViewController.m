@@ -40,6 +40,13 @@
  
   // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
   // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  
+  NSDictionary * unitDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                             @"Layout2RowTableView_145x60.jpg", @"image",
+                             @"Little discription", @"text",
+                             nil];
+  cellUnitArray_ = [[NSMutableArray alloc] initWithObjects:unitDict,
+                    unitDict, unitDict, unitDict, unitDict, unitDict, unitDict, nil];
 }
 // ---------------------------------------------------------------------------
 - (void)viewDidUnload
@@ -118,6 +125,25 @@
   } else {
     CellIdentifier = @"Cell";
     [cellView setFrame:CGRectMake(0.0f, 0.0f, 300.0f, 100.0f)];
+    
+    // Half width of cell unit
+    NSInteger count = 2;
+    for (NSInteger currUnitNum = [indexPath row] * 2; count > 0; ++currUnitNum, --count) {
+      if (currUnitNum < [cellUnitArray_ count]) {
+        UIImage * image = [UIImage imageNamed:[[cellUnitArray_ objectAtIndex:currUnitNum] objectForKey:@"image"]];
+        UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
+        [image release];
+        
+        // Set left or right
+        if (!(currUnitNum % 2))
+          [imageView setFrame:CGRectMake(10.0f, 10.0f, 145.0f, 60.0f)];
+        else
+          [imageView setFrame:CGRectMake(165.0f, 10.0f, 145.0f, 60.0f)];
+        
+        [cellView addSubview:imageView];
+        [imageView release];
+      }
+    }
   }
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];

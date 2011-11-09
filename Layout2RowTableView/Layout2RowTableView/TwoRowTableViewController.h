@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TwoRowTableViewController : UITableViewController
+{
+  NSMutableArray * cellUnitArray_;
+}
 
 @end
