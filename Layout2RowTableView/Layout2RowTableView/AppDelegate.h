@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class RootNavigationController;
 @class TwoRowTableViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
@@ -18,6 +19,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property (nonatomic, retain) RootNavigationController * rootNavController;
 @property (nonatomic, retain) TwoRowTableViewController * tableViewController;
 
 - (void)saveContext;

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "RootNavigationController.h"
 #import "TwoRowTableViewController.h"
 
 @implementation AppDelegate
@@ -17,6 +18,7 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
+@synthesize rootNavController;
 @synthesize tableViewController;
 
 - (void)dealloc
@@ -26,6 +28,7 @@
   [__managedObjectModel release];
   [__persistentStoreCoordinator release];
   
+  self.rootNavController = nil;
   self.tableViewController = nil;
   [super dealloc];
 }
@@ -38,7 +41,8 @@
   [[UIApplication sharedApplication] setStatusBarHidden:YES];
   
   self.tableViewController = [[TwoRowTableViewController alloc] initWithStyle:UITableViewStylePlain];
-  [self.window addSubview:self.tableViewController.view];
+  rootNavController = [[RootNavigationController alloc] initWithRootViewController:self.tableViewController];
+  [self.window addSubview:self.rootNavController.view];
 
   [self.window makeKeyAndVisible];
   return YES;

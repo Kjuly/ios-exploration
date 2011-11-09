@@ -24,6 +24,7 @@
 		7F207910146A387D00C95698 /* TwoRowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F20790F146A387D00C95698 /* TwoRowTableViewController.m */; };
 		7F207914146A3A6400C95698 /* Layout2RowTableView_145x60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F207912146A3A6400C95698 /* Layout2RowTableView_145x60.jpg */; };
 		7F207915146A3A6400C95698 /* NTCInfoBg_300x120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F207913146A3A6400C95698 /* NTCInfoBg_300x120.jpg */; };
+		7FA96A9F146A84B500B504AB /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA96A9E146A84B500B504AB /* RootNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		7F20790F146A387D00C95698 /* TwoRowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoRowTableViewController.m; sourceTree = "<group>"; };
 		7F207912146A3A6400C95698 /* Layout2RowTableView_145x60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Layout2RowTableView_145x60.jpg; sourceTree = "<group>"; };
 		7F207913146A3A6400C95698 /* NTCInfoBg_300x120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCInfoBg_300x120.jpg; sourceTree = "<group>"; };
+		7FA96A9D146A84B500B504AB /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		7FA96A9E146A84B500B504AB /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 			children = (
 				7F2078C9146A2E9000C95698 /* AppDelegate.h */,
 				7F2078CA146A2E9000C95698 /* AppDelegate.m */,
+				7FA96A9D146A84B500B504AB /* RootNavigationController.h */,
+				7FA96A9E146A84B500B504AB /* RootNavigationController.m */,
 				7F20790E146A387D00C95698 /* TwoRowTableViewController.h */,
 				7F20790F146A387D00C95698 /* TwoRowTableViewController.m */,
 				7F2078CC146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld */,
@@ -283,6 +288,7 @@
 				7F2078CB146A2E9000C95698 /* AppDelegate.m in Sources */,
 				7F2078CE146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld in Sources */,
 				7F207910146A387D00C95698 /* TwoRowTableViewController.m in Sources */,
+				7FA96A9F146A84B500B504AB /* RootNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +450,7 @@
 				7F2078E9146A2E9000C95698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F2078EA146A2E9000C95698 /* Build configuration list for PBXNativeTarget "Layout2RowTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +459,7 @@
 				7F2078EC146A2E9000C95698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
