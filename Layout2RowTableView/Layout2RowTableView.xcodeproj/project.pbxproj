@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F2078B9146A2E9000C95698 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2078B8146A2E9000C95698 /* UIKit.framework */; };
+		7F2078BB146A2E9000C95698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2078BA146A2E9000C95698 /* Foundation.framework */; };
+		7F2078BD146A2E9000C95698 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2078BC146A2E9000C95698 /* CoreGraphics.framework */; };
+		7F2078BF146A2E9000C95698 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2078BE146A2E9000C95698 /* CoreData.framework */; };
+		7F2078C5146A2E9000C95698 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F2078C3146A2E9000C95698 /* InfoPlist.strings */; };
+		7F2078C7146A2E9000C95698 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2078C6146A2E9000C95698 /* main.m */; };
+		7F2078CB146A2E9000C95698 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2078CA146A2E9000C95698 /* AppDelegate.m */; };
+		7F2078CE146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F2078CC146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld */; };
+		7F2078D6146A2E9000C95698 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2078D5146A2E9000C95698 /* SenTestingKit.framework */; };
+		7F2078D7146A2E9000C95698 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2078B8146A2E9000C95698 /* UIKit.framework */; };
+		7F2078D8146A2E9000C95698 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2078BA146A2E9000C95698 /* Foundation.framework */; };
+		7F2078D9146A2E9000C95698 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2078BE146A2E9000C95698 /* CoreData.framework */; };
+		7F2078E1146A2E9000C95698 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F2078DF146A2E9000C95698 /* InfoPlist.strings */; };
+		7F2078E4146A2E9000C95698 /* Layout2RowTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2078E3146A2E9000C95698 /* Layout2RowTableViewTests.m */; };
+		7F207910146A387D00C95698 /* TwoRowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F20790F146A387D00C95698 /* TwoRowTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F2078DA146A2E9000C95698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F2078AB146A2E9000C95698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F2078B3146A2E9000C95698;
+			remoteInfo = Layout2RowTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F2078B4146A2E9000C95698 /* Layout2RowTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Layout2RowTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2078B8146A2E9000C95698 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F2078BA146A2E9000C95698 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F2078BC146A2E9000C95698 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F2078BE146A2E9000C95698 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F2078C2146A2E9000C95698 /* Layout2RowTableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Layout2RowTableView-Info.plist"; sourceTree = "<group>"; };
+		7F2078C4146A2E9000C95698 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F2078C6146A2E9000C95698 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F2078C8146A2E9000C95698 /* Layout2RowTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Layout2RowTableView-Prefix.pch"; sourceTree = "<group>"; };
+		7F2078C9146A2E9000C95698 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F2078CA146A2E9000C95698 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F2078CD146A2E9000C95698 /* Layout2RowTableView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Layout2RowTableView.xcdatamodel; sourceTree = "<group>"; };
+		7F2078D4146A2E9000C95698 /* Layout2RowTableViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Layout2RowTableViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2078D5146A2E9000C95698 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F2078DE146A2E9000C95698 /* Layout2RowTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Layout2RowTableViewTests-Info.plist"; sourceTree = "<group>"; };
+		7F2078E0146A2E9000C95698 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F2078E2146A2E9000C95698 /* Layout2RowTableViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Layout2RowTableViewTests.h; sourceTree = "<group>"; };
+		7F2078E3146A2E9000C95698 /* Layout2RowTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Layout2RowTableViewTests.m; sourceTree = "<group>"; };
+		7F20790E146A387D00C95698 /* TwoRowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoRowTableViewController.h; sourceTree = "<group>"; };
+		7F20790F146A387D00C95698 /* TwoRowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoRowTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F2078B1146A2E9000C95698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2078B9146A2E9000C95698 /* UIKit.framework in Frameworks */,
+				7F2078BB146A2E9000C95698 /* Foundation.framework in Frameworks */,
+				7F2078BD146A2E9000C95698 /* CoreGraphics.framework in Frameworks */,
+				7F2078BF146A2E9000C95698 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2078D0146A2E9000C95698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2078D6146A2E9000C95698 /* SenTestingKit.framework in Frameworks */,
+				7F2078D7146A2E9000C95698 /* UIKit.framework in Frameworks */,
+				7F2078D8146A2E9000C95698 /* Foundation.framework in Frameworks */,
+				7F2078D9146A2E9000C95698 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F2078A9146A2E9000C95698 = {
+			isa = PBXGroup;
+			children = (
+				7F2078C0146A2E9000C95698 /* Layout2RowTableView */,
+				7F2078DC146A2E9000C95698 /* Layout2RowTableViewTests */,
+				7F2078B7146A2E9000C95698 /* Frameworks */,
+				7F2078B5146A2E9000C95698 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F2078B5146A2E9000C95698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F2078B4146A2E9000C95698 /* Layout2RowTableView.app */,
+				7F2078D4146A2E9000C95698 /* Layout2RowTableViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F2078B7146A2E9000C95698 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F2078B8146A2E9000C95698 /* UIKit.framework */,
+				7F2078BA146A2E9000C95698 /* Foundation.framework */,
+				7F2078BC146A2E9000C95698 /* CoreGraphics.framework */,
+				7F2078BE146A2E9000C95698 /* CoreData.framework */,
+				7F2078D5146A2E9000C95698 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F2078C0146A2E9000C95698 /* Layout2RowTableView */ = {
+			isa = PBXGroup;
+			children = (
+				7F2078C9146A2E9000C95698 /* AppDelegate.h */,
+				7F2078CA146A2E9000C95698 /* AppDelegate.m */,
+				7F20790E146A387D00C95698 /* TwoRowTableViewController.h */,
+				7F20790F146A387D00C95698 /* TwoRowTableViewController.m */,
+				7F2078CC146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld */,
+				7F2078C1146A2E9000C95698 /* Supporting Files */,
+			);
+			path = Layout2RowTableView;
+			sourceTree = "<group>";
+		};
+		7F2078C1146A2E9000C95698 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F2078C2146A2E9000C95698 /* Layout2RowTableView-Info.plist */,
+				7F2078C3146A2E9000C95698 /* InfoPlist.strings */,
+				7F2078C6146A2E9000C95698 /* main.m */,
+				7F2078C8146A2E9000C95698 /* Layout2RowTableView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F2078DC146A2E9000C95698 /* Layout2RowTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F2078E2146A2E9000C95698 /* Layout2RowTableViewTests.h */,
+				7F2078E3146A2E9000C95698 /* Layout2RowTableViewTests.m */,
+				7F2078DD146A2E9000C95698 /* Supporting Files */,
+			);
+			path = Layout2RowTableViewTests;
+			sourceTree = "<group>";
+		};
+		7F2078DD146A2E9000C95698 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F2078DE146A2E9000C95698 /* Layout2RowTableViewTests-Info.plist */,
+				7F2078DF146A2E9000C95698 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F2078B3146A2E9000C95698 /* Layout2RowTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2078E7146A2E9000C95698 /* Build configuration list for PBXNativeTarget "Layout2RowTableView" */;
+			buildPhases = (
+				7F2078B0146A2E9000C95698 /* Sources */,
+				7F2078B1146A2E9000C95698 /* Frameworks */,
+				7F2078B2146A2E9000C95698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Layout2RowTableView;
+			productName = Layout2RowTableView;
+			productReference = 7F2078B4146A2E9000C95698 /* Layout2RowTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F2078D3146A2E9000C95698 /* Layout2RowTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2078EA146A2E9000C95698 /* Build configuration list for PBXNativeTarget "Layout2RowTableViewTests" */;
+			buildPhases = (
+				7F2078CF146A2E9000C95698 /* Sources */,
+				7F2078D0146A2E9000C95698 /* Frameworks */,
+				7F2078D1146A2E9000C95698 /* Resources */,
+				7F2078D2146A2E9000C95698 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F2078DB146A2E9000C95698 /* PBXTargetDependency */,
+			);
+			name = Layout2RowTableViewTests;
+			productName = Layout2RowTableViewTests;
+			productReference = 7F2078D4146A2E9000C95698 /* Layout2RowTableViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F2078AB146A2E9000C95698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = thePlant;
+			};
+			buildConfigurationList = 7F2078AE146A2E9000C95698 /* Build configuration list for PBXProject "Layout2RowTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F2078A9146A2E9000C95698;
+			productRefGroup = 7F2078B5146A2E9000C95698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F2078B3146A2E9000C95698 /* Layout2RowTableView */,
+				7F2078D3146A2E9000C95698 /* Layout2RowTableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F2078B2146A2E9000C95698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2078C5146A2E9000C95698 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2078D1146A2E9000C95698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2078E1146A2E9000C95698 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F2078D2146A2E9000C95698 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F2078B0146A2E9000C95698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2078C7146A2E9000C95698 /* main.m in Sources */,
+				7F2078CB146A2E9000C95698 /* AppDelegate.m in Sources */,
+				7F2078CE146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld in Sources */,
+				7F207910146A387D00C95698 /* TwoRowTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2078CF146A2E9000C95698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2078E4146A2E9000C95698 /* Layout2RowTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F2078DB146A2E9000C95698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F2078B3146A2E9000C95698 /* Layout2RowTableView */;
+			targetProxy = 7F2078DA146A2E9000C95698 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F2078C3146A2E9000C95698 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F2078C4146A2E9000C95698 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F2078DF146A2E9000C95698 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F2078E0146A2E9000C95698 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F2078E5146A2E9000C95698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F2078E6146A2E9000C95698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F2078E8146A2E9000C95698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Layout2RowTableView/Layout2RowTableView-Prefix.pch";
+				INFOPLIST_FILE = "Layout2RowTableView/Layout2RowTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F2078E9146A2E9000C95698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Layout2RowTableView/Layout2RowTableView-Prefix.pch";
+				INFOPLIST_FILE = "Layout2RowTableView/Layout2RowTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F2078EB146A2E9000C95698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Layout2RowTableView.app/Layout2RowTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Layout2RowTableView/Layout2RowTableView-Prefix.pch";
+				INFOPLIST_FILE = "Layout2RowTableViewTests/Layout2RowTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7F2078EC146A2E9000C95698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Layout2RowTableView.app/Layout2RowTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Layout2RowTableView/Layout2RowTableView-Prefix.pch";
+				INFOPLIST_FILE = "Layout2RowTableViewTests/Layout2RowTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F2078AE146A2E9000C95698 /* Build configuration list for PBXProject "Layout2RowTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2078E5146A2E9000C95698 /* Debug */,
+				7F2078E6146A2E9000C95698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2078E7146A2E9000C95698 /* Build configuration list for PBXNativeTarget "Layout2RowTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2078E8146A2E9000C95698 /* Debug */,
+				7F2078E9146A2E9000C95698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F2078EA146A2E9000C95698 /* Build configuration list for PBXNativeTarget "Layout2RowTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2078EB146A2E9000C95698 /* Debug */,
+				7F2078EC146A2E9000C95698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F2078CC146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F2078CD146A2E9000C95698 /* Layout2RowTableView.xcdatamodel */,
+			);
+			currentVersion = 7F2078CD146A2E9000C95698 /* Layout2RowTableView.xcdatamodel */;
+			path = Layout2RowTableView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F2078AB146A2E9000C95698 /* Project object */;
+}
