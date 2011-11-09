@@ -105,10 +105,20 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   static NSString *CellIdentifier;
+  
+  if ([indexPath row] == 0) CellIdentifier = @"CellTop";
+  else CellIdentifier = @"Cell";
+  
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  if (cell == nil) {
+    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+  }
+  
+  // Configure the cell
   UIView * cellView = [[UIView alloc] init];
+  [cellView setBackgroundColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
   
   if ([indexPath row] == 0) {
-    CellIdentifier = @"CellTop";
     [cellView setFrame:CGRectMake(0.0f, 0.0f, 300.0f, 170.0f)];
     
     // Top image
@@ -126,8 +136,14 @@
     [textBelowImage setText:@"We recomment to you..."];
     [cellView addSubview:textBelowImage];
     [textBelowImage release];
+    
+    // Top View Button
+    UIButton * viewButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 300.0f, 160.0f)];
+    [viewButton setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
+    [viewButton addTarget:self action:@selector(loadCategory:) forControlEvents:UIControlEventTouchUpInside];
+    [cell addSubview:viewButton];
+    [viewButton release];
   } else {
-    CellIdentifier = @"Cell";
     [cellView setFrame:CGRectMake(0.0f, 0.0f, 300.0f, 100.0f)];
     
     // Center vertical seperate line in cell
@@ -140,16 +156,14 @@
     NSInteger count = 2;
     for (NSInteger currUnitNum = ([indexPath row] - 1) * 2; count > 0; ++currUnitNum, --count) {
       if (currUnitNum < [unitArray_ count]) {
+        // Set left or right
+        NSInteger marginLeft;
+        if (!(currUnitNum % 2)) marginLeft = 10.0f;
+        else marginLeft = 165.0f;
+        
         // Unit Image
         UIImage * image = [UIImage imageNamed:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"image"]];
         UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
-        
-        NSInteger marginLeft;
-        
-        // Set left or right
-        if (!(currUnitNum % 2)) marginLeft = 10.0f;          
-        else marginLeft = 165.0f;
-
         [imageView setFrame:CGRectMake(marginLeft, 10.0f, 145.0f, 60.0f)];
         [cellView addSubview:imageView];
         [imageView release];
@@ -162,17 +176,16 @@
         [text setText:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"text"]];
         [cellView addSubview:text];
         [text release];
+        
+        // Unit Button
+        UIButton * unitButton = [[UIButton alloc] initWithFrame:CGRectMake(marginLeft, 0.0f, 145.0f, 100.0f)];
+        [unitButton setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
+        [unitButton addTarget:self action:@selector(loadCategory:) forControlEvents:UIControlEventTouchUpInside];
+        [cell addSubview:unitButton];
+        [unitButton release];
       }
     }
   }
-  
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-  if (cell == nil) {
-    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-  }
-    
-  // Configure the cell
-  [cellView setBackgroundColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
   
   // Cell Setting
   [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
@@ -241,6 +254,14 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+}
+
+//////////////////////////////////////////////////////////////////////////////
+#pragma mark - Button Action
+// ---------------------------------------------------------------------------
+- (void)loadCategory:(id)sender
+{
+  NSLog(@"******");
 }
 
 @end

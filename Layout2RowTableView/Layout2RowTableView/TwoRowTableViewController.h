@@ -13,4 +13,6 @@
   NSMutableArray * unitArray_;
 }
 
+- (void)loadCategory:(id)sender;
+
 @end
