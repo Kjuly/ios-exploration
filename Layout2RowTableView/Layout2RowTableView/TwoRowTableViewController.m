@@ -93,14 +93,28 @@
 // ---------------------------------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  NSLog(@"%d", [indexPath row]);
-  
-  static NSString *CellIdentifier = @"Cell";
-  
+  static NSString *CellIdentifier;
   UIView * cellView = [[UIView alloc] init];
+  
   if ([indexPath row] == 0) {
     CellIdentifier = @"CellTop";
     [cellView setFrame:CGRectMake(0.0f, 0.0f, 300.0f, 170.0f)];
+    
+    // Top image
+    UIImage * image = [UIImage imageNamed:@"NTCInfoBg_300x120.jpg"];
+    UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
+    [imageView setFrame:CGRectMake(10.0f, 10.0f, 300.0f, 120.0f)];
+    [cellView addSubview:imageView];
+    [imageView release];
+    
+    // Top text below image
+    UILabel * textBelowImage = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 135.0f, 300.0f, 20.0f)];
+    [textBelowImage setBackgroundColor:[UIColor clearColor]];
+    [textBelowImage setFont:[UIFont systemFontOfSize:18.0f]];
+    [textBelowImage setTextColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
+    [textBelowImage setText:@"We recomment to you..."];
+    [cellView addSubview:textBelowImage];
+    [textBelowImage release];
   } else {
     CellIdentifier = @"Cell";
     [cellView setFrame:CGRectMake(0.0f, 0.0f, 300.0f, 100.0f)];
