@@ -8,6 +8,7 @@
 
 #import "TwoRowTableViewController.h"
 
+#import "TableViewTwoColCell.h"
 
 @implementation TwoRowTableViewController
 
@@ -110,8 +111,9 @@
   else CellIdentifier = @"Cell";
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  TableViewTwoColCell * twoColCell = (TableViewTwoColCell *)cell;
   if (cell == nil) {
-    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    cell = [[[TableViewTwoColCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
   }
   
   // Configure the cell

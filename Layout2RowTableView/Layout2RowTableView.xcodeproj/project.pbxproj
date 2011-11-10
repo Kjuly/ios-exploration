@@ -24,6 +24,7 @@
 		7F207910146A387D00C95698 /* TwoRowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F20790F146A387D00C95698 /* TwoRowTableViewController.m */; };
 		7F207914146A3A6400C95698 /* Layout2RowTableView_145x60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F207912146A3A6400C95698 /* Layout2RowTableView_145x60.jpg */; };
 		7F207915146A3A6400C95698 /* NTCInfoBg_300x120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F207913146A3A6400C95698 /* NTCInfoBg_300x120.jpg */; };
+		7F5437D5146B80FB0086DEC8 /* TableViewTwoColCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5437D4146B80FB0086DEC8 /* TableViewTwoColCell.m */; };
 		7FA96A9F146A84B500B504AB /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA96A9E146A84B500B504AB /* RootNavigationController.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		7F20790F146A387D00C95698 /* TwoRowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoRowTableViewController.m; sourceTree = "<group>"; };
 		7F207912146A3A6400C95698 /* Layout2RowTableView_145x60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Layout2RowTableView_145x60.jpg; sourceTree = "<group>"; };
 		7F207913146A3A6400C95698 /* NTCInfoBg_300x120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NTCInfoBg_300x120.jpg; sourceTree = "<group>"; };
+		7F5437D3146B80FB0086DEC8 /* TableViewTwoColCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTwoColCell.h; sourceTree = "<group>"; };
+		7F5437D4146B80FB0086DEC8 /* TableViewTwoColCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTwoColCell.m; sourceTree = "<group>"; };
 		7FA96A9D146A84B500B504AB /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		7FA96A9E146A84B500B504AB /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +133,8 @@
 				7FA96A9E146A84B500B504AB /* RootNavigationController.m */,
 				7F20790E146A387D00C95698 /* TwoRowTableViewController.h */,
 				7F20790F146A387D00C95698 /* TwoRowTableViewController.m */,
+				7F5437D3146B80FB0086DEC8 /* TableViewTwoColCell.h */,
+				7F5437D4146B80FB0086DEC8 /* TableViewTwoColCell.m */,
 				7F2078CC146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld */,
 				7F2078C1146A2E9000C95698 /* Supporting Files */,
 			);
@@ -289,6 +294,7 @@
 				7F2078CE146A2E9000C95698 /* Layout2RowTableView.xcdatamodeld in Sources */,
 				7F207910146A387D00C95698 /* TwoRowTableViewController.m in Sources */,
 				7FA96A9F146A84B500B504AB /* RootNavigationController.m in Sources */,
+				7F5437D5146B80FB0086DEC8 /* TableViewTwoColCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
