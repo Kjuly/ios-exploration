@@ -140,7 +140,7 @@
     // Top View Button
     UIButton * viewButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 300.0f, 160.0f)];
     [viewButton setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
-    [viewButton addTarget:self action:@selector(loadCategory:) forControlEvents:UIControlEventTouchUpInside];
+    [viewButton addTarget:self action:@selector(toggleStatusBar:) forControlEvents:UIControlEventTouchUpInside];
     [cell addSubview:viewButton];
     [viewButton release];
   } else {
@@ -275,6 +275,15 @@
                         otherButtonTitles:nil];    
   [alert show];
   [alert release];
+}
+
+// ---------------------------------------------------------------------------
+- (void)toggleStatusBar:(id)sender
+{
+  if ([[UIApplication sharedApplication] isStatusBarHidden])
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+  else
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
 }
 
 @end

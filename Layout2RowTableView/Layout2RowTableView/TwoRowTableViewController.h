@@ -14,5 +14,6 @@
 }
 
 - (void)loadCategory:(id)sender;
+- (void)toggleStatusBar:(id)sender;
 
 @end
