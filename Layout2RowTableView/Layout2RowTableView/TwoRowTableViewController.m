@@ -106,21 +106,21 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   static NSString *CellIdentifier;
+  UITableViewCell *cell;
   
-  if ([indexPath row] == 0) CellIdentifier = @"CellTop";
-  else CellIdentifier = @"Cell";
-  
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-  TableViewTwoColCell * twoColCell = (TableViewTwoColCell *)cell;
-  if (cell == nil) {
-    cell = [[[TableViewTwoColCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-  }
-  
-  // Configure the cell
-  UIView * cellView = [[UIView alloc] init];
-  [cellView setBackgroundColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
-  
+  // Top cell
   if ([indexPath row] == 0) {
+    CellIdentifier = @"CellTop";
+    cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+      cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    // Configure the cell
+    UIView * cellView = [[UIView alloc] init];
+    [cellView setBackgroundColor:[UIColor colorWithWhite:0.95f alpha:1.0f]];
+    
     [cellView setFrame:CGRectMake(0.0f, 0.0f, 300.0f, 170.0f)];
     
     // Top image
@@ -145,55 +145,38 @@
     [viewButton addTarget:self action:@selector(toggleStatusBar:) forControlEvents:UIControlEventTouchUpInside];
     [cell addSubview:viewButton];
     [viewButton release];
-  } else {
-    [cellView setFrame:CGRectMake(0.0f, 0.0f, 300.0f, 100.0f)];
     
-    // Center vertical seperate line in cell
-    UIView * virtSeperateLine = [[UIView alloc] initWithFrame:CGRectMake(159.5f, 0.0f, 1.0f, cellView.frame.size.height)];
-    [virtSeperateLine setBackgroundColor:[UIColor colorWithWhite:0.8f alpha:1.0f]];
-    [cellView addSubview:virtSeperateLine];
-    [virtSeperateLine release];
+    [cell setBackgroundView:cellView];
+    [cellView release];
+  }
+  // Two column unit cell
+  else {
+    CellIdentifier = @"Cell";
+    cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+      cell = [[[TableViewTwoColCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    TableViewTwoColCell * twoColCell = (TableViewTwoColCell *)cell;
     
     // Half width of cell unit
     NSInteger count = 2;
     for (NSInteger currUnitNum = ([indexPath row] - 1) * 2; count > 0; ++currUnitNum, --count) {
       if (currUnitNum < [unitArray_ count]) {
-        // Set left or right
-        NSInteger marginLeft;
-        if (!(currUnitNum % 2)) marginLeft = 10.0f;
-        else marginLeft = 165.0f;
-        
-        // Unit Image
-        UIImage * image = [UIImage imageNamed:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"image"]];
-        UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
-        [imageView setFrame:CGRectMake(marginLeft, 10.0f, 145.0f, 60.0f)];
-        [cellView addSubview:imageView];
-        [imageView release];
-        
-        // Unit Text
-        UILabel * text = [[UILabel alloc] initWithFrame:CGRectMake(marginLeft, 70.0f, 145.0f, cellView.frame.size.height - imageView.frame.size.height - 10.0f)];
-        [text setBackgroundColor:[UIColor clearColor]];
-        [text setFont:[UIFont systemFontOfSize:12.0f]];
-        [text setTextColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
-        [text setText:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"text"]];
-        [cellView addSubview:text];
-        [text release];
-        
-        // Unit Button
-        UIButton * unitButton = [[UIButton alloc] initWithFrame:CGRectMake(marginLeft, 0.0f, 145.0f, 100.0f)];
-        [unitButton setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
-        [unitButton setTag:currUnitNum];
-        [unitButton addTarget:self action:@selector(loadCategory:) forControlEvents:UIControlEventTouchUpInside];
-        [cell addSubview:unitButton];
-        [unitButton release];
+        if (!(currUnitNum % 2)) {
+          [twoColCell setUnitLeftWithImage:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"image"]
+                                      text:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"text"]
+                                       tag:currUnitNum];
+        } else {
+          [twoColCell setUnitRightWithImage:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"image"]
+                                       text:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"text"]
+                                        tag:currUnitNum];
+        }
       }
     }
   }
   
   // Cell Setting
   [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-  [cell setBackgroundView:cellView];
-  [cellView release];
   
   return cell;
 }

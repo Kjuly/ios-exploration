@@ -10,6 +10,8 @@
 
 @interface TableViewTwoColCell : UITableViewCell
 {
+  UIView * cellBgView_;
+  
   UIButton * buttonLeft_;
   UIButton * buttonRight_;
   
@@ -19,5 +21,16 @@
   UILabel * labelLeft_;
   UILabel * labelRight_;
 }
+
+@property (nonatomic, retain) UIView * cellBgView;
+@property (nonatomic, retain) UIButton * buttonLeft;
+@property (nonatomic, retain) UIButton * buttonRight;
+@property (nonatomic, retain) UIImageView * imageViewLeft;
+@property (nonatomic, retain) UIImageView * imageViewRight;
+@property (nonatomic, retain) UILabel * labelLeft;
+@property (nonatomic, retain) UILabel * labelRight;
+
+- (void)setUnitLeftWithImage:(NSString *)imageName text:(NSString *)text tag:(NSInteger)tagID;
+- (void)setUnitRightWithImage:(NSString *)imageName text:(NSString *)text tag:(NSInteger)tagID;
 
 @end
