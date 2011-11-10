@@ -8,8 +8,6 @@
 
 #import "TwoRowTableViewController.h"
 
-#import "TableViewTwoColCell.h"
-
 @implementation TwoRowTableViewController
 
 - (void)dealloc
@@ -171,6 +169,7 @@
                                        text:[[unitArray_ objectAtIndex:currUnitNum] objectForKey:@"text"]
                                         tag:currUnitNum];
         }
+        [twoColCell setDelegate:self];
       }
     }
   }
@@ -243,25 +242,26 @@
 }
 
 //////////////////////////////////////////////////////////////////////////////
-#pragma mark - Button Action
+#pragma mark - TableViewTwoColCelDelegate
 // ---------------------------------------------------------------------------
 - (void)loadCategory:(id)sender
 {
-//  NSLog(@"****");
 //  UIViewController * newViewController = [[UIViewController alloc] init];
 //  [newViewController.view setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
 //  [self.navigationController pushViewController:newViewController animated:YES];
   
-  UIAlertView * alert = [[ UIAlertView alloc]                          
-                        initWithTitle:@" Alert"                          
-                        message:[NSString stringWithFormat:@"button %d", [sender tag]]
-                        delegate:nil                          
-                        cancelButtonTitle:@" OK"                          
-                        otherButtonTitles:nil];    
+  UIAlertView * alert = [[ UIAlertView alloc]
+                        initWithTitle:@"Alert"
+                        message:[NSString stringWithFormat:@"Button %d", [sender tag]]
+                        delegate:nil
+                        cancelButtonTitle:@"OK"
+                        otherButtonTitles:nil];
   [alert show];
   [alert release];
 }
 
+//////////////////////////////////////////////////////////////////////////////
+#pragma mark - Button Action
 // ---------------------------------------------------------------------------
 - (void)toggleStatusBar:(id)sender
 {

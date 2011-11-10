@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TwoRowTableViewController : UITableViewController
+#import "TableViewTwoColCell.h"
+
+@interface TwoRowTableViewController : UITableViewController <TableViewTwoColCellDelegate>
 {
   NSMutableArray * unitArray_;
 }

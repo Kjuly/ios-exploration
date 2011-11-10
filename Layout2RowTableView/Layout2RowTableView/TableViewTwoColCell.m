@@ -10,6 +10,7 @@
 
 @implementation TableViewTwoColCell
 
+@synthesize delegate = delegate_;
 @synthesize cellBgView = cellBgView_;
 @synthesize buttonLeft = buttonLeft_, buttonRight = buttonRight_;
 @synthesize imageViewLeft = imageViewLeft_, imageViewRight = imageViewRight_;
@@ -72,8 +73,13 @@
     // Unit Button
     self.buttonLeft = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 0.0f, 145.0f, 100.0f)];
     [self.buttonLeft setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
-//    [self.buttonLeft addTarget:self action:@selector(loadCategory:) forControlEvents:UIControlEventTouchUpInside];
-    [self.cellBgView addSubview:self.buttonLeft];
+    [self.buttonLeft addTarget:self.delegate action:@selector(loadCategory:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:self.buttonLeft];
+    
+    self.buttonRight = [[UIButton alloc] initWithFrame:CGRectMake(165.0f, 0.0f, 145.0f, 100.0f)];
+    [self.buttonRight setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
+    [self.buttonRight addTarget:self.delegate action:@selector(loadCategory:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:self.buttonRight];
     
     [self setBackgroundView:self.cellBgView];
   }

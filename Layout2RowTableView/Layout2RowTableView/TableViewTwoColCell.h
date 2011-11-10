@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class TableViewTwoColCell;
+
+@protocol TableViewTwoColCellDelegate
+
+- (void)loadCategory:(id)sender;
+
+@end
+
+// ---------------------------------------------------------------------------
 @interface TableViewTwoColCell : UITableViewCell
 {
+  id <TableViewTwoColCellDelegate> delegate_;
   UIView * cellBgView_;
   
   UIButton * buttonLeft_;
@@ -22,6 +32,7 @@
   UILabel * labelRight_;
 }
 
+@property (nonatomic, retain) id <TableViewTwoColCellDelegate> delegate;
 @property (nonatomic, retain) UIView * cellBgView;
 @property (nonatomic, retain) UIButton * buttonLeft;
 @property (nonatomic, retain) UIButton * buttonRight;
