@@ -180,6 +180,7 @@
         // Unit Button
         UIButton * unitButton = [[UIButton alloc] initWithFrame:CGRectMake(marginLeft, 0.0f, 145.0f, 100.0f)];
         [unitButton setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.0f]];
+        [unitButton setTag:currUnitNum];
         [unitButton addTarget:self action:@selector(loadCategory:) forControlEvents:UIControlEventTouchUpInside];
         [cell addSubview:unitButton];
         [unitButton release];
@@ -261,10 +262,19 @@
 // ---------------------------------------------------------------------------
 - (void)loadCategory:(id)sender
 {
-  NSLog(@"****");
-  UIViewController * newViewController = [[UIViewController alloc] init];
-  [newViewController.view setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
-  [self.navigationController pushViewController:newViewController animated:YES];
+//  NSLog(@"****");
+//  UIViewController * newViewController = [[UIViewController alloc] init];
+//  [newViewController.view setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:1.0f]];
+//  [self.navigationController pushViewController:newViewController animated:YES];
+  
+  UIAlertView * alert = [[ UIAlertView alloc]                          
+                        initWithTitle:@" Alert"                          
+                        message:[NSString stringWithFormat:@"button %d", [sender tag]]
+                        delegate:nil                          
+                        cancelButtonTitle:@" OK"                          
+                        otherButtonTitles:nil];    
+  [alert show];
+  [alert release];
 }
 
 @end
