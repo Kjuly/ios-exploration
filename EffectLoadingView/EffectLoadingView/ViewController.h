@@ -11,9 +11,11 @@
 @interface ViewController : UIViewController
 {
   UIButton * loadNewViewButton_;
+  UIImageView * imageView_;
 }
 
 @property (nonatomic, retain) UIButton * loadNewViewButton;
+@property (nonatomic, retain) UIImageView * imageView;
 
 - (void)loadNewView:(id)sender;
 

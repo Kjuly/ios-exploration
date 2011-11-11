@@ -12,6 +12,7 @@
 
 @implementation ViewController
 
+@synthesize imageView = imageView_;
 @synthesize loadNewViewButton = loadNewViewButton_;
 
 - (void)didReceiveMemoryWarning
@@ -28,6 +29,11 @@
 
   [self.view setBackgroundColor:[UIColor whiteColor]];
   
+  self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image_01_640x960.jpg"]];
+  [self.imageView setFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
+  [self.imageView setContentMode:UIViewContentModeScaleAspectFit];
+  [self.view addSubview:self.imageView];
+  
   // Button to load new view
   self.loadNewViewButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 360.0f, 300.0f, 30.0f)];
   [self.loadNewViewButton setBackgroundColor:[UIColor blackColor]];
@@ -41,11 +47,14 @@
 {
   [super viewDidUnload];
   self.loadNewViewButton = nil;
+  self.imageView = nil;
 }
 
 - (void)dealloc
 {
   [loadNewViewButton_ release];
+  [imageView_ release];
+  [super release];
 }
 
 - (void)viewWillAppear:(BOOL)animated
