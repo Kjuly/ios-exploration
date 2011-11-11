@@ -13,6 +13,7 @@
 
 @implementation ViewController
 
+@synthesize loadingViewController = loadingViewController_;
 @synthesize imageView = imageView_;
 @synthesize loadNewViewButton = loadNewViewButton_;
 
@@ -29,6 +30,9 @@
   [super viewDidLoad];
 
   [self.view setBackgroundColor:[UIColor whiteColor]];
+  
+  // Loading view
+  self.loadingViewController = [[LoadingViewController alloc] initWithNibName:nil bundle:nil];
   
   self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image_01_640x960.jpg"]];
   [self.imageView setFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
@@ -47,12 +51,14 @@
 - (void)viewDidUnload
 {
   [super viewDidUnload];
+  self.loadingViewController = nil;
   self.loadNewViewButton = nil;
   self.imageView = nil;
 }
 
 - (void)dealloc
 {
+  [loadingViewController_ release];
   [loadNewViewButton_ release];
   [imageView_ release];
   [super release];
@@ -89,12 +95,9 @@
 // ---------------------------------------------------------------------------
 - (void)loadNewView:(id)sender
 {
-  LoadingViewController * loadingViewController = [[LoadingViewController alloc] initWithNibName:nil bundle:nil];
-  [self.view addSubview:loadingViewController.view];
+  [self.view addSubview:self.loadingViewController.view];
 
   [self performSelectorInBackground:@selector(replaceViewController:) withObject:sender];
-  
-  [loadingViewController release];
 }
 
 - (void)replaceViewController:(id)sender
