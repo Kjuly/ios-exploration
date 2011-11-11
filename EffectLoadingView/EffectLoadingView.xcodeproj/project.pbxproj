@@ -20,6 +20,7 @@
 		7F2EE7D3146CD43F006817B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2EE7B4146CD43F006817B2 /* Foundation.framework */; };
 		7F2EE7DB146CD43F006817B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F2EE7D9146CD43F006817B2 /* InfoPlist.strings */; };
 		7F2EE7DE146CD43F006817B2 /* EffectLoadingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2EE7DD146CD43F006817B2 /* EffectLoadingViewTests.m */; };
+		7F2EE7E9146CD57A006817B2 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2EE7E8146CD57A006817B2 /* LoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		7F2EE7DA146CD43F006817B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F2EE7DC146CD43F006817B2 /* EffectLoadingViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectLoadingViewTests.h; sourceTree = "<group>"; };
 		7F2EE7DD146CD43F006817B2 /* EffectLoadingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectLoadingViewTests.m; sourceTree = "<group>"; };
+		7F2EE7E7146CD57A006817B2 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		7F2EE7E8146CD57A006817B2 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				7F2EE7C2146CD43F006817B2 /* AppDelegate.m */,
 				7F2EE7C4146CD43F006817B2 /* ViewController.h */,
 				7F2EE7C5146CD43F006817B2 /* ViewController.m */,
+				7F2EE7E7146CD57A006817B2 /* LoadingView.h */,
+				7F2EE7E8146CD57A006817B2 /* LoadingView.m */,
 				7F2EE7B9146CD43F006817B2 /* Supporting Files */,
 			);
 			path = EffectLoadingView;
@@ -261,6 +266,7 @@
 				7F2EE7BF146CD43F006817B2 /* main.m in Sources */,
 				7F2EE7C3146CD43F006817B2 /* AppDelegate.m in Sources */,
 				7F2EE7C6146CD43F006817B2 /* ViewController.m in Sources */,
+				7F2EE7E9146CD57A006817B2 /* LoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
