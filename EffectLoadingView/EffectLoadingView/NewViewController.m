@@ -10,6 +10,8 @@
 
 @implementation NewViewController
 
+@synthesize imageView = imageView_;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,19 +38,27 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
+  
+  // ImageView
+  self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image_02_640x960.jpg"]];
+  [self.imageView setFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
+  [self.imageView setContentMode:UIViewContentModeScaleAspectFit];
+  [self.view addSubview:self.imageView];
 }
-*/
 
 - (void)viewDidUnload
 {
   [super viewDidUnload];
-  // Release any retained subviews of the main view.
-  // e.g. self.myOutlet = nil;
+  self.imageView = nil;
+}
+
+- (void)dealloc
+{
+  [imageView_ release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
