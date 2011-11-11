@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface LoadingViewController : UIViewController
+{
+  UIView * blackRect_;
+  UIActivityIndicatorView * spinner_;
+}
+
+@property (nonatomic, retain) UIView * blackRect;
+@property (nonatomic, retain) UIActivityIndicatorView * spinner;
 
 @end
