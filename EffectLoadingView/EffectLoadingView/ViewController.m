@@ -112,6 +112,8 @@
 - (void)replaceViewController:(id)sender
 {
   sleep(1);
+  NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+  
   NewViewController * newViewController = [[NewViewController alloc] init];
   [newViewController.view setFrame:CGRectMake(320.0f, 0.0f, 320.0f, 480.0f)];
   [self.view insertSubview:newViewController.view atIndex:2];
@@ -125,6 +127,7 @@
                      [self didLoadNewView:sender];
                    }];
   [newViewController release];
+  [pool drain];
 }
 
 @end
