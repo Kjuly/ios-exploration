@@ -18,5 +18,6 @@
 @property (nonatomic, retain) UIImageView * imageView;
 
 - (void)loadNewView:(id)sender;
+- (void)replaceViewController:(id)sender;
 
 @end

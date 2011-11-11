@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "LoadingViewController.h"
+#import "NewViewController.h"
 
 @implementation ViewController
 
@@ -90,7 +91,26 @@
 {
   LoadingViewController * loadingViewController = [[LoadingViewController alloc] initWithNibName:nil bundle:nil];
   [self.view addSubview:loadingViewController.view];
+
+  [self performSelectorInBackground:@selector(replaceViewController:) withObject:sender];
+  
   [loadingViewController release];
+}
+
+- (void)replaceViewController:(id)sender
+{
+  sleep(1);
+  NewViewController * newViewController = [[NewViewController alloc] init];
+  [newViewController.view setFrame:CGRectMake(320.0f, 0.0f, 320.0f, 480.0f)];
+  [self.view insertSubview:newViewController.view atIndex:2];
+  [UIView animateWithDuration:0.3f
+                        delay:0.0f
+                      options:UIViewAnimationOptionCurveEaseInOut
+                   animations:^{
+                     [newViewController.view setFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
+                   }
+                   completion:nil];
+  [newViewController release];
 }
 
 @end
