@@ -1,14 +1,14 @@
 //
-//  LoadingView.m
+//  LoadingViewController.m
 //  EffectLoadingView
 //
 //  Created by Kaijie Yu on 11/11/11.
 //  Copyright (c) 2011 thePlant. All rights reserved.
 //
 
-#import "LoadingView.h"
+#import "LoadingViewController.h"
 
-@implementation LoadingView
+@implementation LoadingViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

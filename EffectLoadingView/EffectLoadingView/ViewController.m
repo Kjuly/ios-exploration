@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "LoadingViewController.h"
+
 @implementation ViewController
 
 @synthesize loadNewViewButton = loadNewViewButton_;
@@ -74,7 +76,9 @@
 // ---------------------------------------------------------------------------
 - (void)loadNewView:(id)sender
 {
-  NSLog(@"123");
+  LoadingViewController * loadingViewController = [[LoadingViewController alloc] initWithNibName:nil bundle:nil];
+  [self.view addSubview:loadingViewController.view];
+  [loadingViewController release];
 }
 
 @end

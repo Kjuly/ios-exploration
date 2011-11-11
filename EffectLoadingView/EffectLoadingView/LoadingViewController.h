@@ -1,5 +1,5 @@
 //
-//  LoadingView.h
+//  LoadingViewController.h
 //  EffectLoadingView
 //
 //  Created by Kaijie Yu on 11/11/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoadingView : UIViewController
+@interface LoadingViewController : UIViewController
 
 @end
