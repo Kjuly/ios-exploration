@@ -21,6 +21,8 @@
 		7F2EE7DB146CD43F006817B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F2EE7D9146CD43F006817B2 /* InfoPlist.strings */; };
 		7F2EE7DE146CD43F006817B2 /* EffectLoadingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2EE7DD146CD43F006817B2 /* EffectLoadingViewTests.m */; };
 		7F2EE7E9146CD57A006817B2 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2EE7E8146CD57A006817B2 /* LoadingViewController.m */; };
+		7F2EE7EC146CFB96006817B2 /* image_02_640x960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F2EE7EB146CFB96006817B2 /* image_02_640x960.jpg */; };
+		7F2EE7EE146CFBA8006817B2 /* image_01_640x960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F2EE7ED146CFBA8006817B2 /* image_01_640x960.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		7F2EE7DD146CD43F006817B2 /* EffectLoadingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectLoadingViewTests.m; sourceTree = "<group>"; };
 		7F2EE7E7146CD57A006817B2 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = LoadingViewController.h; sourceTree = "<group>"; };
 		7F2EE7E8146CD57A006817B2 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		7F2EE7EB146CFB96006817B2 /* image_02_640x960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_02_640x960.jpg; sourceTree = "<group>"; };
+		7F2EE7ED146CFBA8006817B2 /* image_01_640x960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_01_640x960.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				7F2EE7BB146CD43F006817B2 /* InfoPlist.strings */,
 				7F2EE7BE146CD43F006817B2 /* main.m */,
 				7F2EE7C0146CD43F006817B2 /* EffectLoadingView-Prefix.pch */,
+				7F2EE7EA146CFAD8006817B2 /* images */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,6 +159,15 @@
 				7F2EE7D9146CD43F006817B2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F2EE7EA146CFAD8006817B2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7F2EE7ED146CFBA8006817B2 /* image_01_640x960.jpg */,
+				7F2EE7EB146CFB96006817B2 /* image_02_640x960.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +243,8 @@
 			files = (
 				7F2EE7BD146CD43F006817B2 /* InfoPlist.strings in Resources */,
 				7F2EE7C9146CD43F006817B2 /* ViewController.xib in Resources */,
+				7F2EE7EC146CFB96006817B2 /* image_02_640x960.jpg in Resources */,
+				7F2EE7EE146CFBA8006817B2 /* image_01_640x960.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
