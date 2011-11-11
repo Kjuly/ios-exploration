@@ -26,6 +26,9 @@
 {
   [super viewDidLoad];
 
+  [self.view setBackgroundColor:[UIColor whiteColor]];
+  
+  // Button to load new view
   self.loadNewViewButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 360.0f, 300.0f, 30.0f)];
   [self.loadNewViewButton setBackgroundColor:[UIColor blackColor]];
   [self.loadNewViewButton setTintColor:[UIColor blackColor]];

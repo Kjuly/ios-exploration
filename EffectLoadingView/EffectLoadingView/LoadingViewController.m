@@ -8,19 +8,29 @@
 
 #import "LoadingViewController.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @implementation LoadingViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    [self.view setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.5]];
+    [self.view setBackgroundColor:[UIColor clearColor]];
     [self.view setFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
     
+    // Black Rect
+    UIView * blackRect = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 200.0f, 120.0f)];
+    [blackRect setCenter:self.view.center];
+    [blackRect setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.75f]];
+    [[blackRect layer] setCornerRadius:10.0f];
+    [self.view addSubview:blackRect];
+    [blackRect release];
+    
+    // Spinner
     UIActivityIndicatorView * spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [spinner setCenter:self.view.center];
     [spinner startAnimating];
-    
     [self.view addSubview:spinner];
     [spinner release];
   }
