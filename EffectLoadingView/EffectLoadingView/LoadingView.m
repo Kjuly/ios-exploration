@@ -14,7 +14,15 @@
 {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
-    // Custom initialization
+    [self.view setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.5]];
+    [self.view setFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
+    
+    UIActivityIndicatorView * spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [spinner setCenter:self.view.center];
+    [spinner startAnimating];
+    
+    [self.view addSubview:spinner];
+    [spinner release];
   }
   return self;
 }

@@ -10,35 +10,47 @@
 
 @implementation ViewController
 
+@synthesize loadNewViewButton = loadNewViewButton_;
+
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+  [super didReceiveMemoryWarning];
+  // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
+
+  self.loadNewViewButton = [[UIButton alloc] initWithFrame:CGRectMake(10.0f, 360.0f, 300.0f, 30.0f)];
+  [self.loadNewViewButton setBackgroundColor:[UIColor blackColor]];
+  [self.loadNewViewButton setTintColor:[UIColor blackColor]];
+  [self.loadNewViewButton setTitle:@"Load New View" forState:UIControlStateNormal];
+  [self.loadNewViewButton addTarget:self action:@selector(loadNewView:) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:self.loadNewViewButton];
 }
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+  [super viewDidUnload];
+  self.loadNewViewButton = nil;
+}
+
+- (void)dealloc
+{
+  [loadNewViewButton_ release];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+  [super viewWillAppear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
+  [super viewDidAppear:animated];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -53,8 +65,16 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
+  // Return YES for supported orientations
   return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+#pragma mark - Button Action
+// ---------------------------------------------------------------------------
+- (void)loadNewView:(id)sender
+{
+  NSLog(@"123");
 }
 
 @end
