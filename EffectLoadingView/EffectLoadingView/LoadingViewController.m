@@ -60,7 +60,30 @@
   [self.spinner setAlpha:0.0f];
   [self.spinner startAnimating];
   [self.view addSubview:self.spinner];
-  
+}
+
+- (void)viewDidUnload
+{
+  [super viewDidUnload];
+  self.blackRect = nil;
+  self.spinner = nil;
+}
+
+- (void)dealloc
+{
+  [blackRect_ release];
+  [spinner_ release];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+  // Return YES for supported orientations
+  return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+// ---------------------------------------------------------------------------
+- (void)showLoadingView;
+{
   [UIView animateWithDuration:0.25f
                         delay:0.0f
                       options:UIViewAnimationOptionCurveEaseOut
@@ -79,17 +102,21 @@
                    }];
 }
 
-- (void)viewDidUnload
+// ---------------------------------------------------------------------------
+- (void)hideLoadingView
 {
-  [super viewDidUnload];
-  // Release any retained subviews of the main view.
-  // e.g. self.myOutlet = nil;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-  // Return YES for supported orientations
-  return (interfaceOrientation == UIInterfaceOrientationPortrait);
+  [UIView animateWithDuration:0.25f
+                        delay:0.0f
+                      options:UIViewAnimationOptionCurveEaseOut
+                   animations:^{
+                     [self.spinner setAlpha:0.0f];
+                     [self.blackRect setCenter:CGPointMake(self.view.center.x, 400.0f)];
+                     [self.blackRect setAlpha:0.0f];
+                   }
+                   completion:^(BOOL finished) {
+                     [self.blackRect setCenter:CGPointMake(self.view.center.x, 100.0f)];
+                     [self.view removeFromSuperview];
+                   }];
 }
 
 @end

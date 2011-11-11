@@ -31,9 +31,7 @@
 
   [self.view setBackgroundColor:[UIColor whiteColor]];
   
-  // Loading view
-  self.loadingViewController = [[LoadingViewController alloc] initWithNibName:nil bundle:nil];
-  
+  // Image view
   self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image_01_640x960.jpg"]];
   [self.imageView setFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
   [self.imageView setContentMode:UIViewContentModeScaleAspectFit];
@@ -46,6 +44,9 @@
   [self.loadNewViewButton setTitle:@"Load New View" forState:UIControlStateNormal];
   [self.loadNewViewButton addTarget:self action:@selector(loadNewView:) forControlEvents:UIControlEventTouchUpInside];
   [self.view addSubview:self.loadNewViewButton];
+  
+  // Loading view
+  self.loadingViewController = [[LoadingViewController alloc] initWithNibName:nil bundle:nil];
 }
 
 - (void)viewDidUnload
@@ -96,10 +97,18 @@
 - (void)loadNewView:(id)sender
 {
   [self.view addSubview:self.loadingViewController.view];
+  [self.loadingViewController showLoadingView];
 
   [self performSelectorInBackground:@selector(replaceViewController:) withObject:sender];
 }
 
+// ---------------------------------------------------------------------------
+- (void)didLoadNewView:(id)sender
+{
+  [self.loadingViewController hideLoadingView];
+}
+
+// ---------------------------------------------------------------------------
 - (void)replaceViewController:(id)sender
 {
   sleep(1);
@@ -112,7 +121,9 @@
                    animations:^{
                      [newViewController.view setFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
                    }
-                   completion:nil];
+                   completion:^(BOOL finished) {
+                     [self didLoadNewView:sender];
+                   }];
   [newViewController release];
 }
 

@@ -17,4 +17,7 @@
 @property (nonatomic, retain) UIView * blackRect;
 @property (nonatomic, retain) UIActivityIndicatorView * spinner;
 
+- (void)showLoadingView;
+- (void)hideLoadingView;
+
 @end
