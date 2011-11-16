@@ -34,7 +34,7 @@
   [imageViewRight_ release];
   [labelLeft_ release];
   [labelRight_ release];
-  [super release];
+  [super dealloc];
 }
 
 // ---------------------------------------------------------------------------
