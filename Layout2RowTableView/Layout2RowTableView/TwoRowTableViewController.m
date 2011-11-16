@@ -13,6 +13,7 @@
 - (void)dealloc
 {
   [unitArray_ release];
+  [super dealloc];
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
