@@ -73,7 +73,7 @@
 - (void)dealloc
 {
   [rootTableView_ release];
-  [super release];
+  [super dealloc];
 }
 
 - (void)viewWillAppear:(BOOL)animated
